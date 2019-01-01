@@ -6,8 +6,8 @@
   * [Exercise 1.1.2](./Chapter%201/Exercise%201.2.md) ([Code](../src/Chapter%201/Exercise%201.2.scm))
   * [Exercise 1.1.3](./Chapter%201/Exercise%201.3.md) ([Code](../src/Chapter%201/Exercise%201.3.scm))
   * [Exercise 1.1.4](./Chapter%201/Exercise%201.4.md)
-  * [Exercise 1.1.5](./Chapter%201/Exercise%201.5.md) ([Code](../src/Chapter%201/Exercise%201.5.scm))
-  * [Exercise 1.1.6]
+  * [Exercise 1.1.5](./Chapter%201/Exercise%201.5.md)
+  * [Exercise 1.1.6](./Chapter%201/Exercise%201.6.md)
   * [Exercise 1.1.7]
   * [Exercise 1.1.8]
 
