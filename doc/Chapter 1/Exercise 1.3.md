@@ -6,7 +6,7 @@ Define a procedure that takes three numbers as arguments and returns the sum of 
 
 ### Solution
 
-([Code](../../src/Chapter%201/Exersice%201.3.scm))
+([Code](../../src/Chapter%201/Exercise%201.3.scm))
 
 Предикат каждого пункта условного выражения **cond** вычисляет, является ли выбранный из трёх формальных параметров наименьшим, и, если это так, соответствующее предикату выражение-следствие вычисляет сумму квадратов остальных формальных параметров.
 
