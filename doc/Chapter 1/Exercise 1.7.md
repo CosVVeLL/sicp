@@ -21,30 +21,6 @@ The _good-enough?_ test used in computing square roots will not be very effectiv
   (average guess (/ x guess)))
 ```
 
-#### Старая версия _good-enough?_
-
-```scheme
-(define (good-enough? guess x)
-  (< (abs (- (square guess) x)) 0.001))
-
-(define (sqrt-iter guess x)
-  (if (good-enough? guess x)
-      guess
-      (sqrt-iter (improve guess x)
-		 x)))
-
-(define (sqrt x) (sqrt-iter 1 x))
-
-(sqrt 4)
-; => 2.0000000929222947 (нет разницы)
-
-(sqrt 0.000004)
-; => 0.03129261341049664 (результат менее точный)
-
-(sqrt 4000000)
-; => 2000.0000000000236 (нет разницы)
-```
-
 #### Новая версия _good-enough?_
 
 ```scheme
@@ -70,3 +46,26 @@ The _good-enough?_ test used in computing square roots will not be very effectiv
 ; => 2000.0000000000236 (нет разницы)
 ```
 
+#### Старая версия _good-enough?_
+
+```scheme
+(define (good-enough? guess x)
+  (< (abs (- (square guess) x)) 0.001))
+
+(define (sqrt-iter guess x)
+  (if (good-enough? guess x)
+      guess
+      (sqrt-iter (improve guess x)
+		 x)))
+
+(define (sqrt x) (sqrt-iter 1 x))
+
+(sqrt 4)
+; => 2.0000000929222947 (нет разницы)
+
+(sqrt 0.000004)
+; => 0.03129261341049664 (результат менее точный)
+
+(sqrt 4000000)
+; => 2000.0000000000236 (нет разницы)
+```
