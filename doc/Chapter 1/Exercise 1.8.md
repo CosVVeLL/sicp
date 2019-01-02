@@ -44,7 +44,7 @@ Use this formula to implement a cube-root procedure analogous to the square-root
 (cbrt 27)
 ; => 3.0000000000000977
 
-(cbrt 64)
-; => 4.000000000076121
+(cbrt -27)
+; = > -3.000000005383821
 ```
 
