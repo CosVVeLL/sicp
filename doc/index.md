@@ -9,7 +9,7 @@
   * [Exercise 1.5](./Chapter%201/Exercise%201.5.md)
   * [Exercise 1.6](./Chapter%201/Exercise%201.6.md)
   * [Exercise 1.7](./Chapter%201/Exercise%201.7.md) ([code](../src/Chapter%201/Exercise%201.7.scm))
-  * [Exercise 1.8]
+  * [Exercise 1.8](./Chapter%201/Exercise%201.8.md) ([code](../src/Chapter%201/Exercise%201.8.scm))
 
 1.2 Procedures and the Processes They Generate
 
