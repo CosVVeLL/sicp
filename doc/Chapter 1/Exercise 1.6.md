@@ -2,7 +2,7 @@
 
 ### Exercise 1.6
 
-Alyssa P. Hacker doesn't see why if needs to be provided as a special form. «Why can't I just define it as an ordinary procedure in terms of cond?» she asks. Alyssa's friend Eva Lu Ator claims this can indeed be done, and she defines a new version of if:
+Alyssa P. Hacker doesn't see why _if_ needs to be provided as a special form. «Why can't I just define it as an ordinary procedure in terms of cond?» she asks. Alyssa's friend Eva Lu Ator claims this can indeed be done, and she defines a new version of _if_:
 
 ```scheme
 (define (new-if predicate then-clause else-clause)
@@ -20,7 +20,7 @@ Eva demonstrates the program for Alyssa:
 ; => 0
 ```
 
-Delighted, Alyssa uses new-if to rewrite the square-root program:
+Delighted, Alyssa uses _new-if_ to rewrite the square-root program:
 
 ```scheme
 (define (sqrt-iter guess x)

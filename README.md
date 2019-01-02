@@ -1,3 +1,5 @@
+[![License MIT](https://img.shields.io/badge/license-MIT-9f67c6.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
 ## SICP Solutions
 
 **My solutions to Structure and Interpretation of Computer Programs**\
