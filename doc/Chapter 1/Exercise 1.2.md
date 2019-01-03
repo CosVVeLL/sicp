@@ -1,6 +1,6 @@
 ## [Chapter 1](../index.md#1-Building-Abstractions-with-Procedures)
 
-### Exersice 1.2
+### Exercise 1.2
 Translate the following expression into prefix form:
 
 <p align="center">

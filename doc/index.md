@@ -13,7 +13,7 @@
 
 1.2 Procedures and the Processes They Generate
 
-  * [Exercise 1.9]
+  * [Exercise 1.9](./Chapter%201/Exercise%201.9.md)
   * [Exercise 1.10]
   * [Exercise 1.11]
   * [Exercise 1.12]
