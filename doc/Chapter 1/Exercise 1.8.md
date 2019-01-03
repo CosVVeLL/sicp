@@ -2,7 +2,7 @@
 
 ### Exercise 1.8
 
-Newton's method for cube roots is based on the fact that if y is an approximation to the cube root of x, then a better approximation is given by the value
+Newton's method for cube roots is based on the fact that if _y_ is an approximation to the cube root of _x_, then a better approximation is given by the value
 
 <p align="center">
 	<img src="https://i.ibb.co/89bVMqf/SICPexpression1-8.png">
