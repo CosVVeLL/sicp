@@ -31,4 +31,4 @@
         (else (cc-iter1 (- amount 1)
               acc))))
 
-(count-change-iter 150) ; => 292
+(count-change-iter 150) ; => 972
