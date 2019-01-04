@@ -65,7 +65,7 @@ Give concise mathematical definitions for the functions computed by the procedur
 ; 1.2
 (A 0 (A 1 1))
 ; 1.3
-(A 0 2) ; 4 (* 2 2)
+(A 0 2) ; 4 или (* 2 2)
 
 (h 3) ; (A 2 3)
 ; 2.1
@@ -77,7 +77,7 @@ Give concise mathematical definitions for the functions computed by the procedur
 ; 2.4
 (A 1 4)
 ; 2.5
-(A 0 (A 0 (A 0 (A 1 1)))) ; 16 (* 2 (* 2 (* 2 2)))
+(A 0 (A 0 (A 0 (A 1 1)))) ; 16 или (* 2 (* 2 (* 2 2)))
 
 (h 4) ; (A 2 4)
 ; 3.1
@@ -89,4 +89,3 @@ Give concise mathematical definitions for the functions computed by the procedur
 ; 3.4
 (A 1 16) ; 65536
 ```
-
