@@ -53,6 +53,8 @@ We can easily translate this description into a recursive procedure:
 
 ### Solution
 
+([Code](../../src/Chapter%201/Example%201.2:%20Counting%20change.scm))
+
 В решении ниже оказалась одна проблема. Как я понял, слишком частый вызов процедуры `first-denomination` затягивал даже итеративный процесс. Тем не менее решение итеративное — для данной процедуры немного быстрее и требует меньше памяти.
 
 ```scheme
@@ -89,6 +91,7 @@ P.S. Не уверен в своих выводах, но процедура `fi
 ```scheme
 (define (count-change-iter amount)
   (cc-iter50 amount 0))
+; 0 — аккумулятор итеративного процесса
 
 (define (cc-iter50 amount acc)
   (cond ((= amount 0) (+ acc 1))
