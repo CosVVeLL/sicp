@@ -58,7 +58,7 @@ Give concise mathematical definitions for the functions computed by the procedur
 
 Подстановочные модели для вычисления `(h 2)`, `(h 3)` и `(h 4)` соответственно:
 
-```sceme
+```scheme
 (h 2) ; (A 2 2)
 ; 1.1
 (A 1 (A 2 1))
