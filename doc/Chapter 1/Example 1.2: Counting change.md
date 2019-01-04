@@ -9,8 +9,8 @@ This problem has a simple solution as a recursive procedure. Suppose we think of
 The number of ways to change amount _a_ using _n_ kinds of coins equals
 
   * the number of ways to change amount _a_ using all but the first kind of coin, plus
-  * the number of ways to change amount _a - d_ using all _n_ kinds of coins, where _d_ is the denomination of the first kind of coin
-.
+  * the number of ways to change amount _a - d_ using all _n_ kinds of coins, where _d_ is the denomination of the first kind of coin.
+
 To see why this is true, observe that the ways to make change can be divided into two groups: those that do not use any of the first kind of coin, and those that do. Therefore, the total number of ways to make change for some amount is equal to the number of ways to make change for the amount without using any of the first kind of coin, plus the number of ways to make change assuming that we do use the first kind of coin. But the latter number is equal to the number of ways to make change for the amount that remains after using a coin of the first kind.
 
 Thus, we can recursively reduce the problem of changing a given amount to the problem of changing smaller amounts using fewer kinds of coins. Consider this reduction rule carefully, and convince yourself that we can use it to describe an algorithm if we specify the following degenerate cases:
@@ -80,7 +80,7 @@ We can easily translate this description into a recursive procedure:
         ((= kinds-of-coins 5) 50)))
 
 (count-change-iter 100)
-; => 292 (время вычисления — ~11 сек. вместо ~15 сек)
+; => 292 (время вычисления — ~11 сек. вместо ~15 сек.)
 ```
 
 Вместо процедуры, определяющей, с каким типом монеты работает данный цикл итерации, создадим для каждого типа монеты свою собственную процедуру, предотвратив этим экспоненциальный рост необходимых операций для вычисления всей функции.
@@ -121,6 +121,6 @@ P.S. Не уверен в своих выводах, но процедура `fi
               acc))))
 
 (count-change-iter 150)
-; => 292 (время вычисления — ~4.5 сек. вместо ~15 сек)
+; => 292 (время вычисления — ~4.5 сек. вместо ~15 сек.)
 ```
 
