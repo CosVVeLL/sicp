@@ -1,6 +1,6 @@
 ## Chapter 1
 
-### Exercise 1.10
+### Exercise 1.11
 
 A function _ƒ_ is defined by the rule that _ƒ(n) = n_ if _n < 3_ and _ƒ(n) = ƒ(n - 1) + 2ƒ(n - 2) + 3ƒ(n - 3)_ if _n ≥ 3_. Write a procedure that computes ƒ by means of a recursive process. Write a procedure that computes ƒ by means of an iterative process.
 
