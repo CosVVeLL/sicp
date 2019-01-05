@@ -7,7 +7,7 @@
 (f-recur 20)
 ; => 101902 (~13 сек.)
 
-(define (f n)
+(define (f-iter n)
   (define (iter a b c n)
     (if (= n 0)
         c

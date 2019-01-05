@@ -24,15 +24,15 @@ A function _ƒ_ is defined by the rule that _ƒ(n) = n_ if _n < 3_ and _ƒ(n) = 
 
 ```scheme
 (define (f n)
-  (f-iter 2 1 0 n))
-
-(define (f-iter a b c n)
-  (if (= n 0)
-      c
-      (f-iter (+ a b c)
+  (define (iter a b c n)
+    (if (= n 0)
+        c
+        (iter (+ a b c)
               a
               b
               (- n 1))))
+
+  (iter 2 1 0 n))
 
 (f 20)
 ; => 101902 (~0.5 сек.)
