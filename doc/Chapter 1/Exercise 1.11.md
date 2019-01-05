@@ -6,7 +6,7 @@ A function _ƒ_ is defined by the rule that _ƒ(n) = n_ if _n < 3_ and _ƒ(n) = 
 
 ### Solution
 
-([Code](../../src/Chapter20%1/Exercise%201.11.scm))
+([Code](../../src/Chapter%201/Exercise%201.11.scm))
 
 Определение процедуры `f` при помощи рекурсивного процесса:
 
