@@ -34,6 +34,7 @@ A function _ƒ_ is defined by the rule that _ƒ(n) = n_ if _n < 3_ and _ƒ(n) = 
               b
               (- n 1))))
 
-(f 20) ; => 101902 (~0.5 сек.)
+(f 20)
+; => 101902 (~0.5 сек.)
 ```
 
