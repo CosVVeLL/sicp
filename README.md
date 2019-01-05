@@ -2,8 +2,8 @@
 
 ## SICP Solutions
 
-**My solutions to Structure and Interpretation of Computer Programs**\
-[Homepage](https://github.com/CosWeLL23/sicp-solution)
+**My solutions to [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/index.html)**\
+[Homepage](https://github.com/CosWeLL23/sicp)
 
 ### Contents
 
