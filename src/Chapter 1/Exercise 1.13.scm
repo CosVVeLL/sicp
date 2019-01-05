@@ -45,17 +45,15 @@
 
 
 (define (test x)
-  (define (good? n)
-    (define a (fib n))
-    (define b (/ (- (expt f n)
-                    (expt u n))
-                 (sqrt 5)))
-
-    (< (abs (- a b)) 1))
+  (define good?
+    (< (abs (- (fib x)
+               (/ (- (expt f x)
+                     (expt u x))
+               (sqrt 5))))
+       1))
 
   (cond ((< x 1) 0)
-        ((= x 1) (good? x))
-        (else (if (good? x)
+        ((= x 1) good?)
+        (else (if good?
                   (test (- x 1))
                   #f))))
-
