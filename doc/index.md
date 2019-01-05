@@ -16,7 +16,7 @@
   * [Exercise 1.9](./Chapter%201/Exercise%201.9.md)
   * [Exercise 1.10](./Chapter%201/Exercise%201.10.md)
   * [Example 1.2: Counting change](./Chapter%201/Example%201.2:%20Counting%20change.md) ([code](../src/Chapter%201/Example%201.2:%20Counting%20change.scm))
-  * [Exercise 1.11]
+  * [Exercise 1.11](./Chapter%201/Exercise%201.11.md) ([code](../src/Chapter%201/Exercise%201.11.scm))
   * [Exercise 1.12]
   * [Exercise 1.13]
   * [Exercise 1.14]
