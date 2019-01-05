@@ -77,3 +77,6 @@ Prove that _Fib(n)_ is the closest integer to _φⁿ / √5_, where _φ = (1 + 5
 (test 57) ; #f
 ```
 
+#### References
+
+  * [github.com/v-kolesnikov/sicp/blob/master/doc/chapter01/ex_1_13.md](https://github.com/v-kolesnikov/sicp/blob/master/doc/chapter01/ex_1_13.md)
