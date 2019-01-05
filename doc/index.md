@@ -18,7 +18,7 @@
   * [Example 1.2: Counting change](./Chapter%201/Example%201.2:%20Counting%20change.md) ([code](../src/Chapter%201/Example%201.2:%20Counting%20change.scm))
   * [Exercise 1.11](./Chapter%201/Exercise%201.11.md) ([code](../src/Chapter%201/Exercise%201.11.scm))
   * [Exercise 1.12](./Chapter%201/Exercise%201.12.md) ([code](../src/Chapter%201/Exercise%201.12.scm))
-  * [Exercise 1.13]
+  * [Exercise 1.13](./Chapter%201/Exercise%201.13.md) ([code](../src/Chapter%201/Exercise%201.13.scm))
   * [Exercise 1.14]
   * [Exercise 1.15]
   * [Exercise 1.16]
