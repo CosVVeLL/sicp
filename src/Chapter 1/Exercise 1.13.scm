@@ -49,7 +49,7 @@
     (< (abs (- (fib x)
                (/ (- (expt f x)
                      (expt u x))
-               (sqrt 5))))
+		  (sqrt 5))))
        1))
 
   (cond ((< x 1) 0)

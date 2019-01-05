@@ -63,7 +63,7 @@ Prove that _Fib(n)_ is the closest integer to _φⁿ / √5_, where _φ = (1 + 5
     (< (abs (- (fib x)
                (/ (- (expt f x)
                      (expt u x))
-               (sqrt 5))))
+                  (sqrt 5))))
        1))
 
   (cond ((< x 1) 0)
