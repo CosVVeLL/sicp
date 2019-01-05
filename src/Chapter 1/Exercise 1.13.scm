@@ -24,7 +24,9 @@
 (define (fib-iter a b count)
   (if (= count 0)
       b
-      (fib-iter (+ a b) a (- count 1))))
+      (fib-iter (+ a b)
+		a
+		(- count 1))))
 
 
 (define (expt a b)
@@ -48,6 +50,7 @@
     (define b (/ (- (expt f n)
                     (expt u n))
                  (sqrt 5)))
+
     (< (abs (- a b)) 1))
 
   (cond ((< x 1) 0)

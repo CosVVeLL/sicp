@@ -6,10 +6,12 @@ Prove that _Fib(n)_ is the closest integer to _φⁿ / √5_, where _φ = (1 + 5
 
 ### Solution
 
+([Code](../../src/Chapter%201/Exercise%201.13.scm))
+
 Аргумент функции — целое положительное число, до которого, начиная с единицы, проводит проверку наш тест. Из-за погрешности вычисления квадратного корня данный тест проходит проверку лишь до числа 56 включительно.
 
 ```scheme
-; Функция опредления квадрата числа с погрешностью в 0.000001
+; Функция определения квадрата числа с погрешностью в 0.000001
 (define (square x) (* x x))
 
 (define (average x y)
@@ -36,7 +38,9 @@ Prove that _Fib(n)_ is the closest integer to _φⁿ / √5_, where _φ = (1 + 5
 (define (fib-iter a b count)
   (if (= count 0)
       b
-      (fib-iter (+ a b) a (- count 1))))
+      (fib-iter (+ a b)
+		a
+		(- count 1))))
 
 ; Функция определения степени числа
 (define (expt a b)
@@ -60,6 +64,7 @@ Prove that _Fib(n)_ is the closest integer to _φⁿ / √5_, where _φ = (1 + 5
     (define b (/ (- (expt f n)
                     (expt u n))
                  (sqrt 5)))
+
     (< (abs (- a b)) 1))
   
   (cond ((< x 1) 0)
