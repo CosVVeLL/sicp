@@ -4,6 +4,7 @@
                      (f-recur (- n 2))
                      (f-recur (- n 3))))))
 
+(f-recur 20)
 ; => 101902 (~13 сек.)
 
 (define (f n)
