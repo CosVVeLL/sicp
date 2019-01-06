@@ -5,7 +5,7 @@
 The following pattern of numbers is called _Pascal's triangle_.
 
 <p align='center'>
-	<img src='https://i.ibb.co/ryVCx9h/SICPexpression1-11.png'>
+  <img src='https://i.ibb.co/smx0v9P/SICPexpression1-12.png' alt='SICPexpression1.12' title='SICPexpression1.12'>
 </p>
 
 The numbers at the edge of the triangle are all 1, and each number inside the triangle is the sum of the two numbers above it.35 Write a procedure that computes elements of Pascal's triangle by means of a recursive process.

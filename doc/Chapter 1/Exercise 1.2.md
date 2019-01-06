@@ -4,7 +4,7 @@
 Translate the following expression into prefix form:
 
 <p align="center">
-	<img src="https://i.ibb.co/5GSykgV/SICPexpression1-2.png">
+  <img src="https://i.ibb.co/5GSykgV/SICPexpression1-2.png" alt="SICPexpression1.2" title="SICPexpression1.2">
 </p>
 
 ### Solution

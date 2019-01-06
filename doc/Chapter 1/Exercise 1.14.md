@@ -17,5 +17,5 @@ _Θ(ƒ(n))_ — порядок роста _R(n)_.
 #### [Дерево процессов](https://realtimeboard.com/app/embed/o9J_kyCoYSU=) функции `count-change` (внутри рекурсивно вызывается процедура `cc`)
 
 <p align="center">
-  <img src="https://i.ibb.co/TvW7KpG/SICPexpression1-14.png">
+  <img src="https://i.ibb.co/TvW7KpG/SICPexpression1-14.png" alt="SICPexpression1.14" title="SICPexpression1.14">
 </p>
