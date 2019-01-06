@@ -6,7 +6,7 @@ The `good-enough?` test used in computing square roots will not be very effectiv
 
 ### Solution
 
-([Code](../../src/Chapter%201/Exercise%201.7.scm))
+([Code](../../src/Chapter%201/Exercise%201.07.scm))
 
 На маленьких числах новая реализация _good-enough?_ работает лучше, на больших разницы в работе процедур нет.
 
@@ -69,3 +69,4 @@ The `good-enough?` test used in computing square roots will not be very effectiv
 (sqrt 4000000)
 ; => 2000.0000000000236 (нет разницы)
 ```
+

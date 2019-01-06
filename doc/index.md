@@ -2,25 +2,25 @@
 
 1.1 The Elements of Programming
 
-  * [Exercise 1.1](./Chapter%201/Exercise%201.1.md) ([code](../src/Chapter%201/Exercise%201.1.scm))
-  * [Exercise 1.2](./Chapter%201/Exercise%201.2.md) ([code](../src/Chapter%201/Exercise%201.2.scm))
-  * [Exercise 1.3](./Chapter%201/Exercise%201.3.md) ([code](../src/Chapter%201/Exercise%201.3.scm))
-  * [Exercise 1.4](./Chapter%201/Exercise%201.4.md)
-  * [Exercise 1.5](./Chapter%201/Exercise%201.5.md)
-  * [Exercise 1.6](./Chapter%201/Exercise%201.6.md)
-  * [Exercise 1.7](./Chapter%201/Exercise%201.7.md) ([code](../src/Chapter%201/Exercise%201.7.scm))
-  * [Exercise 1.8](./Chapter%201/Exercise%201.8.md) ([code](../src/Chapter%201/Exercise%201.8.scm))
+  * [Exercise 1.1](./Chapter%201/Exercise%201.01.md) ([code](../src/Chapter%201/Exercise%201.01.scm))
+  * [Exercise 1.2](./Chapter%201/Exercise%201.02.md) ([code](../src/Chapter%201/Exercise%201.02.scm))
+  * [Exercise 1.3](./Chapter%201/Exercise%201.03.md) ([code](../src/Chapter%201/Exercise%201.03.scm))
+  * [Exercise 1.4](./Chapter%201/Exercise%201.04.md)
+  * [Exercise 1.5](./Chapter%201/Exercise%201.05.md)
+  * [Exercise 1.6](./Chapter%201/Exercise%201.06.md)
+  * [Exercise 1.7](./Chapter%201/Exercise%201.07.md) ([code](../src/Chapter%201/Exercise%201.07.scm))
+  * [Exercise 1.8](./Chapter%201/Exercise%201.08.md) ([code](../src/Chapter%201/Exercise%201.08.scm))
 
 1.2 Procedures and the Processes They Generate
 
-  * [Exercise 1.9](./Chapter%201/Exercise%201.9.md)
+  * [Exercise 1.9](./Chapter%201/Exercise%201.09.md)
   * [Exercise 1.10](./Chapter%201/Exercise%201.10.md)
   * [Example 1.2: Counting change](./Chapter%201/Example%201.2:%20Counting%20change.md) ([code](../src/Chapter%201/Example%201.2:%20Counting%20change.scm))
   * [Exercise 1.11](./Chapter%201/Exercise%201.11.md) ([code](../src/Chapter%201/Exercise%201.11.scm))
   * [Exercise 1.12](./Chapter%201/Exercise%201.12.md) ([code](../src/Chapter%201/Exercise%201.12.scm))
   * [Exercise 1.13](./Chapter%201/Exercise%201.13.md) ([code](../src/Chapter%201/Exercise%201.13.scm))
   * [Exercise 1.14](./Chapter%201/Exercise%201.14.md)
-  * [Exercise 1.15]
+  * [Exercise 1.15](./Chapter%201/Exercise%201.14.md)
   * [Exercise 1.16]
   * [Exercise 1.17]
   * [Exercise 1.18]

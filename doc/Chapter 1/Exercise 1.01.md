@@ -6,7 +6,7 @@ Below is a sequence of expressions. What is the result printed by the interprete
 
 ### Solution
 
-([Code](../../src/Chapter%201/Exercise%201.1.scm))
+([Code](../../src/Chapter%201/Exercise%201.01.scm))
 
 ```scheme
 10

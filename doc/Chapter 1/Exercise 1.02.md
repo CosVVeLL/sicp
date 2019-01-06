@@ -9,9 +9,10 @@ Translate the following expression into prefix form:
 
 ### Solution
 
-([Code](../../src/Chapter%201/Exercise%201.2.scm))
+([Code](../../src/Chapter%201/Exercise%201.02.scm))
 
 ```scheme
 (/ (+ 5 4 (- 2 (- 3 (+ 6 (/ 4 5))))) (* 3 (- 6 2) (- 2 7)))
 ; => -0.24666666666666667
 ```
+
