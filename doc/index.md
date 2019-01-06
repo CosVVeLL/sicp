@@ -20,7 +20,7 @@
   * [Exercise 1.12](./Chapter%201/Exercise%201.12.md) ([code](../src/Chapter%201/Exercise%201.12.scm))
   * [Exercise 1.13](./Chapter%201/Exercise%201.13.md) ([code](../src/Chapter%201/Exercise%201.13.scm))
   * [Exercise 1.14](./Chapter%201/Exercise%201.14.md)
-  * [Exercise 1.15](./Chapter%201/Exercise%201.14.md)
+  * [Exercise 1.15](./Chapter%201/Exercise%201.15.md)
   * [Exercise 1.16]
   * [Exercise 1.17]
   * [Exercise 1.18]
