@@ -38,5 +38,12 @@ This algorithm takes a number of steps that is linear in `b`. Now suppose we inc
 
 (* -3 4)
 ; => -12
+
+(* -3 0)
+; => 0
+
+(* 0 5)
+; => 0
+
 ```
 

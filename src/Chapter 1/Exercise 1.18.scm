@@ -1,0 +1,20 @@
+(define (double x) (+ x x))
+(define (half x) (/ x 2))
+
+(define (* a b)
+  (iter a b 0))
+
+(define (iter a b acc)
+  (cond ((or (= a 0)
+             (= b 0)) acc)
+        ((= b 1) (+ acc a))
+        ((even? b) (iter (double a)
+                         (half b)
+                         acc))
+        ((positive? b) (iter (double a)
+                             (half (- b 1))
+                             (+ acc a)))
+        (else (iter (double a)
+                    (half (+ b 1))
+                    (- acc a)))))
+
