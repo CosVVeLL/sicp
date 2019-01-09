@@ -7,8 +7,13 @@
 
 ### Contents
 
-  * [Chapter 1. Building Abstractions with Procedures](./doc/index.md#1-Building-Abstractions-with-Procedures)
-  * [Chapter 2. Building Abstractions with Data](./doc/index.md#2-Building-Abstractions-with-Data)
+  * [Chapter 1. Building Abstractions with Procedures](./doc/index.md#1-Building-Abstractions-with-Procedures)\
+  [1.1](./doc/index.md#1.1-The-Elements-of-Programming) |
+  [1.2](./doc/index.md#1.2-Procedures-and-the-Processes-They-Generate) |
+  [1.3](./doc/index.md#1.3-Formulating-Abstractions-with-Higher-Order-Procedures)
+  * [Chapter 2. Building Abstractions with Data](./doc/index.md#2-Building-Abstractions-with-Data)\
+  [2.1](./doc/index.md#2.1-Introduction-to-Data-Abstraction)
   * [Chapter 3. Modularity, Objects, and State]
   * [Chapter 4. Metalinguistic Abstraction]
   * [Chapter 5. Computing with Register Machines]
+

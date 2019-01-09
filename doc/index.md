@@ -1,6 +1,6 @@
 ## 1 Building Abstractions with Procedures
 
-1.1 The Elements of Programming
+### 1.1 The Elements of Programming
 
   * [Exercise 1.1](./Chapter%201/Exercise%201.01.md) ([code](../src/Chapter%201/Exercise%201.01.scm))
   * [Exercise 1.2](./Chapter%201/Exercise%201.02.md) ([code](../src/Chapter%201/Exercise%201.02.scm))
@@ -11,7 +11,7 @@
   * [Exercise 1.7](./Chapter%201/Exercise%201.07.md) ([code](../src/Chapter%201/Exercise%201.07.scm))
   * [Exercise 1.8](./Chapter%201/Exercise%201.08.md) ([code](../src/Chapter%201/Exercise%201.08.scm))
 
-1.2 Procedures and the Processes They Generate
+### 1.2 Procedures and the Processes They Generate
 
   * [Exercise 1.9](./Chapter%201/Exercise%201.09.md)
   * [Exercise 1.10](./Chapter%201/Exercise%201.10.md)
@@ -46,7 +46,7 @@
   * [Exercise 1.38]
   * [Exercise 1.39]
 
-1.3 Formulating Abstractions with Higher-Order Procedures
+### 1.3 Formulating Abstractions with Higher-Order Procedures
 
   * [Exercise 1.40]
   * [Exercise 1.41]
@@ -58,6 +58,7 @@
 
 ## 2 Building Abstractions with Data
 
-2.1 Introduction to Data Abstraction
+### 2.1 Introduction to Data Abstraction
 
   * [Exercise 2.1]
+
