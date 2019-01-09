@@ -6,7 +6,7 @@ Design a procedure that evolves an iterative exponentiation process that uses su
 
 ### Solution
 
-([Code](../../src/Chapter%201/Exercise20%1.16.scm))
+([Code](../../src/Chapter%201/Exercise%201.16.scm))
 
 ```scheme
 (define (square x) (* x x))
