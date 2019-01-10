@@ -16,8 +16,7 @@ Using the results of exercises 1.16 and 1.17, devise a procedure that generates 
   (iter a b 0))
 
 (define (iter a b acc)
-  (cond ((or (= a 0)
-             (= b 0)) acc)
+  (cond ((zero? b) acc)
         ((= b 1) (+ acc a))
         ((even? b) (iter (double a)
                          (half b)
@@ -37,6 +36,9 @@ Using the results of exercises 1.16 and 1.17, devise a procedure that generates 
 
 (* -3 4)
 ; => -12
+
+(* -3 -5)
+; => 15
 
 (* -3 0)
 ; => 0

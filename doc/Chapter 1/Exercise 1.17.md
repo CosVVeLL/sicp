@@ -22,13 +22,15 @@ This algorithm takes a number of steps that is linear in `b`. Now suppose we inc
 (define (half x) (/ x 2))
 
 (define (* a b)
-  (cond ((or (= a 0)
-             (= b 0)) 0)
-        ((even? b) (* (double a) (half b)))
-        ((positive? b) (+ (* (double a) (half (- b 1)))
-                    a))
-        (else (- (* (double a) (half (+ b 1)))
-                    a))))
+  (cond ((zero? b) 0)
+        ((even? b) (* (double a)
+		      (half b)))
+        ((positive? b) (+ (* (double a)
+			     (half (- b 1)))
+			  a))
+        (else (- (* (double a)
+		    (half (+ b 1)))
+                 a))))
 
 (* 2 3)
 ; => 6
@@ -38,6 +40,9 @@ This algorithm takes a number of steps that is linear in `b`. Now suppose we inc
 
 (* -3 4)
 ; => -12
+
+(* -3 -5)
+; => 15
 
 (* -3 0)
 ; => 0
