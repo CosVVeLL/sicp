@@ -8,13 +8,14 @@ The process that a procedure generates is of course dependent on the rules used 
 
 При вычислении `(gcd 206 40)` в нормальном порядке выполнится 18 операций `reminder`, в аппликативном — 4.
 
-#### Подстановочная модель для нормального порядка вычисления (в процедурах ниже буду использовать `mod` вместо `reminder` для краткости):
+---
+
+Подстановочная модель для нормального порядка вычисления (в процедурах ниже буду использовать `mod` вместо `reminder` для краткости):
 
 ```scheme
 (gcd 206 40)
 
-; последовательность подстановок:
-; шаг 1.
+; шаг 1. Последовательность подстановок:
 (if (= 40 0)
     206
     (gcd 40 (mod 206 40))) ; шаг 2.
@@ -60,12 +61,11 @@ The process that a procedure generates is of course dependent on the rules used 
 
 ; шаг 13.
 (if (= 0 0) ; семь вычислений reminder (всего 14)
-    (mod (mod 206 40) (mod 40 (mod 206 40))) ; шаг 14.
+    (mod (mod 206 40) (mod 40 (mod 206 40))) ; шаг 14. Последовательность редукций:
     (gcd (mod (mod 40 (mod 206 40)) (mod (mod 206 40) (mod 40 (mod 206 40))))
          (mod (mod (mod 206 40) (mod 40 (mod 206 40)))
               (mod (mod 40 (mod 206 40)) (mod (mod 206 40) (mod 40 (mod 206 40)))))))
 
-; последовательность редукций:
 ; шаг 15.
 (mod (mod 206 40) (mod 40 6)) ; одно вычисление reminder (всего 15)
 
@@ -76,16 +76,15 @@ The process that a procedure generates is of course dependent on the rules used 
 2 ; одно вычисление reminder (всего 18)
 
 ; => 2
-; => всего 18 вычислений reminder
+; всего 18 вычислений reminder
 ```
 
-#### Подстановочная модель для аппликативного порядка вычисления:
+Подстановочная модель для аппликативного порядка вычисления:
 
 ```scheme
 (gcd 206 40)
 
-; последовательность подстановок:
-; шаг 1.
+; шаг 1. Последовательность подстановок:
 (if (= 40 0)
     206
     (gcd 40 (reminder 206 40))) ; шаг 2.
@@ -123,6 +122,6 @@ The process that a procedure generates is of course dependent on the rules used 
     (gcd 0 (reminder 2 0)))
 
 ; => 2
-; => всего 4 вычисления reminder
+; всего 4 вычисления reminder
 ```
 

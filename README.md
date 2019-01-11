@@ -13,3 +13,5 @@
   * [Chapter 4. Metalinguistic Abstraction]
   * [Chapter 5. Computing with Register Machines]
 
+![SICP](https://user-images.githubusercontent.com/27781341/51055288-86d5be80-15f0-11e9-8039-e2ef29a76cf6.jpg)
+
