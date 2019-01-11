@@ -9,24 +9,24 @@ Using the results of exercises 1.16 and 1.17, devise a procedure that generates 
 ([Code](../../src/Chapter%201/Exercise%201.18.scm))
 
 ```scheme
-(define (double x) (+ x x))
-(define (half x) (/ x 2))
-
 (define (* a b)
-  (iter a b 0))
+  (define (iter a b acc)
+    (define double-a (+ a a))
+    (define (half b) (/ b 2))
 
-(define (iter a b acc)
-  (cond ((zero? b) acc)
-        ((= b 1) (+ acc a))
-        ((even? b) (iter (double a)
-                         (half b)
-                         acc))
-        ((positive? b) (iter (double a)
-                             (half (- b 1))
-                             (+ acc a)))
-        (else (iter (double a)
-                    (half (+ b 1))
-                    (- acc a)))))
+    (cond ((zero? b) acc)
+          ((= b 1) (+ acc a))
+          ((even? b) (iter double-a
+                           (half b)
+                           acc))
+          ((positive? b) (iter double-a
+                               (half (- b 1))
+                               (+ acc a)))
+          (else (iter double-a
+                      (half (+ b 1))
+                      (- acc a)))))
+
+  (iter a b 0))
 
 (* 2 3)
 ; => 6

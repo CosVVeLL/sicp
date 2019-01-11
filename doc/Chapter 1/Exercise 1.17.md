@@ -18,18 +18,18 @@ This algorithm takes a number of steps that is linear in `b`. Now suppose we inc
 ([Code](../../src/Chapter%201/Exercise%201.17.scm))
 
 ```scheme
-(define (double x) (+ x x))
-(define (half x) (/ x 2))
-
 (define (* a b)
+  (define double-a (+ a a))
+  (define (half b) (/ b 2))
+
   (cond ((zero? b) 0)
-        ((even? b) (* (double a)
-		      (half b)))
-        ((positive? b) (+ (* (double a)
-			     (half (- b 1)))
-			  a))
-        (else (- (* (double a)
-		    (half (+ b 1)))
+        ((even? b) (* double-a
+                      (half b)))
+        ((positive? b) (+ (* double-a
+                             (half (- b 1)))
+                          a))
+        (else (- (* double-a
+                    (half (+ b 1)))
                  a))))
 
 (* 2 3)
