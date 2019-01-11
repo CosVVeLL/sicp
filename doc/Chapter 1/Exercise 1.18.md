@@ -4,7 +4,7 @@
 
 Using the results of exercises 1.16 and 1.17, devise a procedure that generates an iterative process for multiplying two integers in terms of adding, doubling, and halving and uses a logarithmic number of steps.
 
-### Solustion
+### Solution
 
 ([Code](../../src/Chapter%201/Exercise%201.18.scm))
 

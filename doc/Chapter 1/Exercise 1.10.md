@@ -23,7 +23,7 @@ What are the values of the following expressions?
 (A 3 3)
 ```
 
-Consider the following procedures, where **A** is the procedure defined above:
+Consider the following procedures, where `A` is the procedure defined above:
 
 ```scheme
 (define (f n) (A 0 n))
@@ -35,7 +35,7 @@ Consider the following procedures, where **A** is the procedure defined above:
 (define (k n) (* 5 n n))
 ```
 
-Give concise mathematical definitions for the functions computed by the procedures `f`, `g`, and `h` for positive integer values of _n_. For example, **(k n)** computes _5n²_.
+Give concise mathematical definitions for the functions computed by the procedures `f`, `g`, and `h` for positive integer values of _n_. For example, `(k n)` computes _5n²_.
 
 ### Solution
 
@@ -89,3 +89,4 @@ Give concise mathematical definitions for the functions computed by the procedur
 ; 3.4
 (A 1 16) ; 65536
 ```
+
