@@ -5,7 +5,7 @@
 The sine of an angle (specified in radians) can be computed by making use of the approximation sin _x ≈ x_ if _x_ is sufficiently small, and the trigonometric identity
 
 <p align="center">
-  <img src="https://i.ibb.co/vdcYcvy/SICPexpression1-15.png" alt="SICPexpression1.15" title="SICPexpression1.15">
+  <img src="https://i.ibb.co/YL9xPVb/SICPexercise1-15.png" alt="SICPexercise1.15" title="SICPexercise1.15">
 </p>
 
 to reduce the size of the argument of sin. (For purposes of this exercise an angle is considered «sufficiently small» if its magnitude is not greater than 0.1 radians.) These ideas are incorporated in the following procedures:
