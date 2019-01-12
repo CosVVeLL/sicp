@@ -10,14 +10,14 @@ Design a procedure that evolves an iterative exponentiation process that uses su
 
 ```scheme
 (define (fast-expt-iter b n)
-  (define (iter b n a)
-    (cond ((zero? n) a)
+  (define (iter b n acc)
+    (cond ((zero? n) acc)
           ((even? n) (iter (* b b)
                            (/ n 2)
-                           a))
+                           acc))
           (else (iter b
                       (- n 1)
-                      (* a b)))))
+                      (* acc b)))))
 
   (iter b n 1))
 
