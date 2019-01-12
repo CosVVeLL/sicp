@@ -4,10 +4,14 @@
   (define (smallest-divisor n)
     (define (find-divisor test-divisor)
       (define divides? (zero? (remainder n test-divisor)))
+    (define (next-divisor current)
+      (if (= current 2)
+          3
+          (+ 2 current)))
 
     (cond ((> (square test-divisor) n) n)
           (divides? test-divisor)
-          (else (find-divisor (+ test-divisor 1)))))
+          (else (find-divisor (next-divisor test-divisor)))))
 
     (find-divisor 2))
 

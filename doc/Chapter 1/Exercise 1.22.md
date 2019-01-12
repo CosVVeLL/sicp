@@ -33,5 +33,5 @@ Using this procedure, write a procedure `search-for-primes` that checks the prim
                           (search-for-primes (+ 2 start) end))))
 ```
 
-Похоже, что время на выполнение процедуры соответствует числу шагов во время её работы.
+Похоже, что время выполнения процедуры соответствует числу шагов во время её работы.
 
