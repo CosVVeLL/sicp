@@ -29,7 +29,7 @@ Using this procedure, write a procedure `search-for-primes` that checks the prim
 (define (search-for-primes start end)
   (if (even? start)
       (search-for-primes (+ 1 start) end)
-      (cond (< start end) (time-prime-test start)
+      (cond (< start end) (timed-prime-test start)
                           (search-for-primes (+ 2 start) end))))
 ```
 

@@ -29,7 +29,7 @@
   * [Exercise 1.21](./Chapter%201/Exercise%201.21.md) ([code](../src/Chapter%201/Exercise%201.21.scm))
   * [Exercise 1.22](./Chapter%201/Exercise%201.22.md) ([code](../src/Chapter%201/Exercise%201.22.scm))
   * [Exercise 1.23](./Chapter%201/Exercise%201.23.md) ([code](../src/Chapter%201/Exercise%201.23.scm))
-  * [Exercise 1.24]
+  * [Exercise 1.24](./Chapter%201/Exercise%201.24.md) ([code](../src/Chapter%201/Exercise%201.24.scm))
   * [Exercise 1.25]
   * [Exercise 1.26]
   * [Exercise 1.27]
