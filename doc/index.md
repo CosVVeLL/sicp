@@ -26,7 +26,7 @@
   * [Exercise 1.18](./Chapter%201/Exercise%201.18.md) ([code](../src/Chapter%201/Exercise%201.18.scm))
   * [Exercise 1.19](./Chapter%201/Exercise%201.19.md) ([code](../src/Chapter%201/Exercise%201.19.scm))
   * [Exercise 1.20](./Chapter%201/Exercise%201.20.md)
-  * [Exercise 1.21]
+  * [Exercise 1.21](./Chapter%201/Exercise%201.21.md) ([code](../src/Chapter%201/Exercise%201.21.scm))
   * [Exercise 1.22]
   * [Exercise 1.23]
   * [Exercise 1.24]
