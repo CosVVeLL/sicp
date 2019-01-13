@@ -25,7 +25,10 @@
   (start-prime-test n (runtime)))
 
 (define (start-prime-test n start-time)
-  (if (fast-prime? n)
+  (define num-of-attempts
+    (if (> n 100) 100 n))
+
+  (if (fast-prime? n num-of-attempts)
       (report-prime (- (runtime) start-time))))
 
 (define (report-prime elapsed-time)
@@ -35,6 +38,6 @@
 (define (search-for-primes start end)
   (if (even? start)
       (search-for-primes (+ 1 start) end)
-      (cond (< start end) (time-prime-test start)
+      (cond (< start end) (timed-prime-test start)
                           (search-for-primes (+ 2 start) end))))
 
