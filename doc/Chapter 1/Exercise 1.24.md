@@ -6,6 +6,8 @@ Modify the `timed-prime-test` procedure of exercise 1.22 to use `fast-prime?` (t
 
 ### Solution
 
+([Code](../../Chapter%201/Exercise%201.24.scm))
+
 При увеличении числа тестируемых чисел в 10 раз на проверку должно уходить примерно в 1-2 * log(10n) раз больше времени из-за логарифмического роста числа шагов процедуры `expmod`.
 
 ```scheme
@@ -36,7 +38,7 @@ Modify the `timed-prime-test` procedure of exercise 1.22 to use `fast-prime?` (t
   (start-prime-test n (runtime)))
 
 (define (start-prime-test n start-time)
-  (if (fast-prime? n)
+  (if (fast-prime? n) ; заменяем prime? на fast-prime?
       (report-prime (- (runtime) start-time))))
 
 (define (report-prime elapsed-time)
