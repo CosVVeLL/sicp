@@ -35,7 +35,9 @@ One variant of the Fermat test that cannot be fooled is called the _Miller-Rabin
 
 (define (miller-rabin-test n)
   (define (try-it a)
-    (= (expmod a (- n 1) n) 1)) ; в процедуре expmod 2-й аргумент заменяем с 'n' на '(- n 1)' и равняться данное выражение будет 1, а не 'a'
+; в процедуре expmod 2-й аргумент заменяем с 'n' на '(- n 1)'
+; и проверять данный предикат будет на равенство 1, а не 'a'
+    (= (expmod a (- n 1) n) 1))
   (try-it (+ 1 (random (- n 1)))))
 
 (define (fast-prime? n times)
