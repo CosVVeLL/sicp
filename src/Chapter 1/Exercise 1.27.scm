@@ -19,10 +19,10 @@
     (if (> a 0)
         (if (= (expmod a n n) a)
             (iter n (- a 1))
-            (and (display (find-lcd n))
+            (and (print (find-lcd n))
                  #f))
         (and (display " *** ")
-             (display n)
+             (print n)
              #t)))
   (iter n (- n 1)))
 
