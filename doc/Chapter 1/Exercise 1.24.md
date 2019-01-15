@@ -54,3 +54,4 @@ Modify the `timed-prime-test` procedure of exercise 1.22 to use `fast-prime?` (t
       (cond (< start end) (timed-prime-test start)
                           (search-for-primes (+ 2 start) end))))
 ```
+

@@ -31,3 +31,4 @@ The `smallest-divisor` procedure shown at the start of this section does lots of
 (prime? 1999)
 ; => #t
 ```
+

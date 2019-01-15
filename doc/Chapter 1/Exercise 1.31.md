@@ -12,7 +12,7 @@ b.  If your `product` procedure generates a recursive process, write one that ge
 
 ### Solution
 
-([Code](../../src/Chapter%201/Exercise%201.31))
+([Code](../../src/Chapter%201/Exercise%201.31.scm))
 
 a. Процедура высшего порядка `product` с рекурсивным процессом:
 
