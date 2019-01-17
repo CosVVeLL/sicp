@@ -39,7 +39,7 @@
   * [Exercise 1.31](./Chapter%201/Exercise%201.31.md) ([code](../src/Chapter%201/Exercise%201.31.scm))
   * [Exercise 1.32](./Chapter%201/Exercise%201.32.md) ([code](../src/Chapter%201/Exercise%201.32.scm))
   * [Exercise 1.33](./Chapter%201/Exercise%201.33.md) ([code](../src/Chapter%201/Exercise%201.33.scm))
-  * [Exercise 1.34]
+  * [Exercise 1.34](./Chapter%201/Exercise%201.34.md)
   * [Exercise 1.35]
   * [Exercise 1.36]
   * [Exercise 1.37]
