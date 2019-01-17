@@ -1,4 +1,3 @@
-(define (true x) #t)
 (define (square x) (* x x))
 
 (define (gcd a b)
