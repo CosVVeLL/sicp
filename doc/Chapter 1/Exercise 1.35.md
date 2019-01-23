@@ -21,7 +21,7 @@ x² - x - 1 → 0
 Докажем, что значение `(1 + √5) / 2` равно одному из корней уравнения `x² - x - 1 = 0` (приведу пример с [этого сайта](https://socratic.org/questions/how-do-you-solve-x-2-x-1-0-using-the-quadratic-formula)):
 
 <p align="center">
-  <img src="https://i.ibb.co/YL9xPVb/SICPexercise1-35.png" alt="SICPexercise1.35" title="SICPexercise1.35">
+  <img src="https://i.ibb.co/jMXjymr/SICPexercise1-35.png" alt="SICPexercise1.35" title="SICPexercise1.35">
 </p>
 
 Выражение (1 + √5) / 2 является одним из корней уравнения `x² - x - 1 = 0`, что значит, что золотое сечение является неподвижной точкой трансформации _x_ → 1 + 1/_x_ и его можно вычислить при помощи процедуры `fixed-point`, воспользовавшись процедурой `(lambda (x) (+ 1 (/ 1 x)))`:
