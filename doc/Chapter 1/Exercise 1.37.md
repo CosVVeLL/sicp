@@ -8,7 +8,7 @@ a. An infinite _continued fraction_ is an expression of the form
   <img src="https://i.ibb.co/8XqXJyd/SICPexercise1-37-1.png" alt="SICPexercise1.37" title="SICPexercise1.37">
 </p>
 
-As an example, one can show that the infinite continued fraction expansion with the _N<sub>i</sub>_ and the _D<sub>i</sub>_ all equal to 1 produces 1/_φ_, where _φ_ is the golden ratio (described in section 1.2.2). One way to approximate an infinite continued fraction is to truncate the expansion after a given number of terms. Such a truncation -- a so-called _k-term finite continued fraction_ -- has the form
+As an example, one can show that the infinite continued fraction expansion with the _N<sub>i</sub>_ and the _D<sub>i</sub>_ all equal to 1 produces 1/_φ_, where _φ_ is the golden ratio (described in section 1.2.2). One way to approximate an infinite continued fraction is to truncate the expansion after a given number of terms. Such a truncation — a so-called _k-term finite continued fraction_ — has the form
 
 <p align="center">
   <img src="https://i.ibb.co/RYQhsRB/SICPexercise1-37-2.png" alt="SICPexercise1.37" title="SICPexercise1.37">

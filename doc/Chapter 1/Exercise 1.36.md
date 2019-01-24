@@ -2,7 +2,7 @@
 
 ### Exercise 1.36
 
-Modify `fixed-point` so that it prints the sequence of approximations it generates, using the `newline` and `display` primitives shown in exercise 1.22. Then find a solution to _x<sup>x</sup>_ = 1000 by finding a fixed point of _x_ → log(1000)/log(_x_). (Use `Scheme`'s primitive `log` procedure, which computes natural logarithms.) Compare the number of steps this takes with and without average damping. (Note that you cannot start `fixed-point` with a guess of 1, as this would cause division by log(1) = 0.)
+Modify `fixed-point` so that it prints the sequence of approximations it generates, using the `newline` and `display` primitives shown in [exercise 1.22](./Exercise%201.22.md). Then find a solution to _x<sup>x</sup>_ = 1000 by finding a fixed point of _x_ → log(1000)/log(_x_). (Use `Scheme`'s primitive `log` procedure, which computes natural logarithms.) Compare the number of steps this takes with and without average damping. (Note that you cannot start `fixed-point` with a guess of 1, as this would cause division by log(1) = 0.)
 
 ### Solution
 

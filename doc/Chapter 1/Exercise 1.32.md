@@ -2,7 +2,7 @@
 
 ### Exercise 1.32
 
-a. Show that `sum` and `product` (exercise 1.31) are both special cases of a still more general notion called _accumulate_ that combines a collection of terms, using some general accumulation function:
+a. Show that `sum` and `product` ([exercise 1.31](./Exercise%201.31.md)) are both special cases of a still more general notion called _accumulate_ that combines a collection of terms, using some general accumulation function:
 
 ```scheme
 (accumulate combiner null-value term a next b)
