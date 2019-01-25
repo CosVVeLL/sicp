@@ -44,7 +44,7 @@
   * [Exercise 1.36](./Chapter%201/Exercise%201.36.md) ([code](../src/Chapter%201/Exercise%201.36.scm))
   * [Exercise 1.37](./Chapter%201/Exercise%201.37.md) ([code](../src/Chapter%201/Exercise%201.37.scm))
   * [Exercise 1.38](./Chapter%201/Exercise%201.38.md) ([code](../src/Chapter%201/Exercise%201.38.scm))
-  * [Exercise 1.39]
+  * [Exercise 1.39](./Chapter%201/Exercise%201.39.md) ([code](../src/Chapter%201/Exercise%201.39.scm))
 
 1.3 Formulating Abstractions with Higher-Order Procedures
 
