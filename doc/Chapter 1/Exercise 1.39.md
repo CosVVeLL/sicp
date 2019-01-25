@@ -8,11 +8,11 @@ A continued fraction representation of the tangent function was published in 177
   <img src="https://i.ibb.co/yF7HL0t/SICPexercise1-39.png" alt="SICPexercise1.39" title="SICPexercise1.39">
 </p>
 
-where x is in radians. Define a procedure `(tan-cf x k)` that computes an approximation to the tangent function based on Lambert's formula. _K_ specifies the number of terms to compute, as in [exercise 1.37](./Exercise%201.37).
+where x is in radians. Define a procedure `(tan-cf x k)` that computes an approximation to the tangent function based on Lambert's formula. _K_ specifies the number of terms to compute, as in [exercise 1.37](./Exercise%201.37.md).
 
 ### Solution
 
-([Code](../../src/Chapter%201/Exercise%201.39))
+([Code](../../src/Chapter%201/Exercise%201.39.scm))
 
 Процедура `pi` возращает лишь приближение к _π_, поэтому и процедура `tan-cf` также возращает приближение к тангенсу.
 
