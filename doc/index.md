@@ -48,7 +48,7 @@
 
 1.3 Formulating Abstractions with Higher-Order Procedures
 
-  * [Exercise 1.40]
+  * [Exercise 1.40](./Chapter%201/Exercise%201.40.md) ([code](../src/Chapter%201/Exercise%201.40.scm))
   * [Exercise 1.41]
   * [Exercise 1.42]
   * [Exercise 1.43]
