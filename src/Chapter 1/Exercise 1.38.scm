@@ -14,7 +14,3 @@
       (/ (* 2 (inc i)) 3)
       1))
 
-(cont-frac (lambda (i) 1.0)
-           d
-           23)
-
