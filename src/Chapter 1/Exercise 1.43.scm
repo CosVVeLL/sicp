@@ -10,9 +10,9 @@
       (compose f (repeated f (dec n)))
       f))
 
-((repeated square 2) 5)
-; => 625
-
-((repeated inc 41) 625)
-; => 666
+(define (repeated-iter f n)
+  (lambda (x)
+    (if (> n 0)
+        ((repeated-iter f (dec n)) (f x))
+        x)))
 

@@ -40,16 +40,16 @@ Hint: You may find it convenient to use compose from [exercise 1.42](./Exercise%
 Решение при помощи итеративного процесса:
 
 ```scheme
-(define (repeated f n)
+(define (repeated-iter f n)
   (lambda (x)
     (if (> n 0)
-        ((repeated f (dec n)) (f x))
+        ((repeated-iter f (dec n)) (f x))
         x)))
 
-((repeated square 2) 5)
+((repeated-iter square 2) 5)
 ; => 625
 
-((repeated inc 41) 625)
+((repeated-iter inc 41) 625)
 ; => 666
 ```
 
