@@ -22,9 +22,6 @@ Hint: You may find it convenient to use compose from [exercise 1.42](./Exercise%
 (define (dec x) (- x 1))
 (define (square x) (* x x))
 
-(define (double f)
-  (lambda (x) (f (f x))))
-
 (define (compose f g)
   (lambda (x) (f (g x))))
 
