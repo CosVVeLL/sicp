@@ -52,7 +52,7 @@
   * [Exercise 1.41](./Chapter%201/Exercise%201.41.md)
   * [Exercise 1.42](./Chapter%201/Exercise%201.42.md)
   * [Exercise 1.43](./Chapter%201/Exercise%201.43.md) ([code](../src/Chapter%201/Exercise%201.43.scm))
-  * [Exercise 1.44]
+  * [Exercise 1.44](./Chapter%201/Exercise%201.44.md) ([code](../src/Chapter%201/Exercise%201.44.scm))
   * [Exercise 1.45]
   * [Exercise 1.46]
 
