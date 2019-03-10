@@ -12,7 +12,7 @@
 
 (define (repeated-iter f n)
   (lambda (x)
-    (if (> n 0)
+    (if (> n 1)
         ((repeated-iter f (dec n)) (f x))
-        x)))
+        (f x))))
 
