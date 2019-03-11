@@ -6,6 +6,8 @@ We saw in section 1.3.3 that attempting to compute square roots by naively findi
 
 ### Solution
 
+([Code](../../src/Chapter%201/Exercise%201.45.scm))
+
 Попробуем вычислить квадратные корни различных степеней, чтобы разобраться, сколько раз потребуется применить торможение усреднением для конкретной процедуры, чтобы последняя работала.
 
 ```scheme
