@@ -2,7 +2,7 @@
 
 ### Exercise 1.13
 
-Prove that _Fib(n)_ is the closest integer to _φⁿ / √5_, where _φ = (1 + 5) / 2_. Hint: Let _ψ = (1 - 5) / 2_. Use induction and the definition of the Fibonacci numbers (see section 1.2.2) to prove that _Fib(n) = (φⁿ - ψⁿ) √5_.
+Prove that _Fib(n)_ is the closest integer to _φⁿ / √5_, where _φ = (1 + 5) / 2_. Hint: Let _ψ = (1 - 5) / 2_. Use induction and the definition of the Fibonacci numbers (see [section 1.2.2](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-11.html#%_sec_1.2.2)) to prove that _Fib(n) = (φⁿ - ψⁿ) √5_.
 
 ### Solution
 

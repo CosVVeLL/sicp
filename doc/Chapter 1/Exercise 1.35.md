@@ -2,13 +2,13 @@
 
 ### Exercise 1.35
 
-Show that the golden ratio _φ_ (section 1.2.2) is a fixed point of the transformation _x_ → 1 + 1/_x_, and use this fact to compute φ by means of the `fixed-point` procedure.
+Show that the golden ratio _φ_ ([section 1.2.2](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-11.html#%_sec_1.2.2)) is a fixed point of the transformation _x_ → 1 + 1/_x_, and use this fact to compute φ by means of the `fixed-point` procedure.
 
 ### Solution
 
 ([Code](../../src/Chapter%201/Exercise%201.35.scm))
 
-Из раздела 1.2.2 известно, что золотое сечение равно ~1.6180 или **_φ = (1 + √5) / 2_**.
+Из [раздела 1.2.2](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-11.html#%_sec_1.2.2) известно, что золотое сечение равно ~1.6180 или **_φ = (1 + √5) / 2_**.
 
 Сделаем несколько подстановок под данное нам преобразование **_x_ → 1 + 1/_x_**:
 
