@@ -61,5 +61,5 @@
 2.1 Introduction to Data Abstraction
 
   * [Exercise 2.1](./Chapter%202/Exercise%202.1.md) ([code](../src/Chapter%202/Exercise%202.1.scm))
-  * [Exercise 2.2]
+  * [Exercise 2.2](./Chapter%202/Exercise%202.2.md) ([code](../src/Chapter%202/Exercise%202.2.scm))
 
