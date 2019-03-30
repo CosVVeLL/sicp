@@ -2,13 +2,13 @@
 
 ### Exercise 2.3
 
-Implement a representation for rectangles in a plane. (Hint: You may want to make use of [exercise 2.2](./Exrcise%202.2.md).) In terms of your constructors and selectors, create procedures that compute the perimeter and the area of a given rectangle. Now implement a different representation for rectangles. Can you design your system with suitable abstraction barriers, so that the same perimeter and area procedures will work using either representation?
+Implement a representation for rectangles in a plane. (Hint: You may want to make use of [exercise 2.2](./Exercise%202.2.md).) In terms of your constructors and selectors, create procedures that compute the perimeter and the area of a given rectangle. Now implement a different representation for rectangles. Can you design your system with suitable abstraction barriers, so that the same perimeter and area procedures will work using either representation?
 
 ### Solution
 
 ([Code](../../src/Chapter%202/Exercise%202.3.scm))
 
-Сначала представим наши процедуры для представления прямогольников так — конструктор `make-rectangle` (принимает два аргумента: верхний левый угол в виде точки, ширину прямоугольника и высоту), селекторы `width-rectangle` (ширина прямоугольника), `height-rectangle` (высота).
+Сначала выразим наши процедуры для представления прямоугольников так — конструктор `make-rectangle` (принимает три аргумента: верхний левый угол (в виде точки _b_), ширина прямоугольника и высота прямоугольника), селекторы `width-rectangle` (ширина прямоугольника), `height-rectangle` (высота прямоугольника).
 
 ```scheme
 (define (double x) (+ x x))
@@ -24,7 +24,7 @@ Implement a representation for rectangles in a plane. (Hint: You may want to mak
 (define (height-rectangle rectangle) (cdr (cdr rectangle)))
 ```
 
-Добавил ещё селекторы, вычисляющие все углы прямоугольника, хотя для вычисления периметра и площади в нашем случае они не понадобятся.
+Добавил для примера ещё селекторы `a-rectangle`, `b-rectangle`, `c-rectangle`, `d-rectangle`, вычисляющие все углы прямоугольника, хотя для вычисления периметра и площади в нашем случае они не понадобятся.
 
 ```scheme
 (define (a-rectangle rectangle)
@@ -49,7 +49,7 @@ Implement a representation for rectangles in a plane. (Hint: You may want to mak
     (make-point x y)))
 ```
 
-Процедуры вычисления периметра и площади прямоугольника выглядят так:
+Процедуры вычисления периметра и площади прямоугольника, — `perimeter-rectangle` и `area-rectangle`, — выглядят так:
 
 ```scheme
 (define (perimeter-rectangle rectangle)
@@ -71,7 +71,7 @@ Implement a representation for rectangles in a plane. (Hint: You may want to mak
 (d-rectangle rect) ; (5 . 7)
 ```
 
-Реализуем другое представление прямоугльников. Сейчас конструктор `make-rectangle` принимает в качестве параметров верхний левый и нижний правый углы.
+Реализуем другое представление прямоугльников. Сейчас конструктор `make-rectangle` принимает в качестве параметров верхний левый (точка _b_) и нижний правый (точка _d_) углы.
 
 ```scheme
 (define (make-rectangle b d) (cons b d))
