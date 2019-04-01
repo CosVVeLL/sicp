@@ -53,8 +53,13 @@ Consider the problem of representing line segments in a plane. Each segment is r
 (define seg2 (make-segment (make-point 1 2) (make-point 5 5)))
 (define seg3 (make-segment (make-point -5 4) (make-point 10 -7)))
 
-(print-point (midpoint-segment seg1)) ; (1.5,1.5)
-(print-point (midpoint-segment seg2)) ; (3,3.5)
-(print-point (midpoint-segment seg3)) ; (2.5,-1.5) 
+(print-point (midpoint-segment seg1))
+; => (1.5,1.5)
+
+(print-point (midpoint-segment seg2))
+; => (3,3.5)
+
+(print-point (midpoint-segment seg3))
+; => (2.5,-1.5) 
 ```
 

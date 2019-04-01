@@ -62,13 +62,19 @@ Implement a representation for rectangles in a plane. (Hint: You may want to mak
 
 (define rect (make-rectangle (make-point 1 10) 4 3))
 
-(perimeter-rectangle rect) ; 14
-(area-rectangle rect) ; 12
+(perimeter-rectangle rect)
+; => 14
+(area-rectangle rect)
+; => 12
 
-(a-rectangle rect) ; (1 . 7)
-(b-rectangle rect) ; (1 . 10)
-(c-rectangle rect) ; (5 . 10)
-(d-rectangle rect) ; (5 . 7)
+(a-rectangle rect)
+; => (1 . 7)
+(b-rectangle rect)
+; => (1 . 10)
+(c-rectangle rect)
+; => (5 . 10)
+(d-rectangle rect)
+; => (5 . 7)
 ```
 
 Реализуем другое представление прямоугольников. Сейчас конструктор `make-rectangle` принимает в качестве параметров верхний левый угол _b_ и нижний правый угол _d_ (в виде точек).
@@ -102,14 +108,20 @@ Implement a representation for rectangles in a plane. (Hint: You may want to mak
 Мы изменили реализацию конструктора и селекторов прямоугольника, но не изменили реализацию вычисления периметра и площади, тем не менее вычисление периметра и площади всё так же работают:
 
 ```scheme
-(perimeter-rectangle rect) ; 14
-(area-rectangle rect) ; 12
+(perimeter-rectangle rect)
+; => 14
+(area-rectangle rect)
+; => 12
 
-(a-rectangle rect) ; (1 . 7)
-(b-rectangle rect) ; (1 . 10)
-(c-rectangle rect) ; (5 . 10)
-(d-rectangle rect) ; (5 . 7)
+(a-rectangle rect)
+; => (1 . 7)
+(b-rectangle rect)
+; => (1 . 10)
+(c-rectangle rect)
+; => (5 . 10)
+(d-rectangle rect)
+; => (5 . 7)
 ```
 
-Вывод: мы смогли абстрагировать определение прямоугольников так, что их реализация никак не влияет на работу с ними на более высоком уровне абстракции.
+Вывод: мы можем абстрагировать реализацию определения треугольников так, что при изменении этой реализации процедуры, работающие с данным типом данных на более высоком уровне абстракции, не перестанут работать.
 

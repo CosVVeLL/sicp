@@ -47,9 +47,16 @@ Define a better version of `make-rat` that handles both positive and negative ar
         (opt-d (opt-args-d n d)))
     (cons (/ n g) (/ d g))))
 
-(print-rat (make-rat 1 2)) ; 1/2
-(print-rat (make-rat -1 2)) ; -1/2
-(print-rat (make-rat 1 -2)) ; -1/2
-(print-rat (make-rat -1 -2)) ; 1/2
+(print-rat (make-rat 1 2))
+; => 1/2
+
+(print-rat (make-rat -1 2))
+; => -1/2
+
+(print-rat (make-rat 1 -2))
+; => -1/2
+
+(print-rat (make-rat -1 -2))
+; => 1/2
 ```
 
