@@ -1,4 +1,4 @@
-#e Chapter 2
+## Chapter 2
 
 ### Exercise 2.4
 
