@@ -26,7 +26,7 @@ Define `one` and `two` directly (not in terms of `zero` and `add-1`). (Hint: Use
 ```
 совершим несколько подстановок:
 
-```
+```scheme
 (add-1 zero)
 
 (add-1 (lambda (f) (lambda (x) x)))
@@ -53,6 +53,8 @@ Define `one` and `two` directly (not in terms of `zero` and `add-1`). (Hint: Use
 
 (lambda (f) (lambda (x) (f (((lambda (f) (lambda (x) (f x))) f) x))))
 
+(lambda (f) (lambda (x) (f ((lambda (x) (f x)) x))))
+
 (lambda (f) (lambda (x) (f (f x))))
 ```
 
@@ -62,7 +64,7 @@ Define `one` and `two` directly (not in terms of `zero` and `add-1`). (Hint: Use
 (define two (lambda (f) (lambda (x) (f (f x)))))
 ```
 
-Из полученных процедур можно сделать вывод, что формальный параметр `f` играет роль инкремента в то время как `x` является основанием или нулём. Тогда просто подставим нужные нам аргументы к процедурам для проверки:
+Из полученных процедур можно сделать вывод, что формальный параметр `f` играет роль инкремента в то время как `x` является основанием (т.е. нулём). Тогда просто подставим нужные нам аргументы к процедурам для проверки:
 
 ```scheme
 (define (inc x) (+ x 1))
