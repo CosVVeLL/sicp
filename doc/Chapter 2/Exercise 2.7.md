@@ -12,7 +12,7 @@ Define selectors `upper-bound` and `lower-bound` to complete the implementation.
 
 ### Solution
 
-Данны данные процедуры для работы с интервалами:
+Для задания предоставлены процедуры для работы с интервалами:
 
 ```scheme
 (define (add-interval x y)
@@ -37,7 +37,7 @@ Define selectors `upper-bound` and `lower-bound` to complete the implementation.
 Завершим реализацию, дописав селекторы интервалов:
 
 ```scheme
-(define-bound interval)
+(define (upper-bound interval)
   (max (car interval) (cdr interval)))
 
 (define (lower-bound interval)
@@ -47,10 +47,10 @@ Define selectors `upper-bound` and `lower-bound` to complete the implementation.
 (define intrvl2 (make-interval 10 20))
 (define intrvl3 (make-interval 2 -3))
 
-(lower-bound intrvl1)
-; => 1
 (upper-bound intrvl2)
 ; => 20
+(lower-bound intrvl3)
+; => -3
 
 (add-interval intrvl1 intrvl2)
 ; => (11 . 30)
@@ -63,4 +63,3 @@ Define selectors `upper-bound` and `lower-bound` to complete the implementation.
 (div-interval intrvl3 intrvl1)
 ; => (-3 . 2)
 ```
-
