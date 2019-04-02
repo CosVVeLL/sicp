@@ -69,3 +69,4 @@
   * [Exercise 2.7](./Chapter%202/Exercise%202.7.md)
   * [Exercise 2.8](./Chapter%202/Exercise%202.8.md)
   * [Exercise 2.9](./Chapter%202/Exercise%202.9.md)
+  * [Exercise 2.10](./Chapter%202/Exercise%202.10.md)
