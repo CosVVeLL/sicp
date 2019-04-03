@@ -6,6 +6,8 @@ Define a constructor `make-center-percent` that takes a center and a percentage 
 
 ### Solution
 
+([Code](../../src/Chapter%202/Exercise%202.12.scm))
+
 Воспользуемся процедурами `make-center-width`, `center` и `width` для создания следующих конструктора `make-center-percent` и селектора `percent`:
 
 ```scheme
