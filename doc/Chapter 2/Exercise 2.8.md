@@ -21,10 +21,10 @@ Using reasoning analogous to Alyssa's, describe how the difference of two interv
   (make-interval (- (lower-bound x) (upper-bound y))
                  (- (upper-bound x) (lower-bound y))))
 
-(define in1 (make-interval 1 10))
-(define in2 (make-interval 10 20))
+(define i1 (make-interval 1 10))
+(define i2 (make-interval 10 20))
 
-(sub-interval in2 in1)
+(sub-interval i2 i1)
 ; => (0 . 19)
 ```
 

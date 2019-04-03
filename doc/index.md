@@ -72,4 +72,4 @@
   * [Exercise 2.10](./Chapter%202/Exercise%202.10.md)
   * [Exercise 2.11](./Chapter%202/Exercise%202.11.md) ([code](../src/Chapter%202/Exercise%202.11.scm))
   * [Exercise 2.12](./Chapter%202/Exercise%202.12.md) ([code](../src/Chapter%202/Exercise%202.12.scm))
-
+  * [Exercise 2.13](./Chapter%202/Exercise%202.13.md)

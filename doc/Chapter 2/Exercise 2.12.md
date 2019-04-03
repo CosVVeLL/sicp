@@ -21,7 +21,7 @@ Define a constructor `make-center-percent` that takes a center and a percentage 
   (/ (- (upper-bound i) (lower-bound i)) 2))
 
 (define (make-center-percent c p)
-  (let ((w (- c (* (/ c 100.0) p))))
+  (let ((w (* (/ c 100.0) p)))
     (make-center-width c w)))
 
 (define (percent i)

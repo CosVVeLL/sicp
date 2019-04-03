@@ -18,10 +18,10 @@ Ben Bitdiddle, an expert systems programmer, looks over Alyssa's shoulder and co
                     (make-interval (/ 1.0 (upper-bound y))
                                    (/ 1.0 (lower-bound y))))))
 
-(define in2 (make-interval 10 20))
-(define in3 (make-interval 2 -3))
+(define i2 (make-interval 10 20))
+(define i3 (make-interval 2 -3))
 
-(div-interval in2 in3)
+(div-interval i2 i3)
 ; Error: Not clear what it means to divide by an interval that spans zero.
 ```
 
