@@ -43,23 +43,23 @@ Define selectors `upper-bound` and `lower-bound` to complete the implementation.
 (define (lower-bound interval)
   (min (car interval) (cdr interval)))
 
-(define intrvl1 (make-interval 1 10))
-(define intrvl2 (make-interval 10 20))
-(define intrvl3 (make-interval 2 -3))
+(define in1 (make-interval 1 10))
+(define in2 (make-interval 10 20))
+(define in3 (make-interval 2 -3))
 
-(upper-bound intrvl2)
+(upper-bound in2)
 ; => 20
-(lower-bound intrvl3)
+(lower-bound in3)
 ; => -3
 
-(add-interval intrvl1 intrvl2)
+(add-interval in1 in2)
 ; => (11 . 30)
 
-(mul-interval intrvl2 intrvl3)
+(mul-interval in2 in3)
 ; => (-60 . 40)
 
-(div-interval intrvl1 intrvl3)
+(div-interval in1 in3)
 ; => (-3.333333333333333 . 5)
-(div-interval intrvl3 intrvl1)
+(div-interval in3 in1)
 ; => (-3 . 2)
 ```

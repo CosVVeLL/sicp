@@ -41,13 +41,13 @@ width — процедура, возращающая радиус
                 (make-interval (/ 1.0 (upper-bound y))
                                (/ 1.0 (lower-bound y)))))
 
-(define intrvl1 (make-interval 1 10))
-(define intrvl2 (make-interval 10 20))
+(define in1 (make-interval 1 10))
+(define in2 (make-interval 10 20))
 
-(div-interval intrvl1 intrvl2)
+(div-interval in1 in2)
 ; => (0.05 . 1)
 
-(div-interval intrvl2 intrvl1)
+(div-interval in2 in1)
 ; => (1 . 20)
 ```
 
