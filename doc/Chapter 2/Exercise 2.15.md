@@ -12,7 +12,7 @@ Eva Lu Ator, another user, has also noticed the different intervals computed by 
   <img src="https://i.ibb.co/b2ByJGZ/SICPexercise2-15.jpg" alt="SICPexercise2.15" title="SICPexercise2.15">
 </p>
 
-и верно алгебраически, мы имеем дело с интервалами и процедура деления `R / R` не вернёт ровно еденицу:
+и верно алгебраически, мы имеем дело с интервалами и по этой причине операция деления `R / R` не вернёт ровно еденицу:
 
 ```scheme
 (define i1 (make-center-width 10 1)) ; (9 . 11)
@@ -21,7 +21,7 @@ Eva Lu Ator, another user, has also noticed the different intervals computed by 
 d1-1
 ; => (0.8181818181818182 . 1.222222222222222)
 
-(center d1-1))
+(center d1-1)
 ; => 1.02020202020202
 
 (percent d1-1)

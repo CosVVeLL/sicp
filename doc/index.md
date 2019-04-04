@@ -75,3 +75,4 @@
   * [Exercise 2.13](./Chapter%202/Exercise%202.13.md)
   * [Exercise 2.14](./Chapter%202/Exercise%202.14.md)
   * [Exercise 2.15](./Chapter%202/Exercise%202.15.md)
+  * [Exercise 2.16](./Chapter%202/Exercise%202.16.md)
