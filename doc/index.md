@@ -76,3 +76,10 @@
   * [Exercise 2.14](./Chapter%202/Exercise%202.14.md)
   * [Exercise 2.15](./Chapter%202/Exercise%202.15.md)
   * [Exercise 2.16](./Chapter%202/Exercise%202.16.md)
+
+2.2  Hierarchical Data and the Closure Property
+
+  * [Exercise 2.17]
+  * [Exercise 2.18]
+  * [Exercise 2.19]
+  * [Exercise 2.20]
