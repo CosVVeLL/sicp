@@ -29,6 +29,6 @@
 (define (search-for-primes start end)
   (if (even? start)
       (search-for-primes (+ 1 start) end)
-      (cond (< start end) (timed-prime-test start)
-                          (search-for-primes (+ 2 start) end))))
+      (cond ((< start end) (timed-prime-test start)
+                          (search-for-primes (+ 2 start) end)))))
 
