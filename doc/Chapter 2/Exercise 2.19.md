@@ -36,7 +36,7 @@ Define the procedures `first-denomination`, `except-first-denomination`, and `no
 
 ### Solution
 
-([Code](../../src/Chapter%202/Exercise%202.19.src))
+([Code](../../src/Chapter%202/Exercise%202.19.scm))
 
 ```scheme
 (define us-coins (list 50 25 10 5 1))
