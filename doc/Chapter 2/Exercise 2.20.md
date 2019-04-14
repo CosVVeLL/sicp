@@ -70,7 +70,6 @@ Use this notation to write a procedure `same-parity` that takes one or more inte
 (same-parity 2 3 4 5 6 7)
 ; => (2 4 6)
 
-(same-parity)
-; => List is empty (Это сообщение выведется на экран, процедура вернёт пустой список.)
+(same-parity) ; List is empty (Это сообщение выведется на экран, процедура без аргументов вернёт пустой список.)
 ```
 
