@@ -23,9 +23,9 @@ x
 (define (deep-reverse l)
   (define (iter acc rest)
     (let ((new-acc (if (pair? (car acc))
-                      (cons (deep-reverse (car acc))
-                            (cdr acc))
-                      acc)))
+                       (cons (deep-reverse (car acc))
+                             (cdr acc))
+                       acc)))
 
       (if (null? rest)
           new-acc
