@@ -84,7 +84,7 @@
   * [Exercise 2.19](./Chapter%202/Exercise%202.19.md) ([code](../src/Chapter%202/Exercise%202.19.scm))
   * [Exercise 2.20](./Chapter%202/Exercise%202.20.md)
   * [Exercise 2.21](./Chapter%202/Exercise%202.21.md)
-  * [Exercise 2.22]
+  * [Exercise 2.22](./Chapter%202/Exercise%202.22.md)
   * [Exercise 2.23]
   * [Exercise 2.24]
   * [Exercise 2.25]
