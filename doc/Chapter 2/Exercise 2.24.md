@@ -6,17 +6,20 @@ Suppose we evaluate the expression `(list 1 (list 2 (list 3 4)))`. Give the resu
 
 ### Solution
 
-Результат, который напечатает интерпретатор: `(1 (2 (3 4)))`
+Результат, который напечатает интерпретатор: `(1 (2 (3 4)))`.
+
+---
 
 Стрелочная диаграмма:
 
-<a align="center">
+<p align="center">
   <img src="https://i.ibb.co/WPrxzzW/SICPexercise2-15-1.jpg" alt="SICPexercise2.15.1" title="SICPexercise2.15.1">
-</a>
+</p>
+
+---
 
 В виде древа:
 
-<a align="center">
+<p align="center">
   <img src="https://i.ibb.co/YPDBgyt/SICPexercise2-15-2.jpg" alt="SICPexercise2.15.2" title="SICPexercise2.15.2">
-</a>
-
+</p>
