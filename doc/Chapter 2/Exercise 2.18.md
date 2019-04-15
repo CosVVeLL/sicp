@@ -16,11 +16,11 @@ Define a procedure `reverse` that takes a list as argument and returns a list of
 
 (define (reverse l)
   (define (iter acc rest)
-      (if (null? rest)
-          acc
-          (iter (append (list (car rest))
-                        acc)
-                (cdr rest))))
+    (if (null? rest)
+        acc
+        (iter (append (list (car rest))
+                      acc)
+              (cdr rest))))
   (if (null? l)
       l
       (iter (list (car l))
