@@ -11,11 +11,13 @@ Suppose we define `x` and `y` to be two lists:
 
 What result is printed by the interpreter in response to evaluating each of the following expressions:
 
+```scheme
 (append x y)
 
 (cons x y)
 
 (list x y)
+```
 
 ### Solution
 
