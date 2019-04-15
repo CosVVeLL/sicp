@@ -87,4 +87,8 @@
   * [Exercise 2.22](./Chapter%202/Exercise%202.22.md)
   * [Exercise 2.23](./Chapter%202/Exercise%202.23.md)
   * [Exercise 2.24](./Chapter%202/Exercise%202.24.md)
-  * [Exercise 2.25]
+  * [Exercise 2.25](./Chapter%202/Exercise%202.25.md)
+  * [Exercise 2.26]
+  * [Exercise 2.27]
+  * [Exercise 2.28]
+  * [Exercise 2.29]
