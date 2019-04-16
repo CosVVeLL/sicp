@@ -43,7 +43,6 @@ Define `square-tree` both directly (i.e., without using any higher-order procedu
             (else (iter tail (if start?
                                  (list (square head))
                                  (append acc (list (square head)))))))))
-  
   (if (not (pair? tree))
       (and (newline)
            (display "Not a pair")
