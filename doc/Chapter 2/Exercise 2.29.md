@@ -109,9 +109,9 @@ d. если заменить в реализации конструкторов 
 
 ```scheme
 (define (right-branch mobile)
-  (cad mobile))
+  (cdr mobile))
 
 (define (branch-structure branch)
-  (cad branch))
+  (cdr branch))
 ```
 
