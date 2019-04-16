@@ -53,7 +53,7 @@ a. селекторы `left-branch`, `right-brach`, `branch-length` и `branch-s
   (cadr branch))
 ```
 
-b.
+b. процедура `total-weight`, которая возвращает общий вес мобиля:
 
 ```scheme
 (define (total-weight mobile)
@@ -76,7 +76,7 @@ b.
 ; => 23
 ```
 
-c.
+c. предикат `mobile-balanced?`, который проверяет мобили на сбалансированность:
 
 ```scheme
 (define (mobile-balanced? mobile)
