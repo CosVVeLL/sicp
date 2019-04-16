@@ -95,7 +95,7 @@ t
            tree))
 
 (square-tree t)
-; => => (1 (4 (9 16) 25) (36 49))
+; => (1 (4 (9 16) 25) (36 49))
 
 (square-tree nil)
 ; Not a pair
