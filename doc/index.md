@@ -94,4 +94,4 @@
   * [Exercise 2.29](./Chapter%202/Exercise%202.29.md) ([code](../src/Chapter%202/Exercise%202.29.scm))
   * [Exercise 2.30](./Chapter%202/Exercise%202.30.md)
   * [Exercise 2.31](./Chapter%202/Exercise%202.31.md)
-  * [Exercise 2.32]
+  * [Exercise 2.32](./Chapter%202/Exercise%202.32.md)
