@@ -95,3 +95,10 @@
   * [Exercise 2.30](./Chapter%202/Exercise%202.30.md)
   * [Exercise 2.31](./Chapter%202/Exercise%202.31.md)
   * [Exercise 2.32](./Chapter%202/Exercise%202.32.md)
+  * [Exercise 2.33](./Chapter%202/Exercise%202.33.md)
+  * [Exercise 2.34]
+  * [Exercise 2.35]
+  * [Exercise 2.36]
+  * [Exercise 2.37]
+  * [Exercise 2.38]
+  * [Exercise 2.39]
