@@ -2,13 +2,15 @@
 
 ### Exercise 2.37
 
-Suppose we represent vectors _υ_ = (_υᵢ_) as sequences of numbers, and matrices m = (_m_<sub>_ij_</sub>) as sequences of vectors (the rows of the matrix). For example, the matrix
+Suppose we represent vectors _υ_ = (_υᵢ_) as sequences of numbers, and matrices _m_ = (_m_<sub>_ij_</sub>) as sequences of vectors (the rows of the matrix). For example, the matrix
 
 <p align="center">
   <img src="https://i.ibb.co/1s0KKHg/SICPexercise2-37-1.jpg" alt="SICPexercise2.37.1" title="SICPexercise2.37.1">
 </p>
 
 is represented as the sequence `((1 2 3 4) (4 5 6 6) (6 7 8 9))`. With this representation, we can use sequence operations to concisely express the basic matrix and vector operations. These operations (which are described in any book on matrix algebra) are the following:
+
+---
 
 (dot-product _υ ω_) returns the sum Σ_ᵢυᵢωᵢ_;
 
@@ -17,6 +19,8 @@ is represented as the sequence `((1 2 3 4) (4 5 6 6) (6 7 8 9))`. With this repr
 (matrix-\*-matrix _m n_) returns the matrix _p_, where _p_<sub>_ij_</sub> = Σ<sub>_k_</sub>_m_<sub>_ik_</sub>_n_<sub>_kj_</sub>;
 
 (transponse _m_) returns the matrix _m_, where _n_<sub>_ij_</sub> = _m_<sub>_ji_</sub>.
+
+---
 
 We can define the dot product as
 
@@ -30,8 +34,10 @@ Fill in the missing expressions in the following procedures for computing the ot
 ```scheme
 (define (matrix-*-vector m v)
   (map <??> m))
+
 (define (transpose mat)
   (accumulate-n <??> <??> mat))
+
 (define (matrix-*-matrix m n)
   (let ((cols (transpose n)))
     (map <??> m)))
@@ -44,7 +50,7 @@ Fill in the missing expressions in the following procedures for computing the ot
 Операции над последовательностями для выражения основных действий над матрицами и векторами:
 
 <p align="center">
-  <img src="https://i.ibb.co/NZn9VpZ/SICPexercise2-37-2.jpg" alt="SICPexercise2.37.2" title="SICPexercise2.37.2">
+  <img src="https://i.ibb.co/n1fkGV0/SICPexercise2-37-2.jpg" alt="SICPexercise2.37.2" title="SICPexercise2.37.2">
 </p>
 
 Заполним пропуски в процедурах `matrix-*-vector`, `transpose` и `matrix-*-matrix`:
