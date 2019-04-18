@@ -98,7 +98,7 @@
   * [Exercise 2.33](./Chapter%202/Exercise%202.33.md)
   * [Exercise 2.34](./Chapter%202/Exercise%202.34.md)
   * [Exercise 2.35](./Chapter%202/Exercise%202.35.md) ([code](../src/Chapter%202/Exercise%202.35.scm))
-  * [Exercise 2.36]
+  * [Exercise 2.36](./Chapter%202/Exercise%202.36.md)
   * [Exercise 2.37]
   * [Exercise 2.38]
   * [Exercise 2.39]
