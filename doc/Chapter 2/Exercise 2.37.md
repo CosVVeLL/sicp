@@ -39,6 +39,8 @@ Fill in the missing expressions in the following procedures for computing the ot
 
 ### solution
 
+([Code](../../src/Chapter%202/Exercise%202.37.scm))
+
 Операции над последовательностями для выражения основных действий над матрицами и векторами:
 
 <p align="center">
