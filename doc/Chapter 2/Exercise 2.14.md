@@ -2,7 +2,7 @@
 
 ### Exercise 2.14
 
-Demonstrate that Lem is right. Investigate the behavior of the system on a variety of arithmetic expressions. Make some intervals _A_ and _B_, and use them in computing the expressions _A/A_ and _A/B_. You will get the most insight by using intervals whose width is a small percentage of the center value. Examine the results of the computation in center-percent form (see [exercise 2.12](./Exercise%202.12.md)).
+Demonstrate that Lem is right. Investigate the behavior of the system on a variety of arithmetic expressions. Make some intervals _A_ and _B_, and use them in computing the expressions _A_/_A_ and _A_/_B_. You will get the most insight by using intervals whose width is a small percentage of the center value. Examine the results of the computation in center-percent form (see [exercise 2.12](./Exercise%202.12.md)).
 
 ### Solution
 

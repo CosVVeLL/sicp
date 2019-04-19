@@ -16,6 +16,7 @@ Here are two different definitions of `square-list`. Complete both of them by fi
   (if (null? items)
       nil
       (cons <??> <??>)))
+
 (define (square-list items)
   (map <??> <??>))
 ```

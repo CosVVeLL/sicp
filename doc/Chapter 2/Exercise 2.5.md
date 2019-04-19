@@ -38,7 +38,7 @@ pair
 
 Для пущей уверенности еще несколько примеров:
 
-```
+```scheme
 (define pair-3-5 (cons 3 5))
 (define pair-5-10 (cons 5 10))
 (define pair-10-5 (cons 10 5))

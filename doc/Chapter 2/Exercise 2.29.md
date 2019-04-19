@@ -27,6 +27,7 @@ d.  Suppose we change the representation of mobiles so that the constructors are
 ```scheme
 (define (make-mobile left right)
   (cons left right))
+
 (define (make-branch length structure)
   (cons length structure))
 ```
