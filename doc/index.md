@@ -100,5 +100,5 @@
   * [Exercise 2.35](./Chapter%202/Exercise%202.35.md) ([code](../src/Chapter%202/Exercise%202.35.scm))
   * [Exercise 2.36](./Chapter%202/Exercise%202.36.md)
   * [Exercise 2.37](./Chapter%202/Exercise%202.37.md) ([code](../src/Chapter%202/Exercise%202.37.scm))
-  * [Exercise 2.38]
+  * [Exercise 2.38](./Chapter%202/Exercise%202.38.md)
   * [Exercise 2.39]
