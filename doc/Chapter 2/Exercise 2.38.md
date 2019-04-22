@@ -65,7 +65,8 @@ Give a property that `op` should satisfy to guarantee that `fold-right` and `fol
 
 (fold-left + 0 (list 1 2 3))
 ; => 6
-
+```
+```scheme
 (fold-right * 1 (list 1 2 3))
 ; => 6
 
