@@ -2,11 +2,11 @@
 
 ### Exercise 2.3
 
-Implement a representation for rectangles in a plane. (Hint: You may want to make use of [exercise 2.2](./Exercise%202.2.md).) In terms of your constructors and selectors, create procedures that compute the perimeter and the area of a given rectangle. Now implement a different representation for rectangles. Can you design your system with suitable abstraction barriers, so that the same perimeter and area procedures will work using either representation?
+Implement a representation for rectangles in a plane. (Hint: You may want to make use of [exercise 2.2](./Exercise%202.02.md).) In terms of your constructors and selectors, create procedures that compute the perimeter and the area of a given rectangle. Now implement a different representation for rectangles. Can you design your system with suitable abstraction barriers, so that the same perimeter and area procedures will work using either representation?
 
 ### Solution
 
-([Code](../../src/Chapter%202/Exercise%202.3.scm))
+([Code](../../src/Chapter%202/Exercise%202.03.scm))
 
 Сначала выразим наши процедуры для представления прямоугольников так — конструктор `make-rectangle` (принимает три аргумента: верхний левый угол _b_ (в виде точки), ширина прямоугольника и высота прямоугольника), селекторы `width-rectangle` (ширина прямоугольника), `height-rectangle` (высота прямоугольника).
 

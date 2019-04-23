@@ -16,7 +16,7 @@ Consider the problem of representing line segments in a plane. Each segment is r
 
 ### Solution
 
-([Code](../../src/Chapter%202/Exercise%202.2.scm))
+([Code](../../src/Chapter%202/Exercise%202.02.scm))
 
 Начнём с обратного и определим сначала конструктор `make-point` и селекторы `x-point` и `y-point`:
 

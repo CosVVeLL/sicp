@@ -17,7 +17,7 @@ Define `one` and `two` directly (not in terms of `zero` and `add-1`). (Hint: Use
 
 ### Solution
 
-([Code](../../src/Chapter%202/Exercise%202.6.scm))
+([Code](../../src/Chapter%202/Exercise%202.06.scm))
 
 Определив еденицу как процедуру `one`,
 

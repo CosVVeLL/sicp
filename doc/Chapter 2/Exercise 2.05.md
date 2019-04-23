@@ -6,7 +6,7 @@ Show that we can represent pairs of nonnegative integers using only numbers and 
 
 ### Solution
 
-([Code](../../src/Chapter%202/Exercise%202.5.scm))
+([Code](../../src/Chapter%202/Exercise%202.05.scm))
 
 Из данного задания прямо следует определение процедуры `cons`:
 

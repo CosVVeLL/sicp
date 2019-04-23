@@ -6,7 +6,7 @@ Define a better version of `make-rat` that handles both positive and negative ar
 
 ### Solution
 
-([Code](../../src/Chapter%202/Exercise%202.1.scm))
+([Code](../../src/Chapter%202/Exercise%202.01.scm))
 
 Используем дополнительные функции `opt-args-n` и `opt-args-d` для нормализации знака в нашей процедуре, определяющей рациональное число:
 

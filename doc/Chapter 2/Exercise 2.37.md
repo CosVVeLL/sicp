@@ -43,7 +43,7 @@ Fill in the missing expressions in the following procedures for computing the ot
     (map <??> m)))
 ```
 
-### solution
+### Solution
 
 ([Code](../../src/Chapter%202/Exercise%202.37.scm))
 
