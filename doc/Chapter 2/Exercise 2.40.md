@@ -2,7 +2,7 @@
 
 ### Exercise 2.40
 
-Define a procedure `unique-pairs` that, given an integer _n_, generates the sequence of pairs (_i_,_j_) with 1≤_j_≤_i_≤_n_. Use `unique-pairs` to simplify the definition of `prime-sum-pairs` given above.
+Define a procedure `unique-pairs` that, given an integer _n_, generates the sequence of pairs (_i_,_j_) with 1 ≤ _j_ ≤ _i_ ≤ _n_. Use `unique-pairs` to simplify the definition of `prime-sum-pairs` given above.
 
 ### Solution
 
