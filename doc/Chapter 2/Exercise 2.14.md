@@ -1,4 +1,4 @@
-## Chapter 2
+## [Chapter 2](../index.md#2-Building-Abstractions-with-Data)
 
 ### Exercise 2.14
 
