@@ -104,4 +104,5 @@
   * [Exercise 2.39](./Chapter%202/Exercise%202.39.md)
   * [Exercise 2.40](./Chapter%202/Exercise%202.40.md) ([code](../src/Chapter%202/Exercise%202.40.scm))
   * [Exercise 2.41](./Chapter%202/Exercise%202.41.md) ([code](../src/Chapter%202/Exercise%202.41.scm))
-  * [Exercise 2.42]
+  * [Exercise 2.42](./Chapter%202/Exercise%202.42.md) ([code](../src/Chapter%202/Exercise%202.42.scm))
+  * [Exercise 2.43]
