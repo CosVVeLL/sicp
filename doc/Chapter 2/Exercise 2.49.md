@@ -80,6 +80,10 @@ c. Рисовалка, которая рисует ромб, соединяя м
 
 d. [Рисовалка `wave`](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-15.html#%_fig_2.10) (сделаю её «на глаз»):
 
+<p align="center">
+  <img src="https://i.ibb.co/WWydDhV/SICPexercise2-49.jpg" alt="SICPexercise2.49" title="SICPexercise2.49">
+</p>
+
 ```scheme
 (define my-wave
   (segments->painter 
