@@ -109,4 +109,4 @@
   * [Exercise 2.44](./Chapter%202/Exercise%202.44.md)
   * [Exercise 2.45](./Chapter%202/Exercise%202.45.md)
   * [Exercise 2.46](./Chapter%202/Exercise%202.46.md)
-  * [Exercise 2.47]
+  * [Exercise 2.47](./Chapter%202/Exercise%202.47.md)
