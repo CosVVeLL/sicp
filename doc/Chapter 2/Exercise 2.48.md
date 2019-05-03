@@ -6,4 +6,30 @@ A directed line segment in the plane can be represented as a pair of vectors —
 
 ### Solution
 
+```scheme
+(define (make-vect x y)
+  (cons x y))
+
+(define (make-segment start-vect end-vect)
+  (cons start-vect end-vect))
+
+(define (start-segment segment)
+  (car segment))
+
+(define (end-segment segment)
+  (cdr segment))
+
+(define vector1 (make-vect 1 1))
+(define vector2 (make-vect 1 3))
+(define segment (make-segment vector1 vector2))
+
+segment
+; => ((1 . 1) 1 . 3)
+
+(start-segment segment)
+; => (1 . 1)
+
+(end-segment segment)
+; => (1 . 3)
+```
 
