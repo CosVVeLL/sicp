@@ -9,7 +9,8 @@ A directed line segment in the plane can be represented as a pair of vectors —
 ```scheme
 (define (make-vect x y)
   (cons x y))
-
+```
+```scheme
 (define (make-segment start-vect end-vect)
   (cons start-vect end-vect))
 
