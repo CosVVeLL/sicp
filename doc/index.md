@@ -115,5 +115,5 @@
   * [Exercise 2.49](./Chapter%202/Exercise%202.49.md)
   * [Exercise 2.50](./Chapter%202/Exercise%202.50.md)
   * [Exercise 2.51](./Chapter%202/Exercise%202.51.md)
-  * [Exercise 2.52]
+  * [Exercise 2.52](./Chapter%202/Exercise%202.52.md)
 
