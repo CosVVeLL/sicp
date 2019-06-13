@@ -12,10 +12,11 @@ c.  Modify the version of `square-limit` that uses `square-of-four` so as to ass
 
 ### Solution
 
-a. изменю написанную мною рисовалку `my-wave` из [упражнения 2.49](./Exercise%202.49.md), добавив покер-фейс (я ленивый —\_—):
+a. изменю написанную мною рисовалку `my-wave` из [упражнения 2.49](./Exercise%202.49.md),
+добавив покер-фейс (я ленивый —\_—):
 
 ```scheme
-(define my-smiling-wave
+(define my-poker-face-wave
   (segments->painter 
     (list (make-segment (make-vect 0 0.85)
                         (make-vect 0.15 0.6))
@@ -91,35 +92,6 @@ b.
 
 c.
 
-```scheme
-(define (beside painter1 painter2)
-  (let ((split-point (make-vect 0.5 0.0)))
-    (let ((paint-left
-           (transform-painter painter1
-                              (make-vect 0.0 0.0)
-                              split-point
-                              (make-vect 0.0 1.0)))
-          (paint-right
-           (transform-painter painter2
-                              split-point
-                              (make-vect 1.0 0.0)
-                              (make-vect 0.5 1.0))))
-      (lambda (frame)
-        (paint-left frame)
-        (paint-right frame)))))
-
-(define (flip-vert painter)
-  (transform-painter painter
-                     (make-vect 0.0 1.0)
-                     (make-vect 1.0 1.0)
-                     (make-vect 0.0 0.0)))
-
-(define (flip-horiz painter)
-  (transform-painter painter
-                     (make-vect 1.0 0)
-                     (make-vect 0 0)
-                     (make-vect 1.0 1.0)))
-```
 ```scheme
 (define (square-limit painter n)
   (let ((quarter (corner-split painter n)))
