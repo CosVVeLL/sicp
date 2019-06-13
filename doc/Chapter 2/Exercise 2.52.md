@@ -12,7 +12,7 @@ c.  Modify the version of `square-limit` that uses `square-of-four` so as to ass
 
 ### Solution
 
-a. изменю написанную мною рисовалку `my-wave` из [упражнения 2.49](./Exercise%202.49.md),
+a. изменю написанную мною рисовалку `my-wave` из [упражнения 2.49](./Exercise%202.49.md),\
 добавив покер-фейс (я ленивый —\_—):
 
 ```scheme
