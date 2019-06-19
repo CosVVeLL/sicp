@@ -8,9 +8,9 @@ tor types to the interpreter the expression
 (car ''abracadabra)
 ```
 
-To her surprise, the interpreter prints back quote. Explain.
+To her surprise, the interpreter prints back `quote`. Explain.
 
 ### Solution
 
-Как нам известно, выражение `'abracadabra` аналогично выражению `(quote abracadabra)`. Соответственно, выражение `''abracadabra` аналогично выражению `(quote (quote abracadabra))`, которое вычисляется в список из двух символьных выражений `(quote abracadabra)`. Таким образом, `(car ''abracadabra)` вернёт первый элемент из списка — `quote`.
+Как нам известно, выражение `'abracadabra` аналогично выражению `(quote abracadabra)`. Соответственно, выражение `''abracadabra` аналогично выражению `(quote (quote abracadabra))`, которое вычисляется в список из двух символьных выражений `(quote abracadabra)` (то же, что `(list 'quote 'abracadabra)`). Таким образом, `(car ''abracadabra)` вернёт первый элемент из списка — `quote`.
 
