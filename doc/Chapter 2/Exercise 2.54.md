@@ -1,9 +1,9 @@
 ## [Chapter 2](../index.md#2-Building-Abstractions-with-Data)
 
-### Exercise 2.53
+### Exercise 2.54
 
 
- lists are said to be equal? if they contain equal elements arranged in the same order. For example,
+ lists are said to be `equal?` if they contain equal elements arranged in the same order. For example,
 
 ```scheme
 (equal? '(this is a list) '(this is a list))
