@@ -2,7 +2,7 @@
 
 ### Exercise 2.55
 
-tor types to the interpreter the expression
+Eva La Ator types to the interpreter the expression
 
 ```scheme
 (car ''abracadabra)
