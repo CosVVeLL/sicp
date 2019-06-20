@@ -82,11 +82,21 @@ by adding a new clause to the `deriv` program and defining appropriate procedure
         ((=number? e 1) b)
         ((and (number? b) (number? e)) (expt b e))
         (else (list '** b e))))
+```
 
+Использую _ax² + bx + c_ для проверки (наша процедура с данным многочленом вернёт _2ax + b_):
+
+```scheme
 (deriv '(** x 2) 'x)
 ; => (* 2 x)
 
-(deriv '(* y (** x 2)) 'x)
-; => (* y (* 2 x))
+(deriv '(* a (** x 2)) 'x)
+; => (* a (* 2 x))
+
+(deriv '(+ (* a (** x 2)) (* b x)) 'x)
+; => (+ (* a (* 2 x)) b)
+
+(deriv '(+ (+ (* a (** x 2)) (* b x)) c) 'x)
+; => (+ (* a (* 2 x)) b)
 ```
 
