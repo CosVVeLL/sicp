@@ -50,7 +50,8 @@
                                              (dec (exponent exp))))
           (deriv (base exp) var)))
         (else
-         (error "unknown expression type -- DERIV" exp))))
+         ((print exp)
+          (print "Error: Unknown expression type -- DERIV")))))
 
 (define (exponentiation? x)
   (and (pair? x) (eq? (car x) '**)))
