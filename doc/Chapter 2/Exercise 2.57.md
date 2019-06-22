@@ -1,6 +1,6 @@
 ## [Chapter 2](../index.md#2-Building-Abstractions-with-Data)
 
-### Exercise 2.56
+### Exercise 2.57
 
 tion program to handle sums and products of arbitrary numbers of (two or more) terms. Then the last example above could be expressed as
 
