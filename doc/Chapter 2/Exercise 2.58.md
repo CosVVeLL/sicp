@@ -68,7 +68,7 @@ b. Убрав лишние скобки в пошлой реализации, п
 
 но изменив слегка селекторы `augend` и `multiplicand`, наше решение будет работать:
 
-```
+```scheme
 (define (augend s)
   (if (null? (cdddr s))
       (caddr s)
