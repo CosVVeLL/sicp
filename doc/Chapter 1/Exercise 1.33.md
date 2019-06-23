@@ -68,7 +68,7 @@ a. Выразим с помощью `filtered-accumulate` сумму квадр�
 
 (define (sum-of-sq-of-prime a b)
   (define (filter n) (prime? n))
-  (sum filter identity a inc b))
+    (sum filter identity a inc b))
 
 (sum-of-sq-of-prime 1 1)
 ; => 0
@@ -93,9 +93,9 @@ b. Процедура `product-of-pos-int`, вычиляющая произве�
 
 (define (product-of-pos-int-less b)
   (define (filter n) (= (gcd n b) 1))
-  (if (= b 1)
-      0
-      (product filter identity 1 inc (- b 1))))
+    (if (= b 1)
+        0
+        (product filter identity 1 inc (- b 1))))
 
 (product-of-pos-int-less 1)
 ; => 0
