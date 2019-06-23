@@ -77,7 +77,6 @@
   * [Exercise 2.15](./Chapter%202/Exercise%202.15.md)
   * [Exercise 2.16](./Chapter%202/Exercise%202.16.md)
 
-
 2.2  Hierarchical Data and the Closure Property
 
   * [Exercise 2.17](./Chapter%202/Exercise%202.17.md)
@@ -116,6 +115,9 @@
   * [Exercise 2.50](./Chapter%202/Exercise%202.50.md)
   * [Exercise 2.51](./Chapter%202/Exercise%202.51.md)
   * [Exercise 2.52](./Chapter%202/Exercise%202.52.md)
+
+2.3  Symbolic Data
+
   * [Exercise 2.53](./Chapter%202/Exercise%202.53.md)
   * [Exercise 2.54](./Chapter%202/Exercise%202.54.md)
   * [Exercise 2.55](./Chapter%202/Exercise%202.55.md)
