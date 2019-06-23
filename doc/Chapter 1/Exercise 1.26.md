@@ -1,4 +1,4 @@
-## Chapter 1
+## [Chapter 1](../index.md#1-Building-Abstractions-with-Procedures)
 
 ### Exercise 1.26
 
@@ -16,7 +16,7 @@ Louis Reasoner is having great difficulty doing [exercise 1.24](./Exercise%201.2
                     m))))
 ```
 
-«I don't see what difference that could make,» says Louis. «I do.» says Eva. «By writing the procedure like that, you have transformed the _Θ(log n)_ process into a _Θ(n)_ process.» Explain.
+«I don't see what difference that could make,» says Louis. «I do.» says Eva. «By writing the procedure like that, you have transformed the Θ(log _n_) process into a Θ(_n_) process.» Explain.
 
 ### Solution
 

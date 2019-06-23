@@ -1,8 +1,8 @@
-## Chapter 1
+## [Chapter 1](../index.md#1-Building-Abstractions-with-Procedures)
 
 ### Exercise 1.15
 
-The sine of an angle (specified in radians) can be computed by making use of the approximation sin _x ≈ x_ if _x_ is sufficiently small, and the trigonometric identity
+The sine of an angle (specified in radians) can be computed by making use of the approximation sin _x_ ≈ _x_ if _x_ is sufficiently small, and the trigonometric identity
 
 <p align="center">
   <img src="https://i.ibb.co/YL9xPVb/SICPexercise1-15.png" alt="SICPexercise1.15" title="SICPexercise1.15">
@@ -29,5 +29,5 @@ b.  What is the order of growth in space and number of steps (as a function of _
 
 a. Особая форма `if` проверяет, является ли выражение `angle` больше значения `0.1` и если это так, вызываем функцию `p`. При `angle`, равном 12.15, функция `p` будет вызвана пять раз.
 
-b. Дополнительный вызов `p` появляется лишь при утроении входного значения. Порядки роста памяти и числа шагов одинаковы — равны примерно _Θ(log₃n)_.
+b. Дополнительный вызов `p` появляется лишь при утроении входного значения. Порядки роста памяти и числа шагов одинаковы — равны примерно Θ(_log_₃_n_).
 

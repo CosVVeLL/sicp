@@ -1,14 +1,14 @@
-## Chapter 1
+## [Chapter 1](../index.md#1-Building-Abstractions-with-Procedures)
 
 ### Exercise 1.7
 
-The `good-enough?` test used in computing square roots will not be very effective for finding the square roots of very small numbers. Also, in real computers, arithmetic operations are almost always performed with limited precision. This makes our test inadequate for very large numbers. Explain these statements, with examples showing how the test fails for small and large numbers. An alternative strategy for implementing `good-enough?` is to watch how _guess_ changes from one iteration to the next and to stop when the change is a very small fraction of the _guess_. Design a square-root procedure that uses this kind of end test. Does this work better for small and large numbers?
+The `good-enough?` test used in computing square roots will not be very effective for finding the square roots of very small numbers. Also, in real computers, arithmetic operations are almost always performed with limited precision. This makes our test inadequate for very large numbers. Explain these statements, with examples showing how the test fails for small and large numbers. An alternative strategy for implementing `good-enough?` is to watch how `guess` changes from one iteration to the next and to stop when the change is a very small fraction of the guess. Design a square-root procedure that uses this kind of end test. Does this work better for small and large numbers?
 
 ### Solution
 
 ([Code](../../src/Chapter%201/Exercise%201.07.scm))
 
-На маленьких числах новая реализация _good-enough?_ работает лучше, на больших разницы в работе процедур нет.
+На маленьких числах новая реализация `good-enough?` работает лучше, на больших разницы в работе процедур нет.
 
 #### Общий код:
 
@@ -21,7 +21,7 @@ The `good-enough?` test used in computing square roots will not be very effectiv
   (average guess (/ x guess)))
 ```
 
-#### Новая версия _good-enough?_
+#### Новая версия `good-enough?`
 
 ```scheme
 (define (good-enough? previous guess)
@@ -46,7 +46,7 @@ The `good-enough?` test used in computing square roots will not be very effectiv
 ; => 2000.0000000000236 (нет разницы)
 ```
 
-#### Старая версия _good-enough?_
+#### Старая версия `good-enough?`
 
 ```scheme
 (define (good-enough? guess x)

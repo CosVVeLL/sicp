@@ -35,7 +35,7 @@ Consider the following procedures, where `A` is the procedure defined above:
 (define (k n) (* 5 n n))
 ```
 
-Give concise mathematical definitions for the functions computed by the procedures `f`, `g`, and `h` for positive integer values of _n_. For example, `(k n)` computes _5n²_.
+Give concise mathematical definitions for the functions computed by the procedures `f`, `g`, and `h` for positive integer values of _n_. For example, `(k n)` computes 5<i>n</i>².
 
 ### Solution
 
