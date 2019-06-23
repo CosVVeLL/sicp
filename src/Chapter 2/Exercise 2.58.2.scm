@@ -1,3 +1,4 @@
+(define nil '())
 (define (dec x) (- x 1))
 
 (define (=number? exp num)
@@ -6,6 +7,23 @@
 (define (variable? x) (symbol? x))
 (define (same-variable? v1 v2)
   (and (variable? v1) (variable? v2) (eq? v1 v2)))
+
+(define (split el seq)
+  (define (iter before after)
+    (cond ((null? after) nil)
+          ((eq? (car after) el) (list before (cdr after)))
+          (else (iter (append before (list (car after)))
+                      (cdr after)))))
+  (iter nil seq))
+
+(define (split-add seq) (split '+ seq))
+(define (split-mul seq) (split '* seq))
+(define (split-exp seq) (split '** seq))
+
+(define (sorting l)
+  (if (null? (cdr l))
+      (car l)
+      l))
 
 (define (make-sum a1 a2)
   (cond ((=number? a1 0) a2)
@@ -27,25 +45,27 @@
         (else (list b '** e))))
 
 (define (sum? x)
-  (and (pair? x) (eq? (cadr x) '+)))
-(define (addend s) (car s))
-(define (augend s)
-  (if (null? (cdddr s))
-      (caddr s)
-      (cddr s)))
+  (and (pair? x)
+       (not (null? (split-add x)))))
+
+(define (addend s) (sorting (car (split-add s))))
+(define (augend s) (sorting (cadr (split-add s))))
 
 (define (product? x)
-  (and (pair? x) (eq? (cadr x) '*)))
-(define (multiplier p) (car p))
-(define (multiplicand p)
-  (if (null? (cdddr p))
-      (caddr p)
-      (cddr p)))
+  (and (pair? x)
+       (not (sum? x))
+       (not (null? (split-mul x)))))
+
+(define (multiplier p) (sorting (car (split-mul p))))
+(define (multiplicand p) (sorting (cadr (split-mul p))))
 
 (define (exponentiation? x)
-  (and (pair? x) (eq? (cadr x) '**)))
-(define (base e) (car e))
-(define (exponent e) (caddr e))
+  (and (pair? x)
+       (not (product? x))
+       (not (null? (split-exp x)))))
+
+(define (base e) (sorting (car (split-exp e))))
+(define (exponent e) (sorting (cadr (split-exp e))))
 
 (define (deriv exp var)
   (cond ((number? exp) 0)

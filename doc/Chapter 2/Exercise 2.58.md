@@ -10,7 +10,8 @@ b. The problem becomes substantially harder if we allow standard algebraic notat
 
 ### Solution
 
-([Code](../../src/Chapter%202/Exercise%202.58.scm))
+(1 | [Code](../../src/Chapter%202/Exercise%202.58.1.scm))
+(2 | [Code](../../src/Chapter%202/Exercise%202.58.2.scm))
 
 a.
 
@@ -66,20 +67,56 @@ b. Убрав лишние скобки в пошлой реализации, п
 ; => 1
 ```
 
-но изменив слегка селекторы `augend` и `multiplicand`, наше решение будет работать:
+Изменим предикаты, селекторы и конструкторы. `split` бёрет оператор и последовательность и делит последовательность на две на месте первого встреченного оператора:
 
 ```scheme
-(define (augend s)
-  (if (null? (cdddr s))
-      (caddr s)
-      (cddr s)))
+(define (split el seq)
+  (define (iter before after)
+    (cond ((null? after) nil)
+          ((eq? (car after) el) (list before (cdr after)))
+          (else (iter (append before (list (car after)))
+                      (cdr after)))))
+  (iter nil seq))
 
-(define (multiplicand p)
-  (if (null? (cdddr p))
-      (caddr p)
-      (cddr p)))
+(define (split-add seq) (split '+ seq))
+(define (split-mul seq) (split '* seq))
+(define (split-exp seq) (split '** seq))
 
-(deriv '(x + 3 * (x + y + 2)) 'x)
-; => 4
+(define (sorting l)
+  (if (null? (cdr l))
+      (car l)
+      l))
+
+(define (sum? x)
+  (and (pair? x)
+       (not (null? (split-add x)))))
+
+(define (addend s) (sorting (car (split-add s))))
+(define (augend s) (sorting (cadr (split-add s))))
+
+(define (product? x)
+  (and (pair? x)
+       (not (sum? x))
+       (not (null? (split-mul x)))))
+
+(define (multiplier p) (sorting (car (split-mul p))))
+(define (multiplicand p) (sorting (cadr (split-mul p))))
+
+(define (exponentiation? x)
+  (and (pair? x)
+       (not (product? x))
+       (not (null? (split-exp x)))))
+
+(define (base e) (sorting (car (split-exp e))))
+(define (exponent e) (sorting (cadr (split-exp e))))
+
+(deriv '(x * 3 + 5 * (x + y + 2)) 'x)
+; => 8
+
+(deriv '(((a * (x ** 2)) + (b * x)) + c) 'x)
+; => ((a * (2 * x)) + b)
+
+(deriv '(x ** 2 * a + c + b * x) 'x)
+; => (((2 * x) * a) + b)
 ```
 
