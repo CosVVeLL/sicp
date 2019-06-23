@@ -1,4 +1,4 @@
-## Chapter 1
+## [Chapter 1](../index.md#1-Building-Abstractions-with-Procedures)
 
 ### Exercise 1.43
 

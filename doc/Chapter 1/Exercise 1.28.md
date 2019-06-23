@@ -1,6 +1,6 @@
-## Chapter 1
+## [Chapter 1](../index.md#1-Building-Abstractions-with-Procedures)
 
-### Exercise 2.28
+### Exercise 1.28
 
 One variant of the Fermat test that cannot be fooled is called the _Miller-Rabin test_ (Miller 1976; Rabin 1980). This starts from an alternate form of Fermat's Little Theorem, which states that if _n_ is a prime number and _a_ is any positive integer less than _n_, then _a_ raised to the (_n_ - 1)st power is congruent to 1 modulo _n_. To test the primality of a number _n_ by the Miller-Rabin test, we pick a random number _a < n_ and raise a to the (_n_ - 1)st power modulo _n_ using the `expmod` procedure. However, whenever we perform the squaring step in `expmod`, we check to see if we have discovered a «nontrivial square root of 1 modulo _n_», that is, a number not equal to 1 or _n_ - 1 whose square is equal to 1 modulo _n_. It is possible to prove that if such a nontrivial square root of 1 exists, then _n_ is not prime. It is also possible to prove that if _n_ is an odd number that is not prime, then, for at least half the numbers _a < n_, computing _aⁿ⁻¹_ in this way will reveal a nontrivial square root of 1 modulo _n_. (This is why the Miller-Rabin test cannot be fooled.) Modify the `expmod` procedure to signal if it discovers a nontrivial square root of 1, and use this to implement the Miller-Rabin test with a procedure analogous to `fermat-test`. Check your procedure by testing various known primes and non-primes. Hint: One convenient way to make `expmod` signal is to have it return 0.
 
