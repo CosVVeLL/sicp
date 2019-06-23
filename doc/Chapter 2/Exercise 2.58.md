@@ -10,8 +10,8 @@ b. The problem becomes substantially harder if we allow standard algebraic notat
 
 ### Solution
 
-(1 | [Code](../../src/Chapter%202/Exercise%202.58.1.scm))\
-(2 | [Code](../../src/Chapter%202/Exercise%202.58.2.scm))
+1\. ([Code](../../src/Chapter%202/Exercise%202.58.1.scm))\
+2. ([Code](../../src/Chapter%202/Exercise%202.58.2.scm))
 
 a.
 
