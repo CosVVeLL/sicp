@@ -2,6 +2,13 @@
 (define false #f)
 (define nil '())
 
+(define (length items)
+  (define (length-iter a count)
+    (if (null? a)
+        count
+        (length-iter (cdr a) (+ 1 count))))
+  (length-iter items 0))
+
 (define (element-of-set? x set)
   (cond ((null? set) false)
         ((equal? x (car set)) true)
