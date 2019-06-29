@@ -42,29 +42,29 @@ We specified that a set would be represented as a list with no duplicates. Now s
 ; => (3 4 4)
 ```
 
-На самом деле, тут есть два выхода: либо всё оставить как есть, либо добавить дополнительный расширенный вариант функции (назову её `intersection-set-ext`), добавляющий, к примеру, в итоговый список максимальное количество повторяющихся элементов. За цикл `intersection-set-ext` трижды проделывает `element-of-set?` (с `set1`, `set2` и `acc`) и дважды `count` (с `set1` и `set2`), порядок роста числа шагов будет примерно Θ(_n⁵_).
+На самом деле, тут есть два выхода: либо всё оставить как есть, либо добавить дополнительный расширенный вариант функции (назову её `intersection-set-ext`), добавляющий, к примеру, в итоговый список максимальное количество повторяющихся элементов. `intersection-set-ext` в данной реализации, помимо использования `element-of-set?` для каждого `set1`, проверяет (так же при помощи `element-of-set?`) наличие каждого элемента в `acc`, что в худшем случае увеличит рост числа шагов до двух раз — Θ(_2n²_).
 
 ```scheme
-(define (intersection-set2 s1 s2)
+(define (intersection-set-ext s1 s2)
   (define (count x set)
-    (define (iter acc rest)
-      (cond ((null? rest) acc)
+    (define (iter i acc rest)
+      (cond ((null? rest) (cons i acc))
             ((equal? x (car rest))
-             (iter (cons x acc) (cdr rest)))
-            (else (iter acc (cdr rest)))))
-    (iter nil set))
+             (iter (inc i) (cons x acc) (cdr rest)))
+            (else (iter i acc (cdr rest)))))
+    (iter 0 nil set))
 
   (define (iter set1 set2 acc)
     (let ((new-acc1 (if (null? set1)
-                        nil
+                        (list 0)
                         (count (car set1) set1)))
           (new-acc2 (if (null? set1)
-                        nil
+                        (list 0)
                         (count (car set1) set2))))
-      (let ((new-acc (if (> (length new-acc1)
-                            (length new-acc2))
-                         new-acc1
-                         new-acc2)))
+      (let ((new-acc (if (> (car new-acc1)
+                            (car new-acc2))
+                         (cdr new-acc1)
+                         (cdr new-acc2))))
         (cond ((and (or (null? set1) (null? set2))
                     (null? acc)) nil)
               ((null? set1) acc)
