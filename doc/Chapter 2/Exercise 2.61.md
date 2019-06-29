@@ -6,7 +6,7 @@ Give an implementation of adjoin-set using the ordered representation. By analog
 
 ### Solution
 
-([Code](../../src/Chapter%202.61.scm))
+([Code](../../src/Chapter%202/Exercise%202.61.scm))
 
 Как и в случае с `element-of-set?`, в среднем мы можем ожидать, что потребуется просмотреть около половины элементов множества. 
 
