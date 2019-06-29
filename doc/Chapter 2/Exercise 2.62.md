@@ -2,7 +2,7 @@
 
 ### Exercise 2.61
 
-Give a Θ(n) implementation of `union-set` for sets represented as ordered lists.
+Give a Θ(_n_) implementation of `union-set` for sets represented as ordered lists.
 
 ### Solution
 
