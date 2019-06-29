@@ -127,4 +127,5 @@
   * [Exercise 2.59](./Chapter%202/Exercise%202.59.md)
   * [Exercise 2.60](./Chapter%202/Exercise%202.60.md) ([code](../src/Chapter%202/Exercise%202.60.scm))
   * [Exercise 2.61](./Chapter%202/Exercise%202.61.md) ([code](../src/Chapter%202/Exercise%202.61.scm))
+  * [Exercise 2.62](./Chapter%202/Exercise%202.62.md)
 
