@@ -40,7 +40,8 @@ a. Обе процедуры дают одинаковый результат. �
 
 (define (make-tree entry left right)
   (list entry left right))
-
+```
+```scheme
 (define (tree->list-1 tree)
   (if (null? tree)
       '()

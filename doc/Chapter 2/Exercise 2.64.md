@@ -1,9 +1,8 @@
 ## [Chapter 2](../index.md#2-Building-Abstractions-with-Data)
 
-### Exercise 2.63
+### Exercise 2.64
 
-
-wing procedure `list->tree` converts an ordered list to a balanced binary tree. The helper procedure `partial-tree` takes as arguments an integer _n_ and list of at least _n_ elements and constructs a balanced tree containing the first _n_ elements of the list. The result returned by `partial-tree` is a pair (formed with `cons`) whose `car` is the constructed tree and whose `cdr` is the list of elements not included in the tree.
+The following procedure `list->tree` converts an ordered list to a balanced binary tree. The helper procedure `partial-tree` takes as arguments an integer _n_ and list of at least _n_ elements and constructs a balanced tree containing the first _n_ elements of the list. The result returned by `partial-tree` is a pair (formed with `cons`) whose `car` is the constructed tree and whose `cdr` is the list of elements not included in the tree.
 
 ```scheme
 (define (list->tree elements)
@@ -32,4 +31,13 @@ b. What is the order of growth in the number of steps required by `list->tree` t
 
 ### Solution
 
+a. Если объяснить работу процедуры `partial-tree` максимально просто, то она, имя упорядоченный список и кол-во элементов в списке, делит этот список на три части: левое поддерево (`left-tree`), вход вершины (`this-entry`) и правое поддерево (`right-tree`). Вход вершины определяется нахождением середины списка в каждом цикле рекурсивного процесса, поддеревья вычисляются, применяя рекурсивно к `partial-tree` левую и правую части списка.
+
+Изображение дерева, которое `partial-tree` сторит из списка (1 3 5 7 9 11):
+
+<p>
+  <img src="https://i.ibb.co/BrWcRkg/SICPexercise2-64.jpg" alt="SICPexercise2.64" title="SICPexercise2.64">
+</p>
+
+b. Порядок роста числа шагов у процедуры `partial-tree` Θ(_n_). По сути, на каждом шаге в процедуре к определённому элементу в списке (вход вершины) добавляются поддеревья, с каждым таким элементом процедура работает один раз.
 
