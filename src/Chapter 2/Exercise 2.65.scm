@@ -1,14 +1,3 @@
-## [Chapter 2](../index.md#2-Building-Abstractions-with-Data)
-
-### Exercise 2.65
-
-Use the results of [exercises 2.63][1] and  [2.64][2] to give (_n_) implementations of `union-set` and `intersection-set` for sets implemented as (balanced) binary trees.
-
-### Solution
-
-([Code](../../doc/Chapter%202/Exercise%202.65.md))
-
-```scheme
 (define (remainder a b) (mod a b))
 (define false #f)
 (define nil '())
@@ -71,8 +60,7 @@ Use the results of [exercises 2.63][1] and  [2.64][2] to give (_n_) implementati
                     (remaining-elts (cdr right-result)))
                 (cons (make-tree this-entry left-tree right-tree)
                       remaining-elts))))))))
-```
-```scheme
+
 (define (union-set tree1 tree2)
   (define (union-list set1 set2)
     (cond ((null? set1) set2)
@@ -104,43 +92,4 @@ Use the results of [exercises 2.63][1] and  [2.64][2] to give (_n_) implementati
                  (intersection-list set1 (cdr set2)))))))
   (list->tree (intersection-list (tree->list tree1)
                                  (tree->list tree2))))
-
-(define t1
-  (make-tree 5 (make-tree 3 (make-tree 1 '() '()) '())
-               (make-tree 9 (make-tree 7 '() '())
-                            (make-tree 11 '() '()))))
-
-; (1 2 3 4 5 6)
-(define bad-t
-  (list 1 '()
-          (list 2 '()
-                  (list 3 '()
-                          (list 4 '()
-                                  (list 5 '()
-                                          (list 6 '() '())))))))
-
-(define tree1 (union-set t1 bad-t))
-(define tree2 (intersection-set t1 bad-t))
-
-tree1
-; => (5 (2 (1 () ()) (3 () (4 () ()))) (7 (6 () ()) (9 () (11 () ()))))
-(entry tree1)
-; => 5
-(left-branch tree1)
-; => (2 (1 () ()) (3 () (4 () ())))
-(right-branch tree1)
-; => (7 (6 () ()) (9 () (11 () ())))
-
-tree2
-; => (3 (1 () ()) (5 () ()))
-(entry tree2)
-; => 3
-(left-branch tree2)
-; => (1 () ())
-(right-branch tree2)
-; => (5 () ())
-```
-
-[1]:./Exercise%202.63.md
-[2]:./Exercise%202.64.md
 
