@@ -1,6 +1,6 @@
 ## [Chapter 2](../index.md#2-Building-Abstractions-with-Data)
 
-### Exercise 2.61
+### Exercise 2.62
 
 Give a Θ(_n_) implementation of `union-set` for sets represented as ordered lists.
 
