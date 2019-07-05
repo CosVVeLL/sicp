@@ -85,6 +85,7 @@ Use the results of [exercises 2.63][1] and  [2.64][2] to give (_n_) implementati
   (list->tree (intersection-list (tree->list tree1)
                                  (tree->list tree2))))
 
+; (1 3 5 7 9 11)
 (define t1
   (make-tree 5 (make-tree 3 (make-tree 1 '() '()) '())
                (make-tree 9 (make-tree 7 '() '())

@@ -131,4 +131,5 @@
   * [Exercise 2.63](./Chapter%202/Exercise%202.63.md)
   * [Exercise 2.64](./Chapter%202/Exercise%202.64.md)
   * [Exercise 2.65](./Chapter%202/Exercise%202.65.md) ([code](../src/Chapter%202/Exercise%202.65.scm))
+  * [Exercise 2.66](./Chapter%202/Exercise%202.66.md)
 
