@@ -132,8 +132,8 @@
   * [Exercise 2.64](./Chapter%202/Exercise%202.64.md)
   * [Exercise 2.65](./Chapter%202/Exercise%202.65.md) ([code](../src/Chapter%202/Exercise%202.65.scm))
   * [Exercise 2.66](./Chapter%202/Exercise%202.66.md)
-  * [Exercise 2.67](./Chapter%202/Exercise%202.67.md)
-  * [Exercise 2.68]
+  * [Exercise 2.67](./Chapter%202/Exercise%202.67.md) ([code](../src/Chapter%202/Exercise%202.67.scm))
+  * [Exercise 2.68](./Chapter%202/Exercise%202.68.md) ([code](../src/Chapter%202/Exercise%202.68.scm))
   * [Exercise 2.69]
   * [Exercise 2.70]
   * [Exercise 2.71]

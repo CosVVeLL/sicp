@@ -2,6 +2,8 @@
 
 ### Exercise 2.67
 
+([Code](../../src/Chapter%202/Exercise%202.67.scm))
+
 Define an encoding tree and a sample message:
 
 ```scheme
