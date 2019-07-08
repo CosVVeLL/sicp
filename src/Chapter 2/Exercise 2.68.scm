@@ -78,8 +78,9 @@
         ((element-of-set? symbol
                           (symbols (right-branch tree)))
          (cons '1 (encode-symbol symbol (right-branch tree))))
-        (else (and (error "symbol doesn't exist -- ENOENT")
-                   symbol))))
+        (else (and (display symbol) (newline)
+                   (error "symbol doesn't exist -- ENOENT")
+                   nil))))
 
 (define (element-of-set? x set)
   (cond ((null? set) false)

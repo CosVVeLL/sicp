@@ -33,8 +33,9 @@ The `encode` procedure takes as arguments a message and a tree and produces the 
         ((element-of-set? symbol
                           (symbols (right-branch tree)))
          (cons '1 (encode-symbol symbol (right-branch tree))))
-        (else (and (error "symbol doesn't exist -- ENOENT")
-                   symbol))))
+        (else (and (display symbol) (newline)
+                   (error "symbol doesn't exist -- ENOENT")
+                   nil))))
 
 (define (element-of-set? x set)
   (cond ((null? set) false)
@@ -52,5 +53,5 @@ The `encode` procedure takes as arguments a message and a tree and produces the 
 ; => (0 1 1 0 0 1 0 1 0 1 1 1 0)
 ```
 
-[1](./Exercise%202.67.md)
+[1]: ./Exercise%202.67.md
 

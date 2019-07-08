@@ -2,8 +2,6 @@
 
 ### Exercise 2.67
 
-([Code](../../src/Chapter%202/Exercise%202.67.scm))
-
 Define an encoding tree and a sample message:
 
 ```scheme
@@ -20,6 +18,8 @@ Define an encoding tree and a sample message:
 Use the decode procedure to `decode` the message, and give the result. 
 
 ### Solution
+
+([Code](../../src/Chapter%202/Exercise%202.67.scm))
 
 ```scheme
 (define sample-tree

@@ -122,6 +122,6 @@ tree2
 ; => (5 () ())
 ```
 
-[1]:./Exercise%202.63.md
-[2]:./Exercise%202.64.md
+[1]: ./Exercise%202.63.md
+[2]: ./Exercise%202.64.md
 
