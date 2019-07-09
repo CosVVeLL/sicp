@@ -4,10 +4,13 @@
 
 The following eight-symbol alphabet with associated relative frequencies was designed to efficiently encode the lyrics of 1950s rock songs. (Note that the «symbols» of an «alphabet» need not be individual letters.)
 
+```
 A 	2 	NA 	16
 BOOM 	1 	SHA 	3
 GET 	2 	YIP 	9
 JOB 	2 	WAH 	1
+```
+
 Use `generate-huffman-tree` ([exercise 2.69][1]) to generate a corresponding Huffman tree, and use `encode` ([exercise 2.68][2]) to encode the following message:
 
 ```
@@ -48,7 +51,12 @@ How many bits are required for the encoding? What is the smallest number of bits
           SHA BOOM)
         huffman-tree)
 
-; => (1 1 1 1 1 1 1 0 0 1 1 1 1 0 1 1 1 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 0 0 1 1 1 1 0 1 1 1 0 0 0 0 0 0 0 0 0 1 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 1 1 0 1 1 0 1 1)
+; => (1 1 1 1 1 1 1 0 0 1 1 1 1 0
+;     1 1 1 0 0 0 0 0 0 0 0 0
+;     1 1 1 1 1 1 1 0 0 1 1 1 1 0
+;     1 1 1 0 0 0 0 0 0 0 0 0
+;     1 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+;     1 1 1 0 1 1 0 1 1)
 ```
 
 В нашем сообщении 84 бита. Если бы мы использовали код с фиксированной длиной для обозначения восьми символов, нам бы понадобилось не больше трёх битов на символ. В нашем сообщении 36 слов, соответственно, закодированное сообщение в таком варианте состояло бы из 108-ми битов.
