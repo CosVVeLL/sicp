@@ -2,7 +2,7 @@
 
 ### Exercise 1.43
 
-If _ƒ_ is a numerical function and _n_ is a positive integer, then we can form the _n_th repeated application of _ƒ_, which is defined to be the function whose value at _x_ is _f(f(...(f(x))...))_. For example, if _ƒ_ is the function _x_ →  _x_ + 1, then the _n_th repeated application of _ƒ_ is the function _x_ → _x_ + _n_. If _ƒ_ is the operation of squaring a number, then the _n_th repeated application of _ƒ_ is the function that raises its argument to the 2_ⁿ_th power. Write a procedure that takes as inputs a procedure that computes _ƒ_ and a positive integer _n_ and returns the procedure that computes the _n_th repeated application of _ƒ_. Your procedure should be able to be used as follows:
+If _ƒ_ is a numerical function and _n_ is a positive integer, then we can form the _n_th repeated application of _ƒ_, which is defined to be the function whose value at _x_ is _f_(_f_(...(_f_(_x_))...)). For example, if _ƒ_ is the function _x_ →  _x_ + 1, then the _n_th repeated application of _ƒ_ is the function _x_ → _x_ + _n_. If _ƒ_ is the operation of squaring a number, then the _n_th repeated application of _ƒ_ is the function that raises its argument to the 2_ⁿ_th power. Write a procedure that takes as inputs a procedure that computes _ƒ_ and a positive integer _n_ and returns the procedure that computes the _n_th repeated application of _ƒ_. Your procedure should be able to be used as follows:
 
 ```scheme
 ((repeated square 2) 5)
