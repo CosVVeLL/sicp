@@ -1,6 +1,6 @@
 ## [Chapter 2](../index.md#2-Building-Abstractions-with-Data)
 
-### Exercise 2.72
+### Exercise 2.73
 
 [Section 2.3.2][1] described a program that performs symbolic differentiation:
 
@@ -91,7 +91,7 @@ b-c.
   'done)
 ```
 
-d. Всё, что нам потребуется для смены индексирования процедур, это в пакете процедур `install-deriv-package` в вызовах процедуры `put` поменять местами первый (аргумент имени процедуры) и второй (аргумент типа процедуры) аргументы
+d. Всё, что нам потребуется для смены индексирования процедур, это в пакете процедур `install-deriv-package` в вызовах процедуры `put` поменять местами первый (аргумент имени процедуры) и второй (аргумент типа процедуры) аргументы.
 
 [1]: https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-16.html#%_sec_2.3.2
 [2]: ./Exercise%202.56.md
