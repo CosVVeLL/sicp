@@ -141,3 +141,5 @@
 
 2.4 Multiple Representations for Abstract Data
 
+  * [Exercise 2.73](./Chapter%202/Exercise%202.73.md)
+
