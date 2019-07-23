@@ -15,7 +15,7 @@ Describe in detail why this works. As an example, trace through all the procedur
 
 ### Solution
 
-([Code](../../scr/Chapter%202/Exercise%202.77.scm))
+([Code](../../src/Chapter%202/Exercise%202.77.scm))
 
 Мы имеем комплексное число `z` типа `complex` и обощённую операцию `magnitude`. Наше комплексное число представлено в декартовой форме, действительная часть 3, мнимая 4. Если разобрать `z` на составные части, получится
 
@@ -55,8 +55,8 @@ Describe in detail why this works. As an example, trace through all the procedur
 Она вернёт в нашем случае значение 5
 
 ```
-√3² + 4²
-√9 + 16
+√(3² + 4²)
+√(9 + 16)
 √25
 5
 ```
