@@ -151,5 +151,5 @@
   * [Exercise 2.77](./Chapter%202/Exercise%202.77.md) ([code](../src/Chapter%202/Exercise%202.77.scm))
   * [Exercise 2.78](./Chapter%202/Exercise%202.78.md)
   * [Exercise 2.79](./Chapter%202/Exercise%202.79.md)
-  * [Exercise 2.80]
+  * [Exercise 2.80](./Chapter%202/Exercise%202.80.md)
 
