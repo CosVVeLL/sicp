@@ -152,4 +152,10 @@
   * [Exercise 2.78](./Chapter%202/Exercise%202.78.md)
   * [Exercise 2.79](./Chapter%202/Exercise%202.79.md)
   * [Exercise 2.80](./Chapter%202/Exercise%202.80.md)
+  * [Exercise 2.81](./Chapter%202/Exercise%202.81.md)
+  * [Exercise 2.82]
+  * [Exercise 2.83]
+  * [Exercise 2.84]
+  * [Exercise 2.85]
+  * [Exercise 2.86]
 
