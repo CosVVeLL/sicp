@@ -1,4 +1,3 @@
-
 (define (error message e)
   (and (display "Error: ") (print message) (print e)))
 

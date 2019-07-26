@@ -83,9 +83,9 @@ Show how to generalize `apply-generic` to handle coercion in the general case of
       (if proc
           (apply proc (map contents args))
           (let ((set-of-types (set-of-type-tags type-tags)))
-            ; Проверка на длину ниже подразумевает, что если тип в множестве `set-of-types` один,
-              то приводить аргументы к нему не имеет смысла.
-            ; А так как ранее мы не нашли нужную операцию в таблице типов, мы сдаёмся и возвращаем ошибку.
+            ;; Проверка на длину ниже подразумевает, что если тип в множестве `set-of-types` один,
+            ;; то приводить аргументы к нему не имеет смысла.
+            ;; А так как ранее мы не нашли нужную операцию в таблице типов, мы сдаёмся и возвращаем ошибку.
             (if (= 1 (length (set-of-types)))
                 (error "No method for these types -- APPLY-GENERIC"
                        (list op type-tags))
