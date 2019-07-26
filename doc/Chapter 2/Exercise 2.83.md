@@ -17,7 +17,7 @@ Suppose you are designing a generic arithmetic system for dealing with the tower
 ```scheme
 (define (integer->rational i) (make-rational i 1))
 
-(put 'raise '(scheme-number) integer->rational)
+(put 'raise '(integer) integer->rational)
 ```
 
 Добавляем в пакет арифметики рациональных чисел

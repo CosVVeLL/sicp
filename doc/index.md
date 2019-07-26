@@ -155,7 +155,7 @@
   * [Exercise 2.81](./Chapter%202/Exercise%202.81.md)
   * [Exercise 2.82](./Chapter%202/Exercise%202.82.md) ([code](../src/Chapter%202/Exercise%202.82.scm))
   * [Exercise 2.83](./Chapter%202/Exercise%202.83.md)
-  * [Exercise 2.84]
+  * [Exercise 2.84](./Chapter%202/Exercise%202.84.md)
   * [Exercise 2.85]
   * [Exercise 2.86]
 
