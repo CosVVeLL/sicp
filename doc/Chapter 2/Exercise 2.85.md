@@ -64,8 +64,8 @@ This section mentioned a method for «simplifying» a data object by lowering it
         (type-tags (map type-tag args)))
     (let ((proc (get op type-tags)))
       (if proc
-          (drop (apply proc (map contents args))) ; <<<<<<<< ВОТ ЗДЕСЬ ПРЕОБРАЗУЕМ РЕЗУЛЬТАТ В ТИП ДАННЫХ ПОПРОЩЕ
-          (if (= (length args) 2)
+          (drop (apply proc (map contents args))) ; <<<<<<<< ВОТ ЗДЕСЬ ПРЕОБРАЗУЕМ РЕЗУЛЬТАТ
+          (if (= (length args) 2)                          ; В ТИП ДАННЫХ ПОПРОЩЕ
               (let ((type1 (car type-tags))
                     (type2 (cadr type-tags))
                     (a1 (car args))
