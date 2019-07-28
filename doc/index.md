@@ -157,5 +157,5 @@
   * [Exercise 2.83](./Chapter%202/Exercise%202.83.md)
   * [Exercise 2.84](./Chapter%202/Exercise%202.84.md)
   * [Exercise 2.85](./Chapter%202/Exercise%202.85.md)
-  * [Exercise 2.86]
+  * [Exercise 2.86](./Chapter%202/Exercise%202.86.md)
 
