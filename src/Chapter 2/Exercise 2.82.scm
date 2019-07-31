@@ -71,9 +71,9 @@
       (error "Tags isn't a list" tags)))
 
 (define (coercion arg type)
-  (if (eq? arg type)
-      arg
-      (let ((arg-type (type-tag arg)))
+  (let ((arg-type (type-tag arg)))
+    (if (eq? arg-type type)
+        arg
         (let ((arg-type->type (get-coercion arg-type type)))
           (if arg-type->type
               (arg-type->type arg)
