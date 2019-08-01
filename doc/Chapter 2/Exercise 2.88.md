@@ -40,7 +40,7 @@ Extend the polynomial system to include subtraction of polynomials. (Hint: You m
 (put 'neg '(polynomial) (tag (lambda (p) (neg-poly p))))
 ```
 
-Теперь есть всё, чтобы реализовать операцию вычитания многочленов. Добавляем в пакет арифметики многчленов
+Теперь есть всё, чтобы реализовать операцию вычитания многочленов. Добавляем в пакет арифметики многочленов
 
 ```scheme
 (define (sub-poly p1 p2)
