@@ -26,18 +26,16 @@ Extend the polynomial system to include subtraction of polynomials. (Hint: You m
 (define (neg-terms terms)
   (if (empty-termlist? terms)
       (the-empty-termlist)
-      (let ((first (first-term terms))
-            (rest (rest-terms terms)))
+      (let ((first (first-term terms)))
         (adjoin-term (make-term (order first)
                                 (neg (coeff first)))
-                     (make-polynomial (variable p)
-                                      rest)))))
+                     (neg-terms (rest-terms terms))))))
 
 (define (neg-poly p)
-    (make-polynomial (variable p)
-                     (neg-terms (terms-list p))))
+    (make-poly (variable p)
+               (neg-terms (terms-list p))))
 
-(put 'neg '(polynomial) (tag (lambda (p) (neg-poly p))))
+(put 'neg '(polynomial) (lambda (p) (tag (neg-poly p))))
 ```
 
 Теперь есть всё, чтобы реализовать операцию вычитания многочленов. Добавляем в пакет арифметики многочленов
@@ -47,6 +45,6 @@ Extend the polynomial system to include subtraction of polynomials. (Hint: You m
   (add-poly p1 (neg p2)))
 
 (put 'sub '(polynomial polynomial)
-  (tag (lambda (p1 p2) (sub-poly p1 p2))))
+  (lambda (p1 p2) (tag (sub-poly p1 p2))))
 ```
 
