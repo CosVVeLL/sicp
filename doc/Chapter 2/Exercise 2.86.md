@@ -127,7 +127,7 @@ P.S. Вообще-то, можно было и операцию `sqrt` пере�
                                 (let ((damped (div x y)))
                                   (cond ((eq? (type-tag damped) 'rational) (raise damped))
                                         ((eq? (type-tag damped) 'integer) damped)
-                                        (else (error "No method for these type -- DAMPED"
+                                        (else (error "No method for this type -- DAMPED"
                                                      damped)))))
                 1.0)))
 ```
