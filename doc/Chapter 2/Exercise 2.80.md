@@ -21,17 +21,17 @@ Define a generic predicate `=zero?` that tests if its argument is zero, and inst
 Добавляем в `install-rational-package`
 
 ```scheme
-(define (zero?-rat x) (=zero? (numer x)))
+(define (zero-rat? x) (=zero? (numer x)))
 
-(put '=zero? '(rational) zero?-rat)
+(put '=zero? '(rational) zero-rat?)
 ```
 
 Добавляем в `install-comlex-package`
 
 ```scheme
-(define (zero?-complex z) (and (=zero? (real-part z))
+(define (zero-complex? z) (and (=zero? (real-part z))
                                (=zero? (imag-part z))))
 
-(put '=zero? '(complex) zero?-complex)
+(put '=zero? '(complex) zero-complex?)
 ```
 
