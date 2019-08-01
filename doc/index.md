@@ -159,7 +159,7 @@
   * [Exercise 2.85](./Chapter%202/Exercise%202.85.md)
   * [Exercise 2.86](./Chapter%202/Exercise%202.86.md)
   * [Exercise 2.87](./Chapter%202/Exercise%202.87.md)
-  * [Exercise 2.88]
+  * [Exercise 2.88](./Chapter%202/Exercise%202.88.md)
   * [Exercise 2.89]
   * [Exercise 2.90]
   * [Exercise 2.91]
