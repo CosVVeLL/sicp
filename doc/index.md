@@ -162,5 +162,5 @@
   * [Exercise 2.88](./Chapter%202/Exercise%202.88.md)
   * [Exercise 2.89](./Chapter%202/Exercise%202.89.md)
   * [Exercise 2.90](./Chapter%202/Exercise%202.90.md) ([code](../src/Chapter%202/Exercise%202.90.scm))
-  * [Exercise 2.91]
+  * [Exercise 2.91](./Chapter%202/Exercise%202.91.md)
 

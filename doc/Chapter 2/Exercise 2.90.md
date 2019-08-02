@@ -2,7 +2,7 @@
 
 ### Exercise 2.90
 
-Suppose we want to have a polynomial system that is efficient for both sparse and dense polynomials. One way to do this is to allow both kinds of term-list representations in our system. The situation is analogous to the complex-number example of section [2.4][1], where we allowed both rectangular and polar representations. To do this we must distinguish different types of term lists and make the operations on term lists generic. Redesign the polynomial system to implement this generalization. This is a major effort, not a local change.
+Suppose we want to have a polynomial system that is efficient for both sparse and dense polynomials. One way to do this is to allow both kinds of term-list representations in our system. The situation is analogous to the complex-number example of [section 2.4][1], where we allowed both rectangular and polar representations. To do this we must distinguish different types of term lists and make the operations on term lists generic. Redesign the polynomial system to implement this generalization. This is a major effort, not a local change.
 
 ### Solution
 
@@ -179,7 +179,10 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
 (define (make-polynomial var terms)
   ((get 'make 'polynomial) var terms))
 (define (the-empty-termlist term-list)
-  ((get 'the-empty-termlist (type-tag term-list))))
+  (let ((proc (get 'the-empty-termlist (type-tag term-list))))
+    ((if proc
+         proc
+         (get 'the-empty-termlist 'dense)))))<Paste>
 (define (first-term term-list)
   (apply-generic 'first-term term-list))
 (define (rest-terms term-list)

@@ -35,7 +35,7 @@ a. Если объяснить работу процедуры `partial-tree` м
 
 Изображение дерева, которое `partial-tree` сторит из списка (1 3 5 7 9 11):
 
-<p>
+<p align="center">
   <img src="https://i.ibb.co/BrWcRkg/SICPexercise2-64.jpg" alt="SICPexercise2.64" title="SICPexercise2.64">
 </p>
 
