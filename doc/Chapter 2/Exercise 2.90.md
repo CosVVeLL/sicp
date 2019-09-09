@@ -42,7 +42,7 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
 (define (install-poly-dense-package)
   (define (the-empty-termlist) (cons nil 0))
   (define (first-term term-list)
-    (make-term (dec (length term-list)) (caar term-list)))
+    (make-term (num-of-terms term-list) (caar term-list)))
   (define (rest-terms term-list)
     (cons (cdar term-list) (dec (num-of-terms term-list))))
   (define (num-of-terms term-list) (cdr term-list))

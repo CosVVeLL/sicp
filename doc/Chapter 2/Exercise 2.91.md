@@ -5,7 +5,7 @@
 A univariate polynomial can be divided by another one to produce a polynomial quotient and a polynomial remainder. For example,
 
 <p align="center">
-  <img src="https://i.ibb.co/tDr6sSb/SICPexercise2-90.jpg" alt="SICPexercise2.90" title="SICPexercise2.90">
+  <img src="https://i.ibb.co/0JFj3vt/SICPexercise2-91.jpg" alt="SICPexercise2.91" title="SICPexercise2.91">
 </p>
 
 Division can be performed via long division. That is, divide the highest-order term of the dividend by the highest-order term of the divisor. The result is the first term of the quotient. Next, multiply the result by the divisor, subtract that from the dividend, and produce the rest of the answer by recursively dividing the difference by the divisor. Stop when the order of the divisor exceeds the order of the dividend and declare the dividend to be the remainder. Also, if the dividend ever becomes zero, return zero as both quotient and remainder.
