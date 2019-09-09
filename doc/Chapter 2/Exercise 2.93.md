@@ -34,7 +34,7 @@ where `remainder-terms` picks out the remainder component of the list returned b
 
 ### Solution
 
-В пакете арифметики рациональных чисел:
+'make-rat' не будет пытаться сокращать дроби, если в числителе или знаменателе находится многочлен. В пакете арифметики рациональных чисел:
 
 ```scheme
 (define (make-rat n d)
@@ -44,16 +44,11 @@ where `remainder-terms` picks out the remainder component of the list returned b
         (cons (/ n g) (/ d g)))
 ```
 
-В пакете арифметики целых чисел:
+Реализация приведения дроби многочленов к наименьшему знаменателю. В пакете арифметики целых чисел:
 
 ```scheme
-(define (gcd-int a b)
-  (if (= b 0)
-      a
-      (gcd b (remainder a b))))
-
-(put 'gcd (scheme-number scheme-number)
-  (lambda (a b) (tag (gcd-int a b))))
+(put 'gcd '(scheme-number scheme-number)
+  (lambda (a b) (gcd a b)))
 ```
 
 В пакете арифметики многочленов:
@@ -76,9 +71,9 @@ where `remainder-terms` picks out the remainder component of the list returned b
         (error "Polys not in same var -- div-poly" 
                (list p1 p2)))))
 
-(put 'gcd (polynomial polynomial)
+(put 'gcd '(polynomial polynomial)
   (lambda (a b) (tag (gcd-poly a b))))
 ```
 
-[1](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-18.html#%_thm_2.91)
+[1]: ./Exercise%202.91.md
 
