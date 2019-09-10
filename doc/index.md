@@ -161,13 +161,13 @@
   * [Exercise 2.87](./Chapter%202/Exercise%202.87.md)
   * [Exercise 2.88](./Chapter%202/Exercise%202.88.md)
   * [Exercise 2.89](./Chapter%202/Exercise%202.89.md)
-  * [Exercise 2.90](./Chapter%202/Exercise%202.90.md) ([code](../src/Chapter%202/Exercise%202.90.scm))
+  * [Exercise 2.90](./Chapter%202/Exercise%202.90.md) ([code](../src/Chapter%202/Exercise%202.90.scm)) :/
   * [Exercise 2.91](./Chapter%202/Exercise%202.91.md)
   * Exercise 2.92 :(
   * [Extended exercise: Rational functions](./Chapter%202/Extended%20exercise:%20Rational%20functions.md)
   * [Exercise 2.93](./Chapter%202/Exercise%202.93.md)
   * [Exercise 2.94](./Chapter%202/Exercise%202.94.md)
   * [Exercise 2.95] :(
-  * [Exercise 2.96]
-  * [Exercise 2.97]
+  * [Exercise 2.96] :(
+  * [Exercise 2.97] :(
 

@@ -33,7 +33,7 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
   (put 'empty-termlist? '(spare) empty-termlist?)
   (put 'adjoin-term 'spare
        (lambda (t t-list) (tag (adjoin-term t t-list))))
-  'done)<Paste>
+  'done)
 ```
 
 Представление плотных термов многочлена

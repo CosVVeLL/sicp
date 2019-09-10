@@ -1,6 +1,6 @@
 ## [Chapter 2](../index.md#2-Building-Abstractions-with-Data)
 
-### Exercise 2.95
+### [Exercise 2.95](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-18.html#%_thm_2.95)
 
 Define _P_<sub>1</sub>, _P_<sub>2</sub>, and _P_<sub>3</sub> to be the polynomials
 

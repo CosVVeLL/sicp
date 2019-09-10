@@ -1,6 +1,6 @@
 ## [Chapter 2](../index.md#2-Building-Abstractions-with-Data)
 
-### Exercise 2.96
+### [Exercise 2.96](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-18.html#%_thm_2.96)
 
 a. Implement the procedure `pseudoremainder-terms`, which is just like `remainder-terms` except that it multiplies the dividend by the integerizing factor described above before calling `div-terms`. Modify `gcd-terms` to use `pseudoremainder-terms`, and verify that `greatest-common-divisor` now produces an answer with integer coefficients on the example in [exercise 2.95][1].
 
@@ -16,7 +16,7 @@ Thus, here is how to reduce a rational function to lowest terms:
 
 ### Solution
 
-
+:(
 
 [1]: ./Exercise2%202.95.md
 
