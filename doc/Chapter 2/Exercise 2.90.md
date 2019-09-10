@@ -62,7 +62,6 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
   (put 'rest-terms '(dense)
     (lambda (t-list) (tag (rest-terms t-list))))
   (put 'num-of-terms 'dense num-of-terms)
-  (put 'length 'dense length-poly-dense)
   (put 'empty-termlist? '(dense) empty-termlist?)
   (put 'adjoin-term 'dense
        (lambda (t t-list) (tag (adjoin-term t t-list))))

@@ -34,7 +34,7 @@ where `remainder-terms` picks out the remainder component of the list returned b
 
 ### Solution
 
-'make-rat' не будет пытаться сокращать дроби, если в числителе или знаменателе находится многочлен. В пакете арифметики рациональных чисел:
+`make-rat` не будет пытаться сокращать дроби, если в числителе или знаменателе находится многочлен. В пакете арифметики рациональных чисел:
 
 ```scheme
 (define (make-rat n d)
@@ -44,7 +44,9 @@ where `remainder-terms` picks out the remainder component of the list returned b
         (cons (/ n g) (/ d g)))
 ```
 
-Реализация приведения дроби многочленов к наименьшему знаменателю. В пакете арифметики целых чисел:
+#### Реализация приведения дроби многочленов к наименьшему знаменателю
+
+В пакете арифметики целых чисел:
 
 ```scheme
 (put 'gcd '(scheme-number scheme-number)
