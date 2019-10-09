@@ -1,4 +1,4 @@
-## 1 Building Abstractions with Procedures
+## 1. Building Abstractions with Procedures
 
 1.1 The Elements of Programming
 
@@ -56,7 +56,7 @@
   * [Exercise 1.45](./Chapter%201/Exercise%201.45.md) ([code](../src/Chapter%201/Exercise%201.45.scm))
   * [Exercise 1.46](./Chapter%201/Exercise%201.46.md) ([code](../src/Chapter%201/Exercise%201.46.scm))
 
-## 2 Building Abstractions with Data
+## 2. Building Abstractions with Data
 
 2.1 Introduction to Data Abstraction
 
@@ -170,4 +170,13 @@
   * [Exercise 2.95] :(
   * [Exercise 2.96] :(
   * [Exercise 2.97] :(
+
+## 3. Modularity, Objects, and State
+
+3.1  Assignment and Local State
+
+  * [Exercise 3.1](./Chapter%203/Exercise%203.1.md)
+  * [Exercise 3.2]
+  * [Exercise 3.3]
+  * [Exercise 3.4]
 
