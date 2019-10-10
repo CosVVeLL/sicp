@@ -176,7 +176,7 @@
 3.1  Assignment and Local State
 
   * [Exercise 3.1](./Chapter%203/Exercise%203.1.md)
-  * [Exercise 3.2]
+  * [Exercise 3.2](./Chapter%203/Exercise%203.2.md)
   * [Exercise 3.3]
   * [Exercise 3.4]
 

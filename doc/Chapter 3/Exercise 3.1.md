@@ -1,4 +1,4 @@
-## [Chapter 3](../index.md#3.-Modularity,-Objects,-and-State)
+## [Chapter 3](../index.md#3-Modularity-Objects-and-State)
 
 ### [Exercise 3.1](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-20.html#%_thm_3.1)
 
