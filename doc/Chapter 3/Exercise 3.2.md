@@ -19,6 +19,9 @@ In software-testing applications, it is useful to be able to count the number of
 ```scheme
 (define (inc x) (+ x 1))
 ```
+
+Анонимная функция внутри `make-monitored`, это `mf`.
+
 ```scheme
 (define (make-monitored f)
   (let ((count 0))
