@@ -21,7 +21,7 @@ Modify the `make-account` procedure of [exercise 3.3][1] by adding another local
       (set! balance (+ balance amount))
       balance)
     (define (incorrect-password) "Incorrect password")
-    (define (call-the-cops) "Cops on the way! >:(")
+    (define (call-the-cops) "Cops on the way!")
 
     (define (dispatch password m)
       (if (eq? password secret-password)
@@ -45,7 +45,7 @@ Modify the `make-account` procedure of [exercise 3.3][1] by adding another local
 ((acc 'some-other-password 'deposit) 50) ; => "Incorrect password"
 ((acc 'some-other-password 'deposit) 50) ; => "Incorrect password"
 ((acc 'some-other-password 'deposit) 50)
-; => "Cops on the way! >:("
+; => "Cops on the way!"
 
 ((acc 'secret-password 'withdraw) 40)
 ; => 60
@@ -58,7 +58,7 @@ Modify the `make-account` procedure of [exercise 3.3][1] by adding another local
 ((acc 'some-other-password 'deposit) 50) ; => "Incorrect password"
 ((acc 'some-other-password 'deposit) 50) ; => "Incorrect password"
 ((acc 'some-other-password 'deposit) 50)
-; => "Cops on the way! >:("
+; => "Cops on the way!"
 ```
 
 [1]: ./Exercise%203.3.md
