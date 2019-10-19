@@ -19,7 +19,6 @@ You will find it useful to have a procedure that returns a number chosen at rand
 ```scheme
 (define (square x) (* x x))
 (define (random x) (/ (random-integer (* x 1000)) 1000))
-(define (rand) (random-integer (expt 1000 100)))
 (define (random-in-range low high)
   (let ((range (- high low)))
     (+ low (random range))))
@@ -77,8 +76,8 @@ You will find it useful to have a procedure that returns a number chosen at rand
                    10000)
 ; => 3.1448
 ; => 3.128
-; => 3.128
-; => 3.128
+; => 3.1684
+; => 3.1536
 ; => 3.1416
 ```
 
