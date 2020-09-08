@@ -15,7 +15,8 @@ It is useful to be able to reset a random-number generator to produce a sequence
   (mod (+ (* 340 x) 72)
        99))
 (define (random x) (/ (random-integer (* x 1000)) 1000))
-
+```
+```scheme
 (define rand
   (let ((x random-init))
     (define (generate)
