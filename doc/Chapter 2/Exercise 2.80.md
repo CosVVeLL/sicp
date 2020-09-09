@@ -29,8 +29,9 @@ Define a generic predicate `=zero?` that tests if its argument is zero, and inst
 Добавляем в `install-comlex-package`
 
 ```scheme
-(define (zero-complex? z) (and (=zero? (real-part z))
-                               (=zero? (imag-part z))))
+(define (zero-complex? z) (or (=zero? (magnitude z))
+                              (and (=zero? (real-part z))
+                                   (=zero? (imag-part z)))))
 
 (put '=zero? '(complex) zero-complex?)
 ```
