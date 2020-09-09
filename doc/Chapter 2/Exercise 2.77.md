@@ -29,7 +29,7 @@ Describe in detail why this works. As an example, trace through all the procedur
 (define (magnitude z) (apply-generic 'magnitude z))
 ```
 
-при помощи вспомогательной процедуры `apply-generic` произведёт поиск процедуры по таблице типов по именем `magnitude` и типу `complex` и, отделив метку типа от объекта,
+при помощи вспомогательной процедуры `apply-generic` произведёт поиск процедуры по таблице типов по имени `magnitude` и типу `complex` и, отделив метку типа от объекта,
 
 ```scheme
 ; примерно это происходит внутри процедуры apply-generic
