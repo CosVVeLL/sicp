@@ -27,13 +27,13 @@ Suppose we want to handle complex numbers whose real parts, imaginary parts, mag
 (define (sqrt-int x)
   (let ((result (expt x 0.5)))
     (if (= (round result) result)
-        (make-integer result)
+        (make-scheme-number result)
         (drop (make-real result)))))
 
-(put 'sine '(integer) sin)
-(put 'cosine '(integer) cos)
-(put 'arctangent '(integer) atan)
-(put 'sqrt '(integer) sqrt-int)
+(put 'sine '(scheme-number) sin)
+(put 'cosine '(scheme-number) cos)
+(put 'arctangent '(scheme-number) atan)
+(put 'sqrt '(scheme-number) sqrt-int)
 ```
 
 Пакет арифметики рациональных чисел
@@ -46,7 +46,7 @@ Suppose we want to handle complex numbers whose real parts, imaginary parts, mag
   (let ((result (expt (/ (numer x) (denom x))
                       0.5)))
     (if (= (round result) result)
-        (make-integer result)
+        (make-scheme-number result)
         (drop (make-real result)))))
 
 (put 'sine '(rational)
@@ -126,7 +126,7 @@ P.S. Вообще-то, можно было и операцию `sqrt` пере�
    (fixed-point (average-damp (lambda (y)
                                 (let ((damped (div x y)))
                                   (cond ((eq? (type-tag damped) 'rational) (raise damped))
-                                        ((eq? (type-tag damped) 'integer) damped)
+                                        ((eq? (type-tag damped) 'scheme-number) damped)
                                         (else (error "No method for this type -- DAMPED"
                                                      damped)))))
                 1.0)))
