@@ -76,8 +76,8 @@ This section mentioned a method for «simplifying» a data object by lowering it
                          (if (and next-a1 next-a2)
                              (apply-generic op next-a1 next-a2)
                              err))
-                        ((higher? a1 a2) (apply op a1 next-a2))
-                        ((higher? a2 a1) (apply op next-a1 a2))
+                        ((higher? a1 a2) (apply-generic op a1 next-a2))
+                        ((higher? a2 a1) (apply-generic op next-a1 a2))
                         (else err))))
               err)))))
 ```
