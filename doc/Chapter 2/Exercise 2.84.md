@@ -10,12 +10,15 @@ Using the `raise` operation of [exercise 2.83][1], modify the `apply-generic` pr
 
 ```scheme
 (define (higher? a1 a2)
-  (let ((next-a1 (raise a1)))
-    (let ((next-type1 (type-tag next-a1))
-          (type2 (type-tag a2)))
-      (cond ((not (next-a1)) true)
-            ((eq? next-type1 type2) false)
-            (else (higher? next-a1 a2))))))
+  (let ((type1 (type-tag a1))
+        (type2 (type-tag a2))
+        (next-a1 (raise a1)))
+    (let ((next-type1 (type-tag next-a1)))
+      (if (eq? type1 type2)
+          false
+          (cond ((not (next-a1)) true)
+                ((eq? next-type1 type2) false)
+                (else (higher? next-a1 a2)))))))
 
 (define (apply-generic op . args)
   (let ((err (error "No method for these types -- APPLY-GENERIC"
@@ -35,8 +38,8 @@ Using the `raise` operation of [exercise 2.83][1], modify the `apply-generic` pr
                          (if (and next-a1 next-a2)
                              (apply-generic op next-a1 next-a2)
                              err))
-                        ((higher? a1 a2) (apply op a1 next-a2))
-                        ((higher? a2 a1) (apply op next-a1 a2))
+                        ((higher? a1 a2) (apply-generic op a1 next-a2))
+                        ((higher? a2 a1) (apply-generic op next-a1 a2))
                         (else err))))
               err)))))
 ```
