@@ -32,8 +32,8 @@ Extend the polynomial system to include subtraction of polynomials. (Hint: You m
                      (neg-terms (rest-terms terms))))))
 
 (define (neg-poly p)
-    (make-poly (variable p)
-               (neg-terms (terms-list p))))
+  (make-poly (variable p)
+             (neg-terms (terms-list p))))
 
 (put 'neg '(polynomial) (lambda (p) (tag (neg-poly p))))
 ```
