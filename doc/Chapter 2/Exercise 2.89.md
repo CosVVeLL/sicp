@@ -41,6 +41,7 @@ Define procedures that implement the term-list representation described above as
                                          (the-empty-termlist)))))
 terms
 ; => (4 2 8)
+
 (adjoin-term t terms)
 ; => (7 0 0 4 2 8)
 ```
