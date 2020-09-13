@@ -8,7 +8,7 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
 
 ([Code](../../src/Chapter%202/Exercise%202.90.scm))
 
-Это черновик. Не уверен в своём решении. Может, закончу это задание позже.
+Решение не идеальное. Жалко время тратить.
 
 Представление разреженных термов многочлена
 
@@ -26,12 +26,11 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
     (lambda (t-list) (first-term-spare t-list)))
   (put 'rest-terms '(spare)
     (lambda (t-list) (tag (rest-terms-spare t-list))))
-
   (put 'the-empty-termlist 'spare
     (lambda () (tag nil)))
+
   (put 'empty-termlist? '(spare)
     (lambda (t-list) (null? t-list)))
-
   (put 'num-of-terms '(spare)
     (lambda (t-list) (length t-list)))
   (put 'adjoin-term 'spare
@@ -61,6 +60,7 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
     (lambda (t-list) (tag (rest-terms-dense t-list))))
   (put 'the-empty-termlist 'dense
     (lambda () (tag nil)))
+
   (put 'empty-termlist? '(dense)
     (lambda (t-list) (null? t-list)))
   (put 'num-of-terms '(dense)
@@ -246,7 +246,8 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
   ((get 'make 'polynomial) var terms))
 (define (greatest-common-divisor a b)
   (apply-generic 'greatest-common-divisor a b))
-
+```
+```scheme
 (define t1 (make-term 5 7))
 (define tl1 (adjoin-term t1 (the-empty-termlist)))
 (define terms
