@@ -14,25 +14,28 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
 
 ```scheme
 (define (install-poly-spare-package)
-  (define (the-empty-termlist) nil)
-  (define (first-term term-list) (car term-list))
-  (define (rest-terms term-list) (cdr term-list))
-  (define (num-of-terms terms-list) (length (term-list)))
-  (define (empty-termlist? term-list) (null? term-list))
-  (define (adjoin-term term term-list)
+  (define (first-term-spare term-list) (car term-list))
+  (define (rest-terms-spare term-list) (cdr term-list))
+  (define (adjoin-term-spare term term-list)
     (if (=zero? (coeff term))
         term-list
         (cons term term-list)))
 
   (define (tag t) (attach-tag 'spare t))
-  (put 'the-empty-termlist 'spare the-empty-termlist)
-  (put 'first-term '(spare) first-term)
+  (put 'first-term '(spare)
+    (lambda (t-list) (first-term-spare t-list)))
   (put 'rest-terms '(spare)
-    (lambda (t-list) (tag (rest-terms t-list))))
-  (put 'num-of-terms 'spare num-of-terms)
-  (put 'empty-termlist? '(spare) empty-termlist?)
+    (lambda (t-list) (tag (rest-terms-spare t-list))))
+
+  (put 'the-empty-termlist 'spare
+    (lambda () (tag nil)))
+  (put 'empty-termlist? '(spare)
+    (lambda (t-list) (null? t-list)))
+
+  (put 'num-of-terms '(spare)
+    (lambda (t-list) (length t-list)))
   (put 'adjoin-term 'spare
-       (lambda (t t-list) (tag (adjoin-term t t-list))))
+       (lambda (t t-list) (tag (adjoin-term-spare t t-list))))
   'done)
 ```
 
@@ -40,31 +43,30 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
 
 ```scheme
 (define (install-poly-dense-package)
-  (define (the-empty-termlist) (cons nil 0))
-  (define (first-term term-list)
-    (make-term (num-of-terms term-list) (caar term-list)))
-  (define (rest-terms term-list)
-    (cons (cdar term-list) (dec (num-of-terms term-list))))
-  (define (num-of-terms term-list) (cdr term-list))
-  (define (empty-termlist? term-list)
-    (=zero? (num-of-terms term-list)))
-  (define (adjoin-term term term-list)
+  (define (first-term-dense term-list)
+    (make-term (- (length term-list) 1)
+               (car term-list)))
+  (define (rest-terms-dense term-list) (cdr term-list))
+  (define (num-of-terms term-list) (length term-list))
+  (define (adjoin-term-dense term term-list)
     (cond ((=zero? (coeff term)) term-list)
           ((> (order term) (num-of-terms term-list))
-           (adjoin-term term (cons (cons 0 term-list)
-                                   (inc (num-of-terms term-list)))))
-          (else (cons (cons (coeff term) term-list)
-                      (inc (num-of-terms term-list))))))
+           (adjoin-term-dense term (cons 0 term-list)))
+          (else (cons (coeff term) term-list))))
 
-  (define (tag t) (attach-tag 'dense t))
-  (put 'the-empty-termlist 'dense the-empty-termlist)
-  (put 'first-term '(dense) first-term)
+  (define (tag t) (attach-tag 'dense t))  
+  (put 'first-term '(dense)
+    (lambda (t-list) (first-term-dense t-list)))
   (put 'rest-terms '(dense)
-    (lambda (t-list) (tag (rest-terms t-list))))
-  (put 'num-of-terms 'dense num-of-terms)
-  (put 'empty-termlist? '(dense) empty-termlist?)
+    (lambda (t-list) (tag (rest-terms-dense t-list))))
+  (put 'the-empty-termlist 'dense
+    (lambda () (tag nil)))
+  (put 'empty-termlist? '(dense)
+    (lambda (t-list) (null? t-list)))
+  (put 'num-of-terms '(dense)
+    (lambda (t-list) (length t-list)))
   (put 'adjoin-term 'dense
-       (lambda (t t-list) (tag (adjoin-term t t-list))))
+       (lambda (t t-list) (tag (adjoin-term-dense t t-list))))
   'done)
 ```
 
@@ -72,8 +74,8 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
 
 ```scheme
 (define (install-polynomial-package)
-  (define (make-poly variable term-list)
-    (cons variable term-list))
+  (define (make-poly var terms)
+    (cons var terms))
   (define (variable p) (car p))
   (define (term-list p) (cdr p))
 
@@ -97,6 +99,8 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
                      (add-terms (rest-terms L1)
                                 (rest-terms L2)))))))))
 
+  (define (sub-terms L1 L2) (add-terms L1 (neg-terms L2)))
+
   (define (neg-terms terms)
     (if (empty-termlist? terms)
         (the-empty-termlist terms)
@@ -110,19 +114,18 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
                  (neg-terms (terms-list p))))
 
   (define (mul-term-by-all-terms t1 L)
-    (if (empty-termlist? L)
-        (the-empty-termlist L)
-        (let ((t2 (first-term L)))
-          (adjoin-term
-           (make-term (+ (order t1) (order t2))
-                      (mul (coeff t1) (coeff t2)))
-           (mul-term-by-all-terms t1 (rest-terms L))))))
+    (let ((t2 (first-term L)))
+      (adjoin-term
+       (make-term (+ (order t1) (order t2))
+                  (mul (coeff t1) (coeff t2)))
+       (mul-term-by-all-terms t1 (rest-terms L)))))
 
   (define (mul-terms L1 L2)
-    (if (empty-termlist? L1)
-        (the-empty-termlist L2)
-        (add-terms (mul-term-by-all-terms (first-term L1) L2)
-                   (mul-terms (rest-terms L1) L2))))
+    (cond ((empty-termlist? L1) (the-empty-termlist L2))
+          ((empty-termlist? L2) (the-empty-termlist L1))
+          (else
+           (add-terms (mul-term-by-all-terms (first-term L1) L2)
+                      (mul-terms (rest-terms L1) L2)))))
 
   (define (add-poly p1 p2)
     (if (same-variable? (variable p1) (variable p2))
@@ -142,7 +145,35 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
         (error "Polys not in same var -- MUL-POLY"
                (list p1 p2))))
 
-  (define (zero-pol? p)
+  (define (div-terms L1 L2)
+    (if (empty-termlist? L1)
+        (list (the-empty-termlist) (the-empty-termlist))
+        (let ((t1 (first-term L1))
+              (t2 (first-term L2)))
+          (if (> (order t2) (order t1))
+              (list (the-empty-termlist) L1)
+              (let ((new-c (div (coeff t1) (coeff t2)))
+                    (new-o (- (order t1) (order t2))))
+                (let ((rest-of-result
+                       (div-terms (add-terms L1
+                                             (neg-terms (mul-term (list (make-term new-o new-c))
+                                                                  L2)))
+                                  L2)))
+                  (list (adjoin-term (make-term new-o new-c)
+                                     (car rest-of-result))
+                        (cadr rest-of-result))))))))
+
+  (define (div-poly p1 p2)
+    (let ((v1 (variable p1)) (v2 (variable p2)))
+      (if (same-variable? v1 v2)
+          (let ((division (div-terms (term-list p1)
+                                     (term-list p2))))
+            (list (make-polynomial v1 (car division))
+                  (make-polynomial v2 (cadr division))))
+          (error "Polys not in same var -- div-poly" 
+                 (list p1 p2)))))
+
+  (define (zero-poly? p)
     (let ((terms (term-list p)))
       (define (iter l)
         (if (empty-termlist? l)
@@ -151,6 +182,23 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
                 (iter (rest-terms terms))
                 false)))
       (iter terms)))
+
+  (define (remainder-terms p1 p2)
+    (cdr (div-terms p1 p2)))
+
+  (define (gcd-terms a b)
+    (if (empty-termlist? b)
+        a
+        (gcd-terms b (remainder-terms a b))))
+
+  (define (gcd-poly p1 p2)
+    (let ((v1 (variable p1)) (v2 (variable p2)))
+      (if (same-variable? v1 v2)
+          (make-poly (variable p1)
+                     (gcd-terms (term-list p1)
+                                (term-list p2)))
+          (error "Polys not in same var -- div-poly" 
+                 (list p1 p2)))))
 
   (define (tag p) (attach-tag 'polynomial p))
   (put 'add '(polynomial polynomial) 
@@ -163,7 +211,9 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
        (lambda (var terms) (tag (make-poly var terms))))
   (put 'neg '(polynomial)
        (lambda (p) (tag (neg-poly p))))
-  (put '=zero? '(polynomial) zero-pol?)
+  (put '=zero? '(polynomial) zero-poly?)
+  (put 'greatest-common-divisor '(polynomial polynomial)
+       (lambda (a b) (tag (gcd-poly a b))))
   'done)
 ```
 
@@ -174,27 +224,42 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
 (define (order term) (car term))
 (define (coeff term) (cadr term))
 
-(define (neg x) (apply-generic 'negation x))
-(define (make-polynomial var terms)
-  ((get 'make 'polynomial) var terms))
+(define (empty-termlist? term-list) (apply-generic 'empty-termlist? term-list))
+(define (num-of-terms term-list) (apply-generic 'num-of-terms term-list))
+(define (rest-terms term-list) (apply-generic 'rest-terms term-list))
+
 (define (the-empty-termlist term-list)
-  (let ((proc (get 'the-empty-termlist (type-tag term-list))))
-    ((if proc
-         proc
-         (get 'the-empty-termlist 'dense)))))<Paste>
+  (if (pair? term-list)
+      (let ((proc (get 'the-empty-termlist (type-tag term-list))))
+        (proc))
+      ((get 'the-empty-termlist 'dense))))
 (define (first-term term-list)
   (apply-generic 'first-term term-list))
 (define (rest-terms term-list)
   (apply-generic 'rest-terms term-list))
-(define (num-of-terms term-list)
-  ((get 'num-of-terms (type-tag term-list)) (contents term-list)))
-(define (empty-termlist? term-list)
-  (apply-generic 'empty-termlist? term-list))
-(define (empty-termlist? term-list)
-  (apply-generic 'empty-termlist? term-list))
 (define (adjoin-term term term-list)
   ((get 'adjoin-term (type-tag term-list)) term
                                            (contents term-list)))
+
+(define (neg x) (apply-generic 'negation x))
+(define (make-polynomial var terms)
+  ((get 'make 'polynomial) var terms))
+(define (greatest-common-divisor a b)
+  (apply-generic 'greatest-common-divisor a b))
+
+(define t1 (make-term 5 7))
+(define tl1 (adjoin-term t1 (the-empty-termlist)))
+(define terms
+  (adjoin-term (make-term 2 4)
+               (adjoin-term (make-term 1 2)
+                            (adjoin-term (make-term 0 8)
+                                         (the-empty-termlist (list 'spare nil))))))
+
+tl1
+; => (dense 7 0 0 0 0 0)
+
+terms
+; => (spare (2 4) (1 2) (0 8))
 ```
 
 [1]: https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-17.html#%_sec_2.4
