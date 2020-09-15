@@ -139,7 +139,7 @@
   (put 'equ? '(scheme-number scheme-number) =)
   (put '=zero? '(scheme-number) zero?)
   (put 'negation '(scheme-number) (lambda (x) (- x)))
-  (put 'greatest-common-divisor '(scheme-number scheme-number)
+  (put 'gcd '(scheme-number scheme-number)
        (lambda (a b) (tag (gcd-int a b))))
 
   (put 'add '(scheme-number scheme-number)

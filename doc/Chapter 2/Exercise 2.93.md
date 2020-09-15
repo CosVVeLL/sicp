@@ -44,6 +44,7 @@ where `remainder-terms` picks out the remainder component of the list returned b
            (not (eq? (type-tag d) 'polynomial)))
       (let ((g (gcd n d)))
         (cons (/ n g) (/ d g)))
+      (cons n d)))
 ```
 
 #### Реализация приведения дроби многочленов к наименьшему знаменателю
@@ -52,7 +53,7 @@ where `remainder-terms` picks out the remainder component of the list returned b
 
 ```scheme
 (put 'gcd '(scheme-number scheme-number)
-  (lambda (a b) (gcd a b)))
+  (lambda (a b) (gcd-int a b)))
 ```
 
 В пакете арифметики многочленов:
