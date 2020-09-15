@@ -41,7 +41,7 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
 
 ```scheme
 (define (install-poly-dense-package)
-  (define (first-term term-list)
+  (define (first-term-dense term-list)
     (make-term (- (length term-list) 1)
                (car term-list)))
   (define (rest-terms term-list) (cdr term-list))
