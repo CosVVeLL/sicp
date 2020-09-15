@@ -33,6 +33,8 @@ Complete the following definition of `div-terms` by filling in the missing expre
 
 ### Solution
 
+([Code](../../src/Chapter%202/Exercise%202.91.scm))
+
 ```scheme
 (define (div-terms L1 L2)
   (if (empty-termlist? L1)
