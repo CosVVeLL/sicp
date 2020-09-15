@@ -414,6 +414,36 @@
         (error "Polys not in same var -- MUL-POLY"
                (list p1 p2))))
 
+(define (div-terms L1 L2)
+  (if (empty-termlist? L1)
+      (list (the-empty-termlist) (the-empty-termlist))
+      (let ((t1 (first-term L1))
+            (t2 (first-term L2)))
+        (if (> (order t2) (order t1))
+            (list (the-empty-termlist) L1)
+            (let ((new-c (div (coeff t1) (coeff t2)))
+                  (new-o (- (order t1) (order t2))))
+              (let ((new-termlist (adjoin-term (make-term new-o new-c)
+                                               (the-empty-termlist '(spare)))))
+                (let ((rest-of-result
+                       (div-terms (add-terms L1
+                                             (neg-terms (mul-terms new-termlist
+                                                                   L2)))
+                                  L2)))
+                  (list (adjoin-term (make-term new-o new-c)
+                                     (car rest-of-result))
+                        (cadr rest-of-result)))))))))
+
+(define (div-poly p1 p2)
+  (let ((v1 (variable p1)) (v2 (variable p2)))
+    (if (same-variable? v1 v2)
+        (let ((division (div-terms (term-list p1)
+                                   (term-list p2))))
+          (list (make-polynomial v1 (car division))
+                (make-polynomial v2 (cadr division))))
+        (error "Polys not in same var -- DIV-POLY"
+               (list p1 p2)))))
+
   (define (zero-poly? p)
     (let ((terms (term-list p)))
       (define (iter l)
@@ -445,6 +475,8 @@
     (lambda (p1 p2) (tag (sub-poly p1 p2))))
   (put 'mul '(polynomial polynomial)
        (lambda (p1 p2) (tag (mul-poly p1 p2))))
+  (put 'div '(polynomial polynomial)
+       (lambda (p1 p2) (div-poly p1 p2)))
   'done)
 
 (install-scheme-number-package)
@@ -459,6 +491,7 @@
 (define (add x y) (apply-generic 'add x y))
 (define (sub x y) (apply-generic 'sub x y))
 (define (mul x y) (apply-generic 'mul x y))
+(define (div x y) (apply-generic 'div x y))
 (define (equ? x y) (apply-generic 'equ? x y))
 (define (=zero? x) (apply-generic '=zero? x))
 (define (neg x) (apply-generic 'negation x))
@@ -502,4 +535,6 @@
 (define (make-polynomial var terms) ((get 'make '(polynomial)) var terms))
 (define (variable p) (apply-generic 'variable p))
 (define (term-list p) (apply-generic 'term-list p))
+(define (div-polynomial-result p1 p2) (car (div p1 p2)))
+(define (div-polynomial-remainder p1 p2) (cadr (div p1 p2)))
 

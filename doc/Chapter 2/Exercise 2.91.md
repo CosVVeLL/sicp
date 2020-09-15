@@ -43,14 +43,16 @@ Complete the following definition of `div-terms` by filling in the missing expre
             (list (the-empty-termlist) L1)
             (let ((new-c (div (coeff t1) (coeff t2)))
                   (new-o (- (order t1) (order t2))))
-              (let ((rest-of-result
-                     (div-terms (add-terms L1
-                                           (neg-terms (mul-term (list (make-term new-o new-c))
-                                                                L2)))
-                                L2)))
-                (list (adjoin-term (make-term new-o new-c)
-                                   (car rest-of-result))
-                      (cadr rest-of-result))))))))
+              (let ((new-termlist (adjoin-term (make-term new-o new-c)
+                                               (the-empty-termlist '(spare)))))
+                (let ((rest-of-result
+                       (div-terms (add-terms L1
+                                             (neg-terms (mul-terms new-termlist
+                                                                   L2)))
+                                  L2)))
+                  (list (adjoin-term (make-term new-o new-c)
+                                     (car rest-of-result))
+                        (cadr rest-of-result)))))))))
 
 (define (div-poly p1 p2)
   (let ((v1 (variable p1)) (v2 (variable p2)))
@@ -59,7 +61,31 @@ Complete the following definition of `div-terms` by filling in the missing expre
                                    (term-list p2))))
           (list (make-polynomial v1 (car division))
                 (make-polynomial v2 (cadr division))))
-        (error "Polys not in same var -- div-poly" 
+        (error "Polys not in same var -- DIV-POLY"
                (list p1 p2)))))
 ```
+```scheme
+(put 'div '(polynomial polynomial)
+     (lambda (p1 p2) (div-poly p1 p2)))
+```
+```scheme
+(define (div x y) (apply-generic 'div x y))
+(define (div-polynomial-result p1 p2) (car (div p1 p2)))
+(define (div-polynomial-remainder p1 p2) (cadr (div p1 p2)))
+```
+```scheme
+(define p1 (make-polynomial 'x '(spare (5 1) (0 -1))))
+; => (polynomial x spare (5 1) (0 -1))
+(define p2 (make-polynomial 'x '(dense 1 0 -1)))
+; => (polynomial x dense 1 0 -1)
 
+(define result (div p1 p2))
+result
+; => ((polynomial x dense 1 0 1 0) (polynomial x dense 1 -1))
+
+(div-polynomial-result p1 p2)
+; => (polynomial x dense 1 0 1 0)
+
+(div-polynomial-remainder p1 p2)
+; => (polynomial x dense 1 -1)
+```
