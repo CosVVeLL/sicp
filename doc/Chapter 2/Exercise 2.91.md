@@ -81,8 +81,7 @@ Complete the following definition of `div-terms` by filling in the missing expre
 (define p2 (make-polynomial 'x '(dense 1 0 -1)))
 ; => (polynomial x dense 1 0 -1)
 
-(define result (div p1 p2))
-result
+(div p1 p2)
 ; => ((polynomial x dense 1 0 1 0) (polynomial x dense 1 -1))
 
 (div-polynomial-result p1 p2)
