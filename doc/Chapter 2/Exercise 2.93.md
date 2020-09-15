@@ -34,6 +34,8 @@ where `remainder-terms` picks out the remainder component of the list returned b
 
 ### Solution
 
+([Code](../../src/Chapter%202/Exercise%202.93.scm))
+
 `make-rat` не будет пытаться сокращать дроби, если в числителе или знаменателе находится многочлен. В пакете арифметики рациональных чисел:
 
 ```scheme
