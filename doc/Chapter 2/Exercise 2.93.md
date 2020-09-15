@@ -53,7 +53,7 @@ where `remainder-terms` picks out the remainder component of the list returned b
 
 ```scheme
 (put 'gcd '(scheme-number scheme-number)
-  (lambda (a b) (gcd-int a b)))
+  (lambda (a b) (gcd-int a b))) ; gcd-int — операция над целыми числами (переименовал)
 ```
 
 В пакете арифметики многочленов:
