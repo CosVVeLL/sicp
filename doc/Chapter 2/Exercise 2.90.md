@@ -237,6 +237,12 @@ tl1
 
 terms
 ; => (spare (2 4) (1 2) (0 8))
+
+(define p1 (make-polynomial 'x '(spare (2 1) (0 1)))) ; (polynomial x spare (2 1) (0 1))
+(define p2 (make-polynomial 'x '(spare (3 1) (0 1)))) ; (polynomial x spare (3 1) (0 1))
+
+(mul p1 p2) ; (x^2 + 1) * (x^3 + 1) = x^5 + x^3 + x^2 + 1
+; => (polynomial x dense 1 0 1 1 0 1)
 ```
 
 [1]: https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-17.html#%_sec_2.4
