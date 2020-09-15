@@ -176,15 +176,6 @@ Suppose we want to have a polynomial system that is efficient for both sparse an
 Общие и обощённые операции
 
 ```scheme
-(install-scheme-number-package)
-(install-rational-package)
-(install-rectangular-package)
-(install-polar-package)
-(install-complex-package)
-(install-poly-spare-package)
-(install-poly-dense-package)
-(install-polynomial-package)
-
 (define (add x y) (apply-generic 'add x y))
 (define (sub x y) (apply-generic 'sub x y))
 (define (mul x y) (apply-generic 'mul x y))
