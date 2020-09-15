@@ -10,7 +10,7 @@
 (define (gcd-int a b)
   (if (= b 0)
       a
-      (gcd b (remainder a b))))
+      (gcd-int b (remainder a b))))
 
 (define (attach-tag type-tag contents)
   (if (number? contents)
