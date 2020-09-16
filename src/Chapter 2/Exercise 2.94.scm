@@ -461,6 +461,23 @@
       (make-poly (variable p)
                  (neg-terms (term-list p))))
 
+  (define (remainder-terms L1 L2)
+    (cadr (div-terms L1 L2)))
+
+  (define (gcd-terms L1 L2)
+    (if (empty-termlist? L2)
+        L1
+        (gcd-terms L2 (remainder-terms L1 L2))))
+
+  (define (gcd-poly p1 p2)
+    (let ((v1 (variable p1)) (v2 (variable p2)))
+      (if (same-variable? v1 v2)
+          (make-poly (variable p1)
+                     (gcd-terms (term-list p1)
+                                (term-list p2)))
+          (error "Polys not in same var -- GCD-POLY"
+                 (list p1 p2)))))
+
   (define (tag p) (attach-tag 'polynomial p))
   (put 'make '(polynomial)
        (lambda (var terms) (tag (make-poly var terms))))
