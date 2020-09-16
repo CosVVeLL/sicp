@@ -16,23 +16,25 @@ and check your result by hand.
 
 Не знаю зачем, но в этом упражнении предлагается сделать примерно то же, что и в [предыдущем задании][1]. Только в этот раз я переопределю некоторые имена функции, как они определены в задании.
 
+#### Реализация приведения дроби многочленов к наименьшему знаменателю
+
 В пакете арифметики целых чисел:
 
 ```scheme
-(put 'greatest-common-divisor '(scheme-number scheme-number)
-     (lambda (a b) (gcd a b))
+(put 'gcd '(scheme-number scheme-number)
+  (lambda (a b) (gcd-int a b))) ; gcd-int — операция над целыми числами (переименовал)
 ```
 
-В пакете арифметики рациональных чисел:
+В пакете арифметики многочленов:
 
 ```scheme
-(define (remainder-terms p1 p2)
-  (cdr (div-terms p1 p2)))
+(define (remainder-terms L1 L2)
+  (cadr (div-terms L1 L2)))
 
-(define (gcd-terms a b)
-  (if (empty-termlist? b)
-      a
-      (gcd-terms b (remainder-terms a b))))
+(define (gcd-terms L1 L2)
+  (if (empty-termlist? L2)
+      L1
+      (gcd-terms L2 (remainder-terms L1 L2))))
 
 (define (gcd-poly p1 p2)
   (let ((v1 (variable p1)) (v2 (variable p2)))
@@ -40,18 +42,21 @@ and check your result by hand.
         (make-poly (variable p1)
                    (gcd-terms (term-list p1)
                               (term-list p2)))
-        (error "Polys not in same var -- div-poly" 
+        (error "Polys not in same var -- GCD-POLY"
                (list p1 p2)))))
-
-(put 'greatest-common-divisor '(polynomial polynomial)
-     (lambda (a b) (tag (gcd-poly a b))))
 ```
 
-Обобщённая операция `greatest-common-divisor`:
+Обобщённая операция `gcd`:
 
 ```scheme
-(define (greatest-common-divisor a b)
-  (apply-generic 'greatest-common-divisor a b))
+(put 'gcd '(polynomial polynomial)
+  (lambda (a b) (tag (gcd-poly a b))))
+```
+```scheme
+(define p1 (make-polynomial 'x '(spare (4 1) (3 -1) (2 -2) (1 2))))
+(define p2 (make-polynomial 'x '(spare (3 1) (1 -1))))
+(gcd p1 p2)
+; => (polynomial x dense -1 1 0)
 ```
 
 [1]: ./Exercise%202.93.md

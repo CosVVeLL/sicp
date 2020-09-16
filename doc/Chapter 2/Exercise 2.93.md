@@ -47,38 +47,6 @@ where `remainder-terms` picks out the remainder component of the list returned b
       (cons n d)))
 ```
 
-#### Реализация приведения дроби многочленов к наименьшему знаменателю
-
-В пакете арифметики целых чисел:
-
-```scheme
-(put 'gcd '(scheme-number scheme-number)
-  (lambda (a b) (gcd-int a b))) ; gcd-int — операция над целыми числами (переименовал)
-```
-
-В пакете арифметики многочленов:
-
-```scheme
-(define (remainder-terms p1 p2)
-  (cdr (div-terms p1 p2)))
-
-(define (gcd-terms a b)
-  (if (empty-termlist? b)
-      a
-      (gcd-terms b (remainder-terms a b))))
-
-(define (gcd-poly p1 p2)
-  (let ((v1 (variable p1)) (v2 (variable p2)))
-    (if (same-variable? v1 v2)
-        (make-poly (variable p1)
-                   (gcd-terms (term-list p1)
-                              (term-list p2)))
-        (error "Polys not in same var -- div-poly" 
-               (list p1 p2)))))
-
-(put 'gcd '(polynomial polynomial)
-  (lambda (a b) (tag (gcd-poly a b))))
-```
 ```scheme
 (define p1 (make-polynomial 'x '(dense 1 0 1)))
 ; (polynomial x dense 1 0 1)
