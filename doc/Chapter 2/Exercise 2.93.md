@@ -79,6 +79,17 @@ where `remainder-terms` picks out the remainder component of the list returned b
 (put 'gcd '(polynomial polynomial)
   (lambda (a b) (tag (gcd-poly a b))))
 ```
+```scheme
+(define p1 (make-polynomial 'x '(dense 1 0 1)))
+; (polynomial x dense 1 0 1)
+(define p2 (make-polynomial 'x '(spare (3 1) (0 1))))
+; (polynomial x spare (3 1) (0 1))
+(define rf (make-rational p2 p1))
+; (rational (polynomial x spare (3 1) (0 1)) polynomial x dense 1 0 1)
+
+(add rf rf)
+; => (rational (polynomial x dense 1 1 0 3 1 0 2) polynomial x dense 1 0 2 0 1)
+```
 
 [1]: ./Exercise%202.91.md
 
