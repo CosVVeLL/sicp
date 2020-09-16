@@ -1,6 +1,6 @@
 ## [Chapter 2](../index.md#2-Building-Abstractions-with-Data)
 
-### Exercise 2.90
+### [Exercise 2.90](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-18.html#%_thm_2.90)
 
 Suppose we want to have a polynomial system that is efficient for both sparse and dense polynomials. One way to do this is to allow both kinds of term-list representations in our system. The situation is analogous to the complex-number example of [section 2.4][1], where we allowed both rectangular and polar representations. To do this we must distinguish different types of term lists and make the operations on term lists generic. Redesign the polynomial system to implement this generalization. This is a major effort, not a local change.
 

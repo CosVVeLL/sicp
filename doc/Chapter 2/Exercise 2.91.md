@@ -1,6 +1,6 @@
 ## [Chapter 2](../index.md#2-Building-Abstractions-with-Data)
 
-### Exercise 2.91
+### [Exercise 2.91](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-18.html#%_thm_2.91)
 
 A univariate polynomial can be divided by another one to produce a polynomial quotient and a polynomial remainder. For example,
 

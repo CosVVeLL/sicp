@@ -1,6 +1,6 @@
 ## [Chapter 2](../index.md#2-Building-Abstractions-with-Data)
 
-### Exercise 2.93
+### [Exercise 2.93](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-18.html#%_thm_2.93)
 
 Modify the rational-arithmetic package to use generic operations, but change `make-rat` so that it does not attempt to reduce fractions to lowest terms. Test your system by calling `make-rational` on two polynomials to produce a rational function
 
