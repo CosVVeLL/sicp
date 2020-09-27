@@ -12,7 +12,7 @@ It is useful to be able to reset a random-number generator to produce a sequence
 
 (define random-init 23)
 (define (rand-update x)
-  (mod (+ (* 340 x) 72 14)
+  (mod (+ (* 340 x) (mod 72 14))
        99))
 ```
 ```scheme
