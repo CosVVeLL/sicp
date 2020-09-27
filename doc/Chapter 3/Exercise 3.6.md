@@ -8,13 +8,12 @@ It is useful to be able to reset a random-number generator to produce a sequence
 
 ```scheme
 (define (error message e)
-  (and (display "Error: ") (print message) (print e)))
+  (print "Error: " message) (print e) false)
 
 (define random-init 23)
 (define (rand-update x)
-  (mod (+ (* 340 x) 72)
+  (mod (+ (* 340 x) 72 14)
        99))
-(define (random x) (/ (random-integer (* x 1000)) 1000))
 ```
 ```scheme
 (define rand
@@ -32,18 +31,18 @@ It is useful to be able to reset a random-number generator to produce a sequence
                      m))))
     dispatch))
 
-(rand 'generate) ; => 71
+(rand 'generate) ; => 1
+(rand 'generate) ; => 45
 (rand 'generate) ; => 56
-(rand 'generate) ; => 5
 
 ((rand 'reset) 23)
-(rand 'generate) ; => 71
+(rand 'generate) ; => 1
+(rand 'generate) ; => 45
 (rand 'generate) ; => 56
-(rand 'generate) ; => 5
 
 ((rand 'reset) 1)
-(rand 'generate) ; => 16
-(rand 'generate) ; => 67
-(rand 'generate) ; => 82
+(rand 'generate) ; => 45
+(rand 'generate) ; => 56
+(rand 'generate) ; => 34
 ```
 
