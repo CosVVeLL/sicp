@@ -181,4 +181,5 @@
   * [Exercise 3.4](./Chapter%203/Exercise%203.4.md)
   * [Exercise 3.5](./Chapter%203/Exercise%203.5.md)
   * [Exercise 3.6](./Chapter%203/Exercise%203.6.md)
+  * [Exercise 3.7](./Chapter%203/Exercise%203.7.md)
 
