@@ -39,6 +39,6 @@ Show the environment structures created by evaluating `(factorial 6)` using each
 Структуры окружений с итеративной процедурой `factorial`:
 
 <p align="center">
-  <img src="https://i.ibb.co/XtYNG0b/SICPexercise3-9-1.jpg" alt="SICPexercise3.9.2" title="SICPexercise3.9.2">
+  <img src="https://i.ibb.co/Q6nQhT5/SICPexercise3-9-2.jpg" alt="SICPexercise3.9.2" title="SICPexercise3.9.2">
 </p>
 
