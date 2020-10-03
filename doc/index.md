@@ -175,13 +175,13 @@
 
 3.1  Assignment and Local State
 
-  * [Exercise 3.1](./Chapter%203/Exercise%203.1.md)
-  * [Exercise 3.2](./Chapter%203/Exercise%203.2.md)
-  * [Exercise 3.3](./Chapter%203/Exercise%203.3.md)
-  * [Exercise 3.4](./Chapter%203/Exercise%203.4.md)
-  * [Exercise 3.5](./Chapter%203/Exercise%203.5.md)
-  * [Exercise 3.6](./Chapter%203/Exercise%203.6.md)
-  * [Exercise 3.7](./Chapter%203/Exercise%203.7.md)
-  * [Exercise 3.8](./Chapter%203/Exercise%203.8.md)
-  * [Exercise 3.9](./Chapter%203/Exercise%203.9.md)
+  * [Exercise 3.1](./Chapter%203/Exercise%203.01.md)
+  * [Exercise 3.2](./Chapter%203/Exercise%203.02.md)
+  * [Exercise 3.3](./Chapter%203/Exercise%203.03.md)
+  * [Exercise 3.4](./Chapter%203/Exercise%203.04.md)
+  * [Exercise 3.5](./Chapter%203/Exercise%203.05.md)
+  * [Exercise 3.6](./Chapter%203/Exercise%203.06.md)
+  * [Exercise 3.7](./Chapter%203/Exercise%203.07.md)
+  * [Exercise 3.8](./Chapter%203/Exercise%203.08.md)
+  * [Exercise 3.9](./Chapter%203/Exercise%203.09.md)
 

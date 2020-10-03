@@ -61,5 +61,5 @@ Modify the `make-account` procedure of [exercise 3.3][1] by adding another local
 ; => "Cops on the way!"
 ```
 
-[1]: ./Exercise%203.3.md
+[1]: ./Exercise%203.03.md
 
