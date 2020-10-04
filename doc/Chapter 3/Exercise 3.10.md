@@ -1,6 +1,6 @@
 ## [Chapter 3](../index.md#3-Modularity-Objects-and-State)
 
-### [Exercise 3.10](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-20.html#%_thm_3.10)
+### [Exercise 3.10](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-21.html#%_thm_3.10)
 
 In the `make-withdraw` procedure, the local variable `balance` is created as a parameter of `make-withdraw`. We could also create the local state variable explicitly, using `let`, as follows:
 

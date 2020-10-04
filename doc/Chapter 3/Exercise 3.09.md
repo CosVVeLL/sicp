@@ -1,6 +1,6 @@
 ## [Chapter 3](../index.md#3-Modularity-Objects-and-State)
 
-### [Exercise 3.9](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-20.html#%_thm_3.9)
+### [Exercise 3.9](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-21.html#%_thm_3.9)
 
 In [section 1.2.1](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-11.html#%_sec_1.2.1) we used the substitution model to analyze two procedures for computing factorials, a recursive version
 

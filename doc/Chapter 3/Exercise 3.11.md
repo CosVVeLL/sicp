@@ -1,6 +1,6 @@
 ## [Chapter 3](../index.md#3-Modularity-Objects-and-State)
 
-### [Exercise 3.11](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-20.html#%_thm_3.11)
+### [Exercise 3.11](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-21.html#%_thm_3.11)
 
 In [section 3.2.3][1] we saw how the environment model described the behavior of procedures with local state. Now we have seen how internal definitions work. A typical message-passing procedure contains both of these aspects. Consider the bank account procedure of [section 3.1.1][2]:
 

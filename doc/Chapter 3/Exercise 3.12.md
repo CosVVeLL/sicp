@@ -1,6 +1,6 @@
 ## [Chapter 3](../index.md#3-Modularity-Objects-and-State)
 
-### [Exercise 3.12](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-20.html#%_thm_3.12)
+### [Exercise 3.12](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-22.html#%_thm_3.12)
 
 The following procedure for appending lists was introduced in [section 2.2.1](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-15.html#%_sec_2.2.1):
 
