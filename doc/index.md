@@ -190,3 +190,7 @@
   * [Exercise 3.10](./Chapter%203/Exercise%203.10.md)
   * [Exercise 3.11](./Chapter%203/Exercise%203.11.md)
 
+3.3  Modeling with Mutable Data
+
+>  * [Exercise 3.12](./Chapter%203/Exercise%203.12.md)
+
