@@ -183,6 +183,9 @@
   * [Exercise 3.6](./Chapter%203/Exercise%203.06.md)
   * [Exercise 3.7](./Chapter%203/Exercise%203.07.md)
   * [Exercise 3.8](./Chapter%203/Exercise%203.08.md)
+
+3.2  The Environment Model of Evaluation
+
   * [Exercise 3.9](./Chapter%203/Exercise%203.09.md)
   * [Exercise 3.10](./Chapter%203/Exercise%203.10.md)
   * [Exercise 3.11](./Chapter%203/Exercise%203.11.md)
