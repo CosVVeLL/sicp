@@ -1,6 +1,6 @@
 ## [Chapter 3](../index.md#3-Modularity-Objects-and-State)
 
-### [Exercise 3.10](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-20.html#%_thm_3.10)
+### [Exercise 3.11](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-20.html#%_thm_3.11)
 
 In [section 3.2.3][1] we saw how the environment model described the behavior of procedures with local state. Now we have seen how internal definitions work. A typical message-passing procedure contains both of these aspects. Consider the bank account procedure of [section 3.1.1][2]:
 
@@ -50,9 +50,11 @@ How are the local states for the two accounts kept distinct? Which parts of the 
   <img src="https://i.ibb.co/tLVqBbL/SICPexercise3-11.png" alt="SICPexercise3.11" title="SICPexercise3.11">
 </p>
 
-Здесь можно увидеть, что у процедурных объектов `acc` и `acc2` один и тот же код<sub>1</sub>, а окружения разные. Так что при общем поведении внутренние состояния у этих объектов разные. 
+Здесь можно увидеть, что у процедурных объектов `acc` и `acc2` один и тот же код<sup>1</sup>, а окружения разные. Так что при общем поведении внутренние состояния у этих объектов разные. 
 
-<sub>1</sub> Как мы узнали, в зависимости от реализации код у `acc` и `acc2` может быть одной общей процедурой, а может быть двумя идентичными.
+---
+
+<sup>1</sup> Как мы узнали, в зависимости от реализации код у `acc` и `acc2` может быть одной общей процедурой, а может быть двумя идентичными.
 
 [1]: https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-21.html#%_sec_3.2.3
 [2]: https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-20.html#%_sec_3.1.1
