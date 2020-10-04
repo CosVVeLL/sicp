@@ -1,6 +1,6 @@
 ## [Chapter 3](../index.md#3-Modularity-Objects-and-State)
 
-### [Exercise 3.11](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-20.html#%_thm_3.11)
+### [Exercise 3.12](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-20.html#%_thm_3.12)
 
 The following procedure for appending lists was introduced in [section 2.2.1](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-15.html#%_sec_2.2.1):
 
@@ -82,4 +82,13 @@ w ; => (a b c d)
   <img src="https://i.ibb.co/d4gy4B6/SICPexercise3-12-2.png" alt="SICPexercise3.12.1" title="SICPexercise3.12.2">
 </p>
 
+---
+
+При этом список `z` указывает на ту же структуру, на которую указывал в момент его определения. Если определить точно так же список сейчас, то:
+
+```scheme
+z ; => (a b c d)
+(define z2 (append x y))
+z2 ; => (a b c d c d)
+```
 
