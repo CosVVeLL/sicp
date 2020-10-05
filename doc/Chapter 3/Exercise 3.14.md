@@ -19,3 +19,9 @@ Loop uses the "temporary" variable `temp` to hold the old value of the `cdr` of 
 
 ### Solution
 
+`mystery` возвращает список, в котором элементы стоят в обратном порядке. В то же время `mystery` изменяет список, который получает в качестве формального параметра так, что из него получится список, в котором всего один элемент — тот, что стоял первым изначально.
+
+<p align="center">
+  <img src="https://i.ibb.co/6YbTnqG/SICPexercise3-14.png" alt="SICPexercise3.14" title="SICPexercise3.14">
+</p>
+

@@ -194,4 +194,5 @@
 
   * [Exercise 3.12](./Chapter%203/Exercise%203.12.md)
   * [Exercise 3.13](./Chapter%203/Exercise%203.13.md)
+  * [Exercise 3.14](./Chapter%203/Exercise%203.14.md)
 
