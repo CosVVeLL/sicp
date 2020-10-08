@@ -167,9 +167,9 @@
   * [Extended exercise: Rational functions](./Chapter%202/Extended%20exercise:%20Rational%20functions.md)
   * [Exercise 2.93](./Chapter%202/Exercise%202.93.md) ([code](../src/Chapter%202/Exercise%202.93.scm))
   * [Exercise 2.94](./Chapter%202/Exercise%202.94.md) ([code](../src/Chapter%202/Exercise%202.94.scm))
-  * [Exercise 2.95] :(
-  * [Exercise 2.96] :(
-  * [Exercise 2.97] :(
+  * Exercise 2.95 :(
+  * Exercise 2.96 :(
+  * Exercise 2.97 :(
 
 ## 3. Modularity, Objects, and State
 
@@ -199,4 +199,5 @@
   * [Exercise 3.16](./Chapter%203/Exercise%203.16.md)
   * [Exercise 3.17](./Chapter%203/Exercise%203.17.md)
   * [Exercise 3.18](./Chapter%203/Exercise%203.18.md)
+  * [Exercise 3.19](./Chapter%203/Exercise%203.19.md)
 
