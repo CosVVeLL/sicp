@@ -31,8 +31,8 @@ Redo [exercise 3.18](./Exercise%203.18.md) using an algorithm that takes only a 
   (define (iter l1 l2)
     (cond ((not (or (pair? l1)
                     (pair? l2))) false)
-          ((eq? l1 l2) true)
-          ((eq? l1 (CDR l2)) true)
+          ((or (eq? l1 l2)
+               (eq? l1 (CDR l2))) true)
           (else (iter (CDR l1) (CDR (CDR l2))))))
   (iter (CDR li) (CDR (CDR li))))
 
