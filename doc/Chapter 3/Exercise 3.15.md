@@ -7,6 +7,6 @@ Draw box-and-pointer diagrams to explain the effect of `set-to-wow!` on the stru
 ### Solution
 
 <p align="center">
-  <img src="https://i.ibb.co/QmXDKP4/SICPexercise3-15.png" alt="SICPexercise3.15" title="SICPexercise3.15">
+  <img src="https://i.ibb.co/SJqpkBJ/SICPexercise3-15.png" alt="SICPexercise3.15" title="SICPexercise3.15">
 </p>
 
