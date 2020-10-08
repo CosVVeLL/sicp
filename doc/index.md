@@ -198,4 +198,5 @@
   * [Exercise 3.15](./Chapter%203/Exercise%203.15.md)
   * [Exercise 3.16](./Chapter%203/Exercise%203.16.md)
   * [Exercise 3.17](./Chapter%203/Exercise%203.17.md)
+  * [Exercise 3.18](./Chapter%203/Exercise%203.18.md)
 
