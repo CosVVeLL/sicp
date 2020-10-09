@@ -9,6 +9,8 @@ Draw environment diagrams to illustrate the evaluation of the sequence of expres
 (define z (cons x x))
 (set-car! (cdr z) 17)
 (car x)
+```
+```
 17
 ```
 
@@ -28,7 +30,7 @@ using the procedural implementation of pairs given above. (Compare [exercise 3.1
   <img src="https://i.ibb.co/wzQk7F4/SICPexercise3-20-2.png" alt="SICPexercise3.20.2" title="SICPexercise3.20.2">
 </p>
 
-Т.к. значение переменной, на которую указывала переменная `x` в окружении `E2`, изменилось, изменится и значение переменной `y` в окружении `E2`, т.к. она указывает на ту же самую переменную. В итоге получится результат, когда у переменной `z` (в глобальном окружении) параметры `x` и `y` будут указывать на `x` в глобальном окружении, которая равна 17:
+Т.к. значение переменной, на которую указывала переменная `x` в окружении `E2`, изменилось, изменится и значение переменной `y` в окружении `E2`, т.к. она указывает на ту же самую переменную. Получается, у переменной `z` (глобальное окружение) параметры `x` и `y` будут указывать на переменную `x` в глобальном окружении, которая равна 17:
 
 <p align="center">
   <img src="https://i.ibb.co/7Y5Qz2K/SICPexercise3-20-3.png" alt="SICPexercise3.20.3" title="SICPexercise3.20.3">
