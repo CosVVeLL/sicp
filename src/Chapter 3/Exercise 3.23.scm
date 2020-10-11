@@ -37,8 +37,6 @@
   (iter (front-ptr deque)))
 
 ; mutators:
-; (('(b c d) '()) '(d))
-; (('(a b c d) '()) '(d))
 (define (front-insert-deque! deque item)
   (let ((new-pair (cons (cons item nil)
                         nil)))
@@ -50,8 +48,6 @@
                 (set-front-ptr! deque new-pair)
                 deque))))
 
-; (('(a b c) '()) '(c))
-; (('(a b c d) '()) '(d))
 (define (rear-insert-deque! deque item)
     (let ((new-pair (cons (cons item nil)
                           nil)))
@@ -63,16 +59,12 @@
                   (set-rear-ptr! deque new-pair)
                   deque))))
 
-; ('(a b c d) ('(d) '(c d)))
-; ('(b c d) ('(d) '(c d)))
 (define (front-delete-deque! deque)
   (cond ((empty-deque? deque)
          (error "FRONT-DELETE! called with an empty deque" deque))
         (else (set-front-ptr! deque (cdr (front-ptr deque)))
               deque)))
 
-; ('(a b c d) ('(d) '(c d)))
-; ('(a b c) ('(c) '(b c)))
 (define (rear-delete-deque! deque)
   (cond ((empty-deque? deque)
          (error "REAR-DELETE! called with an empty deque" deque))
