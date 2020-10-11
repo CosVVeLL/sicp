@@ -106,11 +106,11 @@ A _deque_ ("double-ended queue") is a sequence in which items can be inserted an
 (print-deque d1)
 ; => (b a c)
 
-(front-delete-deque! d1 'a)
+(front-delete-deque! d1)
 (print-deque d1)
 ; => (a c)
 
-(rear-delete-deque! d1 'b)
+(rear-delete-deque! d1)
 (print-deque d1)
 ; => (a)
 ```
