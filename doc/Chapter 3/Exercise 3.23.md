@@ -37,7 +37,6 @@ A _deque_ ("double-ended queue") is a sequence in which items can be inserted an
       (caar (rear-ptr deque))))
 ```
 ```scheme
-; (define (print-deque deque) (car (front-ptr deque)))
 (define (print-deque deque)
   (define (iter li)
     (let ((first (caar li))
