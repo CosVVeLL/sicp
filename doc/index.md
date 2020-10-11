@@ -201,6 +201,7 @@
   * [Exercise 3.18](./Chapter%203/Exercise%203.18.md)
   * [Exercise 3.19](./Chapter%203/Exercise%203.19.md)
   * [Exercise 3.20](./Chapter%203/Exercise%203.20.md)
-  * [Exercise 3.21](./Chapter%203/Exercise%203.21.md)
+  * [Exercise 3.21](./Chapter%203/Exercise%203.21.md) ([code](../src/Chapter%203/Exercise%203.21.scm))
   * [Exercise 3.22](./Chapter%203/Exercise%203.22.md)
+  * [Exercise 3.23](./Chapter%203/Exercise%203.23.md) ([code](../src/Chapter%203/Exercise%203.23.scm))
 
