@@ -63,6 +63,7 @@
   (cond ((empty-deque? deque)
          (error "FRONT-DELETE! called with an empty deque" deque))
         (else (set-front-ptr! deque (cdr (front-ptr deque)))
+              (set-cdr! (car (front-ptr deque)) nil)
               deque)))
 
 (define (rear-delete-deque! deque)

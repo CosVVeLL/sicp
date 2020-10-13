@@ -80,10 +80,11 @@ A _deque_ ("double-ended queue") is a sequence in which items can be inserted an
   (cond ((empty-deque? deque)
          (error "FRONT-DELETE! called with an empty deque" deque))
         (else (set-front-ptr! deque (cdr (front-ptr deque)))
+              (set-cdr! (car (front-ptr deque)) nil)
               deque)))
 
-; (('(a b c d) '()) ('(d) '(c d)))
-; (('(a b c) '()) ('(c) '(b c)))
+; ('(a b c d) ('(d) '(c d)))
+; ('(a b c) ('(c) '(b c)))
 (define (rear-delete-deque! deque)
   (cond ((empty-deque? deque)
          (error "REAR-DELETE! called with an empty deque" deque))
