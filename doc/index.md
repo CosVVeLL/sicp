@@ -206,4 +206,5 @@
   * [Exercise 3.23](./Chapter%203/Exercise%203.23.md) ([code](../src/Chapter%203/Exercise%203.23.scm))
   * [Exercise 3.24](./Chapter%203/Exercise%203.24.md)
   * [Exercise 3.25](./Chapter%203/Exercise%203.25.md)
+  * [Exercise 3.26](./Chapter%203/Exercise%203.26.md) ([code](../src/Chapter%203/Exercise%203.26.scm))
 
