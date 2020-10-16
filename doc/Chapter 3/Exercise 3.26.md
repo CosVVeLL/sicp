@@ -6,7 +6,7 @@ To search a table as implemented above, one needs to scan through the list of re
 
 ### Solution
 
-1\. ([Code](../../src/Chapter%203/Exercise%203.26.scm))
+1\. ([Code](../../src/Chapter%203/Exercise%203.26.scm))\
 2. ([Draft](../../src/Chapter%203/Exercise%203.26%20(draft).scm))
 
 ```scheme
