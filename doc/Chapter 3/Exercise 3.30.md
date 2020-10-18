@@ -24,7 +24,7 @@
 Подсчитав все функциональные элементы, получится, что задержка `ripple-carry-adder` равна
 
 ```
-2n * [(max (and-gate-delay + invert-delay; or-gate-delay)] + and-gate-delay) + n * or-gate-delay
+2n * ([max (and-gate-delay + invert-delay; or-gate-delay)] + and-gate-delay) + n * or-gate-delay
 ```
 ```scheme
 (define (ripple-carry-adder a-list b-list s-list c-out)
