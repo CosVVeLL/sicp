@@ -13,13 +13,18 @@
 `ripple-carry-adder`, принимющая _n_ сигналов для сложения, вызовет _n_ сумматоров. В каждом сумматоре два полусумматора и ИЛИ-элемент. Это 2<i>n</i> полусумматоров + _n_ ИЛИ-элементов. В каждом полусумматоре два И-элемента, инвертор и ИЛИ-элемент. Общая задержка в полусумматоре (учитывая, что, не зная реализации И-элемента и ИЛИ-элемента, нельзя быть уверенным, будет задержка больше у `and-gate-delay + invert` или у `and-gate-delay`)
 
 ```
-[max (and-gate-delay + invert-delay)] + and-gate-delay
+[max (and-gate-delay + invert-delay; or-gate-delay)] + and-gate-delay
+```
+Общая задержка в одном сумматоре
+
+```
+2 * ([max (and-gate-delay + invert-delay; or-gate-delay)] + and-gate-delay) + or-gate-delay
 ```
 
-Подсчитав все функциональные элементы в полусумматорах, получится, что задержка `ripple-carry-adder` равна
+Подсчитав все функциональные элементы, получится, что задержка `ripple-carry-adder` равна
 
 ```
-2n * [(max (and-gate-delay + invert-delay); or-gate-delay] + and-gate-delay) + n * or-gate-delay
+2n * [(max (and-gate-delay + invert-delay; or-gate-delay)] + and-gate-delay) + n * or-gate-delay
 ```
 ```scheme
 (define (ripple-carry-adder a-list b-list s-list c-out)
@@ -44,16 +49,16 @@
                                                  (cdr s-li)
                                                  iter-c-out)))))
 
-  (if (not (or (= (length a-list) (length b-list))
-               (= (length a-list) (length s-list))))
-      (error "The number of incoming signals doesn't match"
-             (list (length a-list)
-                   (length b-list)
-                   (length s-list)))
+  (if (and (= (length a-list) (length b-list))
+           (= (length a-list) (length s-list)))
       (ripple-carry-adder-procedure a-list
                                     b-list
                                     s-list
                                     (make-wire)
-                                    (make-wire))))
+                                    (make-wire))
+      (error "Inputs length doesn't match -- RIPPLE-CARRY-ADDER"
+             (list (length a-list)
+                   (length b-list)
+                   (length s-list)))))
 ```
 
