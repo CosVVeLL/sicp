@@ -212,4 +212,5 @@
   * [Exercise 3.29](./Chapter%203/Exercise%203.29.md)
   * [Exercise 3.30](./Chapter%203/Exercise%203.30.md)
   * [Exercise 3.31](./Chapter%203/Exercise%203.31.md)
+  * [Exercise 3.32](./Chapter%203/Exercise%203.32.md)
 
