@@ -8,9 +8,9 @@ Using primitive multiplier, adder, and constant constraints, define a procedure 
 
 ([Code](../../src/Chapter%203/Exercise%203.33.scm))
 
-Ограничение `averager` будет содержать в себе это уравнение: `c` = (`a` + `b`) / 2
+Процедура `averager`, создающая сеть ограничений, будет содержать в себе это уравнение: c = (a + b) / 2
 
-Вот так оно выглядит в виде сети ограничений:
+Вот сама сеть:
 
 <p align="center">
   <img src="https://i.ibb.co/bQSq6c2/SICPexercise3-33.png" alt="SICPexercise3.33" title="SICPexercise3.33">
