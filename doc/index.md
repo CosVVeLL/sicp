@@ -222,4 +222,5 @@
 3.4  Concurrency: Time Is of the Essence
 
   * [Exercise 3.38](./Chapter%203/Exercise%203.38.md)
+  * [Exercise 3.39](./Chapter%203/Exercise%203.39.md)
 
