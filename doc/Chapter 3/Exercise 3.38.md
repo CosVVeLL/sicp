@@ -36,6 +36,6 @@ a. Eсли банковская система запрещает выполня
 b. Один из возможных вариантов, если бы транзакции выполнялись одновременно:
 
 <p align="center">
-  <img src="https://i.ibb.co/pJQLLxV/SICPexercise3-38-2.png" alt="SICPexercise3.38.2" title="SICPexercise3.38.2">
+  <img src="https://i.ibb.co/QdPh7xP/SICPexercise3-38-2.png" alt="SICPexercise3.38.2" title="SICPexercise3.38.2">
 </p>
 
