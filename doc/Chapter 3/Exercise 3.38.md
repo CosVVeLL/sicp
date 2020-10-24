@@ -30,12 +30,12 @@ a. Eсли банковская система запрещает выполня
 Первый пример:
 
 <p align="center">
-  <img src="https://i.ibb.co/Gs2k5wX/SICPexercise3-38-1.png" alt="SICPexercise3.38.1" title="SICPexercise3.38.1">
+  <img src="https://i.ibb.co/4YzW3x0/SICPexercise3-38-1.png" alt="SICPexercise3.38.1" title="SICPexercise3.38.1">
 </p>
 
 b. Один из возможных вариантов, если бы транзакции выполнялись одновременно:
 
 <p align="center">
-  <img src="https://i.ibb.co/QdPh7xP/SICPexercise3-38-2.png" alt="SICPexercise3.38.2" title="SICPexercise3.38.2">
+  <img src="https://i.ibb.co/xDgjt8V/SICPexercise3-38-2.png" alt="SICPexercise3.38.2" title="SICPexercise3.38.2">
 </p>
 
