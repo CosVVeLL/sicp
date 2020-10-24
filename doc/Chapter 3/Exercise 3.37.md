@@ -24,6 +24,8 @@ Here `c+`, `c*`, etc. are the "constraint" versions of the arithmetic operations
 
 Define analogous procedures `c-`, `c*`, `c/`, and `cv` (constant value) that enable us to define compound constraints as in the converter example above.<sup>1</sup>
 
+---
+
 <sup>1</sup> The expression-oriented format is convenient because it avoids the need to name the intermediate expressions in a computation. Our original formulation of the constraint language is cumbersome in the same way that many languages are cumbersome when dealing with operations on compound data. For example, if we wanted to compute the product `(a + b) · (c + d)`, where the variables represent vectors, we could work in "imperative style", using procedures that set the values of designated vector arguments but do not themselves return vectors as values:
 
 ```scheme

@@ -4,6 +4,8 @@
 
 A _deque_ ("double-ended queue") is a sequence in which items can be inserted and deleted at either the front or the rear. Operations on deques are the constructor `make-deque`, the predicate `empty-deque?`, selectors `front-deque` and `rear-deque`, and mutators `front-insert-deque!`, `rear-insert-deque!`, `front-delete-deque!`, and `rear-delete-deque!`. Show how to represent deques using pairs, and give implementations of the operations.<sup>1</sup> All operations should be accomplished in Θ(1) steps.
 
+---
+
 <sup>1</sup> Be careful not to make the interpreter try to print a structure that contains cycles. (See [exercise 3.13](./Exercise%203.13.md).)
 
 ### Solution
