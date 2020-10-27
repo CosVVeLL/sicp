@@ -40,7 +40,7 @@ Explain what is wrong with Louis's reasoning. In particular, consider what happe
 
 ```scheme
 ((account1 'withdraw) difference)
-((account2 'deposit) difference))
+((account2 'deposit) difference)
 ```
 
 Выполнение любого из приведённых выше вызова оказалось бы проблемой при данной реализации `make-account-and-serializer`, ведь если внутренние процедуры `withdraw` и `deposite` будут сериализованны теми же сериализаторами, что и `exchange`, то это означало бы, что `exchange`, `withdraw` и `deposite` не могут выполняться параллельно. Т.е. каждая из этих процедур не сможет начать выполняться, пока не завершит свою работу текущая процедура, находящаяся в тех же сериализаторах, а т.к. `exchange` уже выполняется, то ни `withdraw`, ни `deposite` не запустятся.
