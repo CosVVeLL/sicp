@@ -54,7 +54,7 @@ b. Полагаемся на то, что `test-and-set!` и `clear!` атома
                     (the-semaphore 'release)) ; retry
                    ((< free-places n)
                     (set! free-places (inc free-places)))
-             (clear! cell))))))
+             (clear! cell)))))
     the-semaphore))
 ```
 
