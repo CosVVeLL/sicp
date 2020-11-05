@@ -234,3 +234,7 @@
   * [Exercise 3.48](./Chapter%203/Exercise%203.48.md)
   * [Exercise 3.49](./Chapter%203/Exercise%203.49.md)
 
+3.5  Streams
+
+  * [Exercise 3.50](./Chapter%203/Exercise%203.50.md)
+

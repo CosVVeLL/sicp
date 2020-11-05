@@ -53,6 +53,6 @@ Draw an environment diagram to analyze the computation of `(memo-fib 3)`. Explai
 Диаграмма окружений, анализирующая вычисление `(memoize fib)`:
 
 <p align="center">
-  <img src="https://i.ibb.co/Vj5fjNF/SICPexercise3-27-2.png" alt="SICPexercise3.27.1" title="SICPexercise3.27.2">
+  <img src="https://i.ibb.co/0rwGN2t/SICPexercise3-27-2.png" alt="SICPexercise3.27.1" title="SICPexercise3.27.2">
 </p>
 
