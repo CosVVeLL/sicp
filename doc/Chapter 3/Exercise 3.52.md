@@ -21,12 +21,6 @@ What is the value of `sum` after each of the above expressions is evaluated? Wha
 
 ### Solution
 
-
-
-```
-
-```
-
 С оптимизацией через `memo-proc`:
 
 ```scheme
