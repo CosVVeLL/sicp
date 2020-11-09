@@ -240,4 +240,5 @@
   * [Exercise 3.51](./Chapter%203/Exercise%203.51.md)
   * [Exercise 3.52](./Chapter%203/Exercise%203.52.md)
   * [Exercise 3.53](./Chapter%203/Exercise%203.53.md)
+  * [Exercise 3.54](./Chapter%203/Exercise%203.54.md)
 
