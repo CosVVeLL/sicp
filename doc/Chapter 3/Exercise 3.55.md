@@ -7,13 +7,12 @@ Define a procedure partial-sums that takes as argument a stream _S_ and returns 
 ### Solution
 
 ```scheme
-(define (partial-sums s)
-  (cons-stream (stream-car s)
-               (add-streams (stream-cdr s)
-                            (partial-sums s))))
+(define (partial-sums s) 
+   (define s2 (add-streams s (cons-stream 0 s2))) 
+   s2)
 ;    (1, 3, 6, 10, 15, ...)
 
 ; (1, 2, 3, 4,  5, ...)
-;    (1, 2, 3,  4,  5, ...)
+; (0, 1, 3, 6, 10, 15, ...)
 ```
 
