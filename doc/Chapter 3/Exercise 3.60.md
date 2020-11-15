@@ -51,3 +51,5 @@ You can test your procedure by verifying that <i>sin</i>² x + <i>cos</i>² _x_ 
 ; done
 ```
 
+[1]: ./Exercise%203.59.md
+
