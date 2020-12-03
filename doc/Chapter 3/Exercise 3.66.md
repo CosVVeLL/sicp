@@ -47,7 +47,7 @@ Examine the stream `(pairs integers integers)`. Can you make any general comment
 Если i < j:
 
 ```
-2^i * (j - i) + (2^i - 1)
+2^i * (j - i) + (2^(i - 1) - 1)
 ```
 
 ---
@@ -55,14 +55,14 @@ Examine the stream `(pairs integers integers)`. Can you make any general comment
 Посчитаем, сколько пар предшествует (99, 100):
 
 ```
-2^99 * 1 + 2^98 - 1
-~ 9.5073795e+29
+(2^99 * 1 + 2^98 - 1) - 1
+~ 9.50737950171172e+29
 ```
 
 Сколько пар предшествует (100, 100):
 
 ```
-2^100 - 1 - 1
-~ 1.2676506e+30
+(2^100 - 1) - 1
+~ 1.2676506002282294e+30
 ```
 
