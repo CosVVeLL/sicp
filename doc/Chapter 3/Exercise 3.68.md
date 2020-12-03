@@ -12,7 +12,7 @@ Louis Reasoner thinks that building a stream of pairs from three parts is unnece
    (pairs (stream-cdr s) (stream-cdr t))))
 ```
 
-Does this work? Consider what happens if we evaluate `(pairs integers integers)` using Louis's definition of `pairs`. 
+Does this work? Consider what happens if we evaluate `(pairs integers integers)` using Louis's definition of `pairs`.
 
 ### Solution
 
