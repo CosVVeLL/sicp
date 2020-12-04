@@ -6,7 +6,7 @@ It would be nice to be able to generate streams in which the pairs appear in som
 
 a. the stream of all pairs of positive integers (_i_,_j_) with _i_ ≤ _j_ ordered according to the sum _i_ + _j_
 
-b. the stream of all pairs of positive integers (_i_,_j_) with _i_ ≤ _j_, where neither _i_ nor _j_ is divisible by 2, 3, or 5, and the pairs are ordered according to the sum 2 _i_ + 3 _j_ + 5 _i_ _j_. 
+b. the stream of all pairs of positive integers (_i_,_j_) with _i_ ≤ _j_, where neither _i_ nor _j_ is divisible by 2, 3, or 5, and the pairs are ordered according to the sum 2 _i_ + 3 _j_ + 5 _i_ _j_.
 
 ---
 
