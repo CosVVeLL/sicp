@@ -2,7 +2,7 @@
 
 ### [Exercise 3.73](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-24.html#%_thm_3.73)
 
-<p>
+<p align="center">
   <img src="https://i.ibb.co/nMjhd2h/SICPexercise3-73.png" alt="SICPexercise3.73" title="SICPexercise3.73">
 </p>
 
