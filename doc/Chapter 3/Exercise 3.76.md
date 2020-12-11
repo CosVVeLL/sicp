@@ -15,6 +15,6 @@ Eva Lu Ator has a criticism of Louis's approach in [exercise 3.75](./Exercise%20
 (define (zero-crossings input-stream smooth)
   (let ((avpt-stream (smooth input-stream)))
     (stream-map sign-change-detector avpt-stream
-                                     (cons 0 avpt-stream))))
+                                     (cons-stream 0 avpt-stream))))
 ```
 
