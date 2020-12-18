@@ -31,5 +31,5 @@ When used in systems with loops, this procedure has the same problem as does our
                                dt)))))
 ```
 
-[1]: ./Exercise%203.52.md
+[1]: https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-24.html#%_sec_3.5.2
 
