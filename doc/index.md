@@ -263,4 +263,5 @@
   * [Exercise 3.74](./Chapter%203/Exercise%203.74.md)
   * [Exercise 3.75](./Chapter%203/Exercise%203.75.md)
   * [Exercise 3.76](./Chapter%203/Exercise%203.76.md)
+  * [Exercise 3.77](./Chapter%203/Exercise%203.77.md)
 
