@@ -10,9 +10,12 @@
       (compose f (repeated f (dec n)))
       f))
 
-(define (repeated-iter f n)
-  (lambda (x)
-    (if (> n 1)
-        ((repeated-iter f (dec n)) (f x))
-        (f x))))
+(define (repeated f n)
+  (define (iter i acc)
+    (if (<= i 1)
+        acc
+        (iter (dec i)
+              (compose f acc))))
+
+  (iter n f))
 

@@ -37,14 +37,27 @@ Hint: You may find it convenient to use compose from [exercise 1.42](./Exercise%
 ; => 666
 ```
 
+или так:
+
+```scheme
+(define (repeated f n)
+  (lambda (x)
+    (if (> n 1)
+        ((repeated f (dec n)) (f x))
+        (f x))))
+```
+
 Решение при помощи итеративного процесса:
 
 ```scheme
-(define (repeated-iter f n)
-  (lambda (x)
-    (if (> n 1)
-        ((repeated-iter f (dec n)) (f x))
-        (f x))))
+(define (repeated f n)
+  (define (iter i acc)
+    (if (<= i 1)
+        acc
+        (iter (dec i)
+              (compose f acc))))
+
+  (iter n f))
 
 ((repeated-iter square 2) 5)
 ; => 625
