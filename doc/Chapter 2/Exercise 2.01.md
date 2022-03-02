@@ -8,7 +8,7 @@ Define a better version of `make-rat` that handles both positive and negative ar
 
 ([Code](../../src/Chapter%202/Exercise%202.01.scm))
 
-Используем дополнительные функции `opt-args-n` и `opt-args-d` для нормализации знака в нашей процедуре, определяющей рациональное число:
+`gcd` работает так: результат будет с таким знаком, какой знак у второго аргумента. Этого достаточно, чтобы выполнить условие данной задачи.
 
 ```scheme
 (define (remainder a b) (mod a b))
@@ -31,20 +31,8 @@ Define a better version of `make-rat` that handles both positive and negative ar
   (display "/")
   (display (denom x)))
 
-(define (opt-args-n n d)
-  (cond ((or (and (< n 0) (> d 0))
-             (and (> n 0) (< d 0))) (- n))
-        ((and (< n 0) (< d 0)) n)))
-
-(define (opt-args-d n d)
-  (cond ((or (and (< n 0) (> d 0))
-             (and (> n 0) (< d 0))) d)
-        ((and (< n 0) (< d 0)) d)))
-
 (define (make-rat n d)
-  (let ((g (gcd n d))
-        (opt-n (opt-args-n n d))
-        (opt-d (opt-args-d n d)))
+  (let ((g (gcd n d)))
     (cons (/ n g) (/ d g))))
 
 (print-rat (make-rat 1 2))

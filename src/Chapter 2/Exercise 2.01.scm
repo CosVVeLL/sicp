@@ -18,19 +18,7 @@
   (display "/")
   (display (denom x)))
 
-(define (opt-args-n n d)
-  (cond ((or (and (< n 0) (> d 0))
-             (and (> n 0) (< d 0))) (- n))
-        ((and (< n 0) (< d 0)) n)))
-
-(define (opt-args-d n d)
-  (cond ((or (and (< n 0) (> d 0))
-             (and (> n 0) (< d 0))) d)
-        ((and (< n 0) (< d 0)) d)))
-
 (define (make-rat n d)
-  (let ((g (gcd n d))
-        (opt-n (opt-args-n n d))
-        (opt-d (opt-args-d n d)))
+  (let ((g (gcd n d)))
     (cons (/ n g) (/ d g))))
 
