@@ -76,3 +76,5 @@ Define `one` and `two` directly (not in terms of `zero` and `add-1`). (Hint: Use
 ; => 2
 ```
 
+P.S. В решении этой задачи мне помогла [эта](https://habr.com/ru/post/215807) статья про λ-исчисление. Мне показалась интересной.
+
