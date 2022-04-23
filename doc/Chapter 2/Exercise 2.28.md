@@ -45,3 +45,26 @@ x2 ; => ((1 (2 3)) (4 (5 6)))
 ; => (1 2 3 4 5 6)
 ```
 
+P.S. Второй вариант процедуры (там может быть понятней):
+
+```scheme
+(define (fringe l)
+  (define (iter acc rest)
+    (if (null? rest)
+      acc
+      (iter (append acc
+                    (fringe (list (car rest))))
+            (cdr rest))))
+
+  (define first (car l))
+  (define first-acc
+      (if (pair? first)
+          (fringe first)
+          (list first)))
+
+  (if (null? l)
+      l
+      (iter first-acc
+            (cdr l))))
+```
+
