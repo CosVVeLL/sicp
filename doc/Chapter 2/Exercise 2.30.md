@@ -56,7 +56,7 @@ Define `square-tree` both directly (i.e., without using any higher-order procedu
 t
 ; => (1 (2 (3 4) 5) (6 7))
 
-(square-tree1 t)
+(square-tree t)
 ; #t start
 ; #f (1)
 ; #t start
@@ -74,7 +74,7 @@ t
 
 ; => (1 (4 (9 16) 25) (36 49))
 
-(square-tree1 nil)
+(square-tree nil)
 ; Not a pair
 
 ; => ()
