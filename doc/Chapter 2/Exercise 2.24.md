@@ -10,7 +10,7 @@ Suppose we evaluate the expression `(list 1 (list 2 (list 3 4)))`. Give the resu
 
 ---
 
-[Стрелочная диаграмма](https://miro.com/app/embed/o9J_kxsm9XM=):
+Стрелочная диаграмма:
 
 <p align="center">
   <img src="https://i.ibb.co/WPrxzzW/SICPexercise2-15-1.jpg" alt="SICPexercise2.15.1" title="SICPexercise2.15.1">
@@ -18,8 +18,9 @@ Suppose we evaluate the expression `(list 1 (list 2 (list 3 4)))`. Give the resu
 
 ---
 
-[В виде древа](https://miro.com/app/embed/o9J_kxtZzIs=):
+В виде древа:
 
 <p align="center">
   <img src="https://i.ibb.co/YPDBgyt/SICPexercise2-15-2.jpg" alt="SICPexercise2.15.2" title="SICPexercise2.15.2">
 </p>
+
