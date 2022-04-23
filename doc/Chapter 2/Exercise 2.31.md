@@ -14,15 +14,15 @@ Abstract your answer to [exercise 2.30](./Exercise%202.30.md) to produce a proce
 (define (square x) (* x x))
 (define nil '())
 
-(define (tree-map square tree)
+(define (tree-map proc tree)
   (if (not (pair? tree))
       (and (newline)
            (display "Not a pair")
            tree))
       (map (lambda (sub-tree)
              (if (pair? sub-tree)
-                 (tree-map factor sub-tree)
-                 (square sub-tree)))
+                 (tree-map proc sub-tree)
+                 (proc sub-tree)))
            tree))
 
 (square-tree t)
