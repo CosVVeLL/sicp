@@ -39,3 +39,13 @@ Redefine `count-leaves` from [section 2.2.2](https://mitpress.mit.edu/sites/defa
 ; => 6
 ```
 
+Решение без использования `enumerate-tree`:
+
+```scheme
+(define (count-leaves t)
+  (accumulate + 0 (map (lambda (x) (if (pair? x)
+                                       (count-leaves x)
+                                       1))
+                       t)))
+```
+
