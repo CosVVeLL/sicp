@@ -97,8 +97,6 @@ d. [Рисовалка `wave`](https://mitpress.mit.edu/sites/default/files/sicp
                         (make-vect 0.35 0.85))
           (make-segment (make-vect 0.35 0.8)
                         (make-vect 0.4 1))
-          (make-segment (make-vect 0.4 1)
-                        (make-vect 0.6 1))
           (make-segment (make-vect 0.6 1)
                         (make-vect 0.65 0.85))
           (make-segment (make-vect 0.65 0.85)
