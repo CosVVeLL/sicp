@@ -15,7 +15,9 @@ produces procedures `right-split` and `up-split` with the same behaviors as the 
 
 ```scheme
 (define (dec x) (- x 1))
+```
 
+```scheme
 (define (split proc1 proc2)
   (lambda (painter n)
     (if (zero? n)
