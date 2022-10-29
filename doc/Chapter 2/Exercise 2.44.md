@@ -8,7 +8,9 @@ Define the procedure `up-split` used by `corner-split`. It is similar to `right-
 
 ```scheme
 (define (dec x) (- x 1))
+```
 
+```scheme
 (define (up-split painter n)
   (if (zero? n)
       painter
