@@ -1,4 +1,4 @@
-## [Chapter 2](../index.md#2-Building-Abstractions-with-Data)
+
 
 ### Exercise 2.52
 
@@ -28,8 +28,6 @@ a. изменю написанную мною рисовалку `my-wave` из 
                         (make-vect 0.35 0.85))
           (make-segment (make-vect 0.35 0.8)
                         (make-vect 0.4 1))
-          (make-segment (make-vect 0.4 1)
-                        (make-vect 0.6 1))
           (make-segment (make-vect 0.6 1)
                         (make-vect 0.65 0.85))
           (make-segment (make-vect 0.65 0.85)
